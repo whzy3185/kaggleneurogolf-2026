@@ -160,7 +160,17 @@ def _should_add_supplement(state: GameState, profiles: dict[int, OpponentProfile
     for profile in profiles.values():
         if profile.confidence < 0.55:
             continue
-        for key in ("enemy_rusher", "neutral_rusher", "turtle", "big_stack", "overcommitter", "comet_greedy"):
+        for key in (
+            "enemy_rusher",
+            "neutral_rusher",
+            "turtle",
+            "big_stack",
+            "overcommitter",
+            "comet_greedy",
+            "reinforce_heavy",
+            "crash_exploiter",
+            "weakest_targeter",
+        ):
             if effective(profile, key) >= 0.55:
                 return True
     return False

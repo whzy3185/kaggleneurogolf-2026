@@ -21,6 +21,9 @@ def build_strategy_modifiers(profiles: Dict[int, OpponentProfile]) -> StrategyMo
     big_stack = max(effective(profile, "big_stack") for profile in profiles.values())
     overcommit = max(effective(profile, "overcommitter") for profile in profiles.values())
     comet = max(effective(profile, "comet_greedy") for profile in profiles.values())
+    reinforce_heavy = max(effective(profile, "reinforce_heavy") for profile in profiles.values())
+    crash_exploiter = max(effective(profile, "crash_exploiter") for profile in profiles.values())
+    weakest_targeter = max(effective(profile, "weakest_targeter") for profile in profiles.values())
 
     if enemy_rush > 0.55:
         mods.reserve_floor_delta += 6
@@ -52,6 +55,20 @@ def build_strategy_modifiers(profiles: Dict[int, OpponentProfile]) -> StrategyMo
 
     if comet > 0.55:
         mods.comet_weight_mult *= 1.25
+
+    if reinforce_heavy > 0.55:
+        mods.attack_weight_mult *= 1.08
+        mods.expansion_weight_mult *= 0.95
+        mods.counterattack_bonus += 6.0
+
+    if crash_exploiter > 0.55:
+        mods.reserve_floor_delta += 4
+        mods.defense_weight_mult *= 1.15
+        mods.max_commit_ratio_delta -= 0.06
+
+    if weakest_targeter > 0.55:
+        mods.reserve_floor_delta += 3
+        mods.defense_weight_mult *= 1.10
 
     return mods
 

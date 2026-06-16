@@ -16,6 +16,9 @@ class OpponentProfile:
     neutral_target_count: int = 0
     own_target_count: int = 0
     enemy_target_count: int = 0
+    self_target_count: int = 0
+    weak_enemy_target_count: int = 0
+    conflict_target_count: int = 0
     center_target_count: int = 0
     high_prod_target_count: int = 0
     comet_target_count: int = 0
@@ -80,6 +83,18 @@ class OpponentProfile:
     def weak_bot(self) -> float:
         return self.scores.get("weak_bot", 0.0)
 
+    @property
+    def reinforce_heavy(self) -> float:
+        return self.scores.get("reinforce_heavy", 0.0)
+
+    @property
+    def crash_exploiter(self) -> float:
+        return self.scores.get("crash_exploiter", 0.0)
+
+    @property
+    def weakest_targeter(self) -> float:
+        return self.scores.get("weakest_targeter", 0.0)
+
 
 class OpponentProfiler:
     def __init__(self) -> None:
@@ -126,22 +141,32 @@ class OpponentProfiler:
 
         target = likely_fleet_target(fleet, state)
         if target is not None:
-            self._record_target(state, profile, target)
+            self._record_target(state, profile, fleet, target)
 
         commit_ratio = self._estimate_commit_ratio(fleet)
         profile.max_commit_ratio = max(profile.max_commit_ratio, commit_ratio)
         if commit_ratio >= 0.65:
             profile.overcommit_count += 1
 
-    def _record_target(self, state: GameState, profile: OpponentProfile, target: PlanetState) -> None:
+    def _record_target(
+        self,
+        state: GameState,
+        profile: OpponentProfile,
+        fleet: FleetState,
+        target: PlanetState,
+    ) -> None:
         if target.owner == -1:
             profile.neutral_target_count += 1
         elif target.owner == state.player:
             profile.own_target_count += 1
             if profile.first_attack_turn is None:
                 profile.first_attack_turn = state.step
+        elif target.owner == fleet.owner:
+            profile.self_target_count += 1
         else:
             profile.enemy_target_count += 1
+            if target.owner == self._weakest_enemy_owner(state):
+                profile.weak_enemy_target_count += 1
 
         if distance_xy(target.x, target.y, CENTER_X, CENTER_Y) < 25.0:
             profile.center_target_count += 1
@@ -149,6 +174,8 @@ class OpponentProfiler:
             profile.high_prod_target_count += 1
         if target.id in state.comet_planet_ids:
             profile.comet_target_count += 1
+        if self._targets_existing_conflict(state, fleet, target):
+            profile.conflict_target_count += 1
 
     def _estimate_commit_ratio(self, fleet: FleetState) -> float:
         if self.previous_state is None:
@@ -168,6 +195,9 @@ class OpponentProfiler:
         comet_ratio = profile.comet_target_count / total
         big_ratio = profile.large_fleet_count / total
         overcommit_ratio = profile.overcommit_count / total
+        self_ratio = profile.self_target_count / total
+        weak_enemy_ratio = profile.weak_enemy_target_count / total
+        conflict_ratio = profile.conflict_target_count / total
         send_pressure = clamp(profile.total_ships_sent / max(1.0, 20.0 * max(1, profile.observed_turns)))
         low_send = 1.0 - clamp(profile.new_fleets_count / max(1.0, profile.observed_turns / 5.0))
 
@@ -184,6 +214,29 @@ class OpponentProfiler:
             "big_stack": clamp(0.75 * big_ratio + 0.25 * profile.max_commit_ratio),
             "comet_greedy": clamp(comet_ratio),
             "overcommitter": clamp(0.65 * overcommit_ratio + 0.35 * profile.max_commit_ratio),
+            "reinforce_heavy": clamp(0.80 * self_ratio + 0.20 * low_send),
+            "crash_exploiter": clamp(conflict_ratio),
+            "weakest_targeter": clamp(weak_enemy_ratio),
             "weak_bot": 0.0,
             "confidence": profile.confidence,
         }
+
+    def _weakest_enemy_owner(self, state: GameState) -> int | None:
+        totals: Dict[int, int] = {}
+        for planet in state.enemy_planets:
+            totals[planet.owner] = totals.get(planet.owner, 0) + int(planet.ships) + int(planet.production) * 12
+        for fleet in state.fleets:
+            if fleet.owner not in (-1, state.player):
+                totals[fleet.owner] = totals.get(fleet.owner, 0) + int(fleet.ships)
+        if not totals:
+            return None
+        return min(totals, key=totals.get)
+
+    def _targets_existing_conflict(self, state: GameState, fleet: FleetState, target: PlanetState) -> bool:
+        for other in state.fleets:
+            if other.id == fleet.id or other.owner in (-1, fleet.owner):
+                continue
+            other_target = likely_fleet_target(other, state)
+            if other_target is not None and other_target.id == target.id:
+                return True
+        return False

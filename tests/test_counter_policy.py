@@ -34,3 +34,21 @@ def test_turtle_and_comet_policy():
     assert mods.expansion_weight_mult > 1.0
     assert mods.comet_weight_mult > 1.0
 
+
+def test_reinforce_heavy_adds_pressure_without_large_reserve_shift():
+    mods = build_strategy_modifiers({1: _profile(1, "reinforce_heavy", 0.8)})
+    assert mods.attack_weight_mult > 1.0
+    assert mods.expansion_weight_mult < 1.0
+    assert mods.counterattack_bonus >= 6.0
+
+
+def test_crash_and_weakest_targeter_raise_defensive_reserve():
+    mods = build_strategy_modifiers(
+        {
+            1: _profile(1, "crash_exploiter", 0.8),
+            2: _profile(2, "weakest_targeter", 0.8),
+        }
+    )
+    assert mods.reserve_floor_delta >= 7
+    assert mods.defense_weight_mult > 1.0
+    assert mods.max_commit_ratio_delta < 0
