@@ -4,11 +4,11 @@ Date: 2026-06-16
 
 This registry records public Orbit Wars sources for reuse and benchmarking. It
 does not treat author LB claims as our official scores. Our only official score
-so far is submission `53729904`, public score `600.0`, from the Kaggle starter.
+so far is submission `53729904`, public score `317.8`, from the Kaggle starter.
 
 | Source ID | Source | Evidence | Claimed/Observed | Status | Value |
 |---|---|---|---:|---|---|
-| `official_starter_600` | Kaggle official starter | S | observed 600.0 | submitted by us | score floor and contract check |
+| `official_starter_317_8` | Kaggle official starter | S | observed 317.8 | submitted by us | score floor and contract check |
 | `orbit_wars_lab` | `automatylicza/orbit-wars-lab` | B | n/a | cloned | evaluation harness and agent zoo |
 | `pilkwang_structured` | Kaggle notebook via lab | B | ~1000 claim | available | likely base candidate |
 | `tamrazov_starwars` | Kaggle notebook via lab | B | 1224 claim | available | strong benchmark |
@@ -32,4 +32,3 @@ Evidence levels:
 - B: complete code likely reproducible locally.
 - C: idea, partial code, or unavailable in this run.
 - D: low-value, unverifiable, duplicate, or high-risk source.
-

@@ -23,6 +23,5 @@ Safety notes:
 
 - `external/` remains ignored and must not be committed.
 - Author LB claims stay as claims until reproduced or submitted by this account.
-- The official starter score `600.0` is the only current official score in our
+- The official starter score `317.8` is the only current official score in our
   scorecard.
-

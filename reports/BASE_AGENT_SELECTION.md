@@ -30,7 +30,7 @@ Summary:
 ## Why Not Starter
 
 The official starter was already used for the connectivity submission and got
-official public score `600.0`. It is a contract baseline, not a strategy base.
+official public score `317.8`. It is a contract baseline, not a strategy base.
 It lacks a world model, defensive forecast, and scoring architecture.
 
 ## Why Pilkwang
@@ -57,4 +57,3 @@ It lacks a world model, defensive forecast, and scoring architecture.
 | `agents/public/pilkwang_structured/SOURCE.md` | provenance and hash |
 | `agents/base_agent.py` | stable wrapper |
 | `configs/base_agent.yaml` | selection metadata |
-

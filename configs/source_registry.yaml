@@ -1,11 +1,11 @@
 sources:
-  - source_id: official_starter_600
+  - source_id: official_starter_317_8
     name: Official Nearest Planet Sniper starter
     url: https://www.kaggle.com/competitions/orbit-wars
     platform: kaggle
     author: Kaggle
     claimed_score: null
-    observed_score: 600.0
+    observed_score: 317.8
     evidence_level: S
     license: competition starter
     main_file: main.py
@@ -287,4 +287,3 @@ sources:
     adaptive_integration_value: low for immediate heuristic base
     risk: unavailable in current network run; likely torch/RL dependency
     next_action: retry only after heuristic track is evaluated
-

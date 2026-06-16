@@ -13,5 +13,5 @@ Resolved:
 
 | Resolved item | Evidence |
 |---|---|
-| No official Orbit Wars submission existed for this account | Submission `53729904` completed with public score `600.0` |
+| No official Orbit Wars submission existed for this account | Submission `53729904` completed with public score `317.8` |
 | Public agent registry not built yet | No targeted benchmark pool | Pull and audit public agents after baseline |

@@ -10,7 +10,7 @@ message: 20260616_official_starter_connectivity_baseline
 submitted_at_utc: 2026-06-16 03:39:20.913000
 initial_status: SubmissionStatus.PENDING
 final_status: SubmissionStatus.COMPLETE
-public_score: 600.0
+public_score: 317.8
 private_score: pending
 source_commit: 2d02c7a
 source_file_sha256: 5253FA86A6191F3D718B8B9850E9D4AAF0BB2AA5E514E87D6B0FB40396DAEEFF
@@ -28,5 +28,5 @@ treated as an optimized agent.
 Final CLI status refresh:
 
 ```text
-53729904  main.py  2026-06-16 03:39:20.913000  20260616_official_starter_connectivity_baseline  SubmissionStatus.COMPLETE  600.0
+53729904  main.py  2026-06-16 03:39:20.913000  20260616_official_starter_connectivity_baseline  SubmissionStatus.COMPLETE  317.8
 ```
