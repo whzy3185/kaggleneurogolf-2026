@@ -1,38 +1,290 @@
 sources:
+  - source_id: official_starter_600
+    name: Official Nearest Planet Sniper starter
+    url: https://www.kaggle.com/competitions/orbit-wars
+    platform: kaggle
+    author: Kaggle
+    claimed_score: null
+    observed_score: 600.0
+    evidence_level: S
+    license: competition starter
+    main_file: main.py
+    repro_status: submitted_by_us
+    contains_world_model: false
+    contains_physics_prediction: false
+    contains_defense_logic: false
+    contains_opponent_modeling: false
+    adaptive_integration_value: connectivity baseline only
+    risk: weak baseline; do not use as final strategy base
+    next_action: keep as score floor and packaging sanity check
+
   - source_id: orbit_wars_lab
     name: automatylicza/orbit-wars-lab
     url: https://github.com/automatylicza/orbit-wars-lab
     platform: github
+    author: automatylicza
+    claimed_score: null
     evidence_level: B
-    type: local_tournament_and_agent_zoo
-    expected_value: high
-    next_action: clone_to_external_and_inspect_agents
-  - source_id: pilkwang_structured_baseline
+    license: MIT plus redistributed public notebooks
+    main_file: null
+    repro_status: cloned_to_external
+    contains_world_model: true
+    contains_physics_prediction: true
+    contains_defense_logic: true
+    contains_opponent_modeling: partial
+    adaptive_integration_value: primary local tournament framework and public agent zoo
+    risk: needs dependency setup; bundled agents include third-party code
+    next_action: use for local match and tournament harness
+
+  - source_id: pilkwang_structured
     name: pilkwang/orbit-wars-structured-baseline
-    platform: kaggle_code
+    url: https://www.kaggle.com/code/pilkwang/orbit-wars-structured-baseline
+    platform: kaggle
+    author: Pilkwang Kim
+    claimed_score: 1000
     evidence_level: B
-    type: structured_public_agent
-    expected_value: high
-    next_action: inspect_for_base_agent_selection
-  - source_id: tamrazov_star_wars
+    license: Apache 2.0
+    main_file: external/orbit-wars-lab/agents/external/pilkwang-structured/main.py
+    repro_status: available_in_orbit_wars_lab
+    contains_world_model: true
+    contains_physics_prediction: true
+    contains_defense_logic: true
+    contains_opponent_modeling: partial
+    adaptive_integration_value: high; clean layered baseline with world model and scoring hooks
+    risk: author notes weak 1v3 behavior; local engine version must be verified
+    next_action: run tournament and inspect scoring insertion points
+
+  - source_id: tamrazov_starwars
     name: romantamrazov/orbit-star-wars-lb-max-1224
-    platform: kaggle_code
+    url: https://www.kaggle.com/code/romantamrazov/orbit-star-wars-lb-max-1224
+    platform: kaggle
+    author: Roman Tamrazov
+    claimed_score: 1224
     evidence_level: B
-    type: public_claimed_high_agent
-    expected_value: high
-    next_action: use_as_benchmark_opponent_after_local_harness
+    license: Apache 2.0
+    main_file: external/orbit-wars-lab/agents/external/tamrazov-starwars/main.py
+    repro_status: available_in_orbit_wars_lab
+    contains_world_model: true
+    contains_physics_prediction: true
+    contains_defense_logic: true
+    contains_opponent_modeling: partial
+    adaptive_integration_value: high as benchmark; medium as base due code size
+    risk: large simulation-based code; harder to modify safely
+    next_action: use as benchmark opponent and inspect if local winrate dominates
+
   - source_id: ykhnkf_distance_prioritized
     name: ykhnkf/distance-prioritized-agent-lb-max-score-1100
-    platform: kaggle_code
+    url: https://www.kaggle.com/code/ykhnkf/distance-prioritized-agent-lb-max-score-1100
+    platform: kaggle
+    author: ykhnkf
+    claimed_score: 1100
     evidence_level: B
-    type: public_claimed_high_agent
-    expected_value: high
-    next_action: use_as_benchmark_opponent_after_local_harness
+    license: Apache 2.0
+    main_file: external/orbit-wars-lab/agents/external/ykhnkf-distance-prioritized/main.py
+    repro_status: available_in_orbit_wars_lab
+    contains_world_model: true
+    contains_physics_prediction: true
+    contains_defense_logic: true
+    contains_opponent_modeling: partial
+    adaptive_integration_value: medium-high; strong benchmark and possible base
+    risk: description incomplete in bundled metadata
+    next_action: benchmark against pilkwang and vkhydras peak
+
   - source_id: sigmaborov_reinforce
     name: sigmaborov/lb-958-1-orbit-wars-2026-reinforce
-    platform: kaggle_code
+    url: https://www.kaggle.com/code/sigmaborov/lb-958-1-orbit-wars-2026-reinforce
+    platform: kaggle
+    author: sigmaborov
+    claimed_score: 958.1
     evidence_level: B
-    type: public_rl_or_search_agent
-    expected_value: medium
-    next_action: inspect_for_features_not_direct_submission
+    license: Apache 2.0
+    main_file: external/orbit-wars-lab/agents/external/sigmaborov-reinforce/main.py
+    repro_status: available_in_orbit_wars_lab
+    contains_world_model: true
+    contains_physics_prediction: true
+    contains_defense_logic: true
+    contains_opponent_modeling: partial
+    adaptive_integration_value: medium; compact reference for reinforce and comet-aware aiming
+    risk: lower claimed score than P0 candidates
+    next_action: keep as readable strategy reference and benchmark
+
+  - source_id: sigmaborov_starter
+    name: sigmaborov/orbit-wars-2026-starter
+    url: https://www.kaggle.com/code/sigmaborov/orbit-wars-2026-starter
+    platform: kaggle
+    author: sigmaborov
+    claimed_score: null
+    evidence_level: B
+    license: Apache 2.0
+    main_file: external/orbit-wars-lab/agents/external/sigmaborov-starter/main.py
+    repro_status: available_in_orbit_wars_lab
+    contains_world_model: true
+    contains_physics_prediction: true
+    contains_defense_logic: true
+    contains_opponent_modeling: false
+    adaptive_integration_value: medium; readable baseline for sun dodge and defense reserve
+    risk: likely weaker than P0 candidates
+    next_action: use for implementation examples, not final base unless tournament surprises
+
+  - source_id: yuriygreben_architect
+    name: yuriygreben/orbit-wars-physics-aware-architect
+    url: https://www.kaggle.com/code/yuriygreben/orbit-wars-physics-aware-architect
+    platform: kaggle
+    author: Yuriy Greben
+    claimed_score: null
+    evidence_level: B
+    license: Apache 2.0
+    main_file: external/orbit-wars-lab/agents/external/yuriygreben-architect/main.py
+    repro_status: available_in_orbit_wars_lab
+    contains_world_model: true
+    contains_physics_prediction: true
+    contains_defense_logic: true
+    contains_opponent_modeling: partial
+    adaptive_integration_value: medium-high; 5-layer architecture reference
+    risk: large multi-layer implementation, unknown LB claim
+    next_action: inspect architecture and benchmark
+
+  - source_id: kashiwaba_rl
+    name: kashiwaba/orbit-wars-reinforcement-learning-tutorial
+    url: https://www.kaggle.com/code/kashiwaba/orbit-wars-reinforcement-learning-tutorial
+    platform: kaggle
+    author: YumeNeko
+    claimed_score: null
+    evidence_level: B
+    license: unknown
+    main_file: external/orbit-wars-lab/agents/external/kashiwaba-rl/main.py
+    repro_status: available_in_orbit_wars_lab
+    contains_world_model: false
+    contains_physics_prediction: false
+    contains_defense_logic: learned_policy
+    contains_opponent_modeling: false
+    adaptive_integration_value: medium as RL feature reference, low as immediate base
+    risk: weights and torch dependency; license unknown
+    next_action: exclude from first base selection, keep for later RL direction
+
+  - source_id: vkhydras_peak_heuristic
+    name: vkhydras/orbit-wars-heuristic-bots peak heuristic
+    url: https://github.com/vkhydras/orbit-wars-heuristic-bots
+    platform: github
+    author: vkhydras
+    claimed_score: 1166.7
+    evidence_level: B
+    license: not_declared_in_readme
+    main_file: external/orbit-wars-heuristic-bots/08_v13_3_R8_full_stack_lb1166_PEAK_HEURISTIC.py
+    repro_status: cloned_to_external
+    contains_world_model: true
+    contains_physics_prediction: true
+    contains_defense_logic: true
+    contains_opponent_modeling: partial
+    adaptive_integration_value: high; strong heuristic lineage and replay-analysis notes
+    risk: no top-level license observed; large single-file code; author says heuristic ceiling below RL
+    next_action: copy only with provenance if license acceptable, otherwise benchmark externally
+
+  - source_id: vkhydras_last_heuristic
+    name: vkhydras main_k_v2 last heuristic
+    url: https://github.com/vkhydras/orbit-wars-heuristic-bots
+    platform: github
+    author: vkhydras
+    claimed_score: 1152.8
+    evidence_level: B
+    license: not_declared_in_readme
+    main_file: external/orbit-wars-heuristic-bots/14_main_k_v2_lb1152_LAST_HEURISTIC.py
+    repro_status: cloned_to_external
+    contains_world_model: true
+    contains_physics_prediction: true
+    contains_defense_logic: true
+    contains_opponent_modeling: true
+    adaptive_integration_value: high as source of opponent-intelligence ideas
+    risk: lower than peak file; no top-level license observed
+    next_action: inspect enemy intelligence and safety gates
+
+  - source_id: pascal_orbitwork_v14
+    name: pascalledesma/orbitwork-v14
+    url: https://www.kaggle.com/code/pascalledesma/orbitwork-v14
+    platform: kaggle
+    author: pascalledesma
+    claimed_score: null
+    evidence_level: B
+    license: Apache 2.0
+    main_file: external/orbit-wars-lab/agents/external/pascal-orbitwork-v14/main.py
+    repro_status: available_in_orbit_wars_lab
+    contains_world_model: true
+    contains_physics_prediction: true
+    contains_defense_logic: true
+    contains_opponent_modeling: partial
+    adaptive_integration_value: medium; additional heuristic variant
+    risk: bundled description incomplete
+    next_action: benchmark if time permits
+
+  - source_id: projectedanx_kaggle_orbit_wars_2026
+    name: projectedanx/kaggle-orbit-wars-2026
+    url: https://github.com/projectedanx/kaggle-orbit-wars-2026
+    platform: github
+    author: projectedanx
+    claimed_score: null
+    evidence_level: C
+    license: unknown
+    main_file: orbit_agent_manifest.py
+    repro_status: cloned_to_external
+    contains_world_model: partial
+    contains_physics_prediction: partial
+    contains_defense_logic: partial
+    contains_opponent_modeling: unclear
+    adaptive_integration_value: low; documentation-heavy experimental framework
+    risk: high abstraction/hallucination risk; not a direct Kaggle agent baseline
+    next_action: deprioritize unless other sources fail
+
+  - source_id: ayushmk7_orbitwarskaggle
+    name: ayushmk7/OrbitWarsKaggle
+    url: https://github.com/ayushmk7/OrbitWarsKaggle
+    platform: github
+    author: ayushmk7
+    claimed_score: null
+    evidence_level: C
+    license: unknown
+    main_file: unknown
+    repro_status: clone_timeout_partial_empty
+    contains_world_model: unknown
+    contains_physics_prediction: unknown
+    contains_defense_logic: unknown
+    contains_opponent_modeling: unknown
+    adaptive_integration_value: unknown until clone succeeds
+    risk: unavailable in current network run
+    next_action: retry later or inspect via browser
+
+  - source_id: abdulbasith5_orbitwars_kaggle
+    name: abdulbasith5/OrbitWars_Kaggle
+    url: https://github.com/abdulbasith5/OrbitWars_Kaggle
+    platform: github
+    author: abdulbasith5
+    claimed_score: null
+    evidence_level: C
+    license: unknown
+    main_file: unknown
+    repro_status: clone_timeout_partial_empty
+    contains_world_model: unknown
+    contains_physics_prediction: unknown
+    contains_defense_logic: unknown
+    contains_opponent_modeling: unknown
+    adaptive_integration_value: unknown until clone succeeds
+    risk: unavailable in current network run
+    next_action: retry later or inspect via browser
+
+  - source_id: michaelriedl_orbit_wars_torch
+    name: michaelriedl/orbit-wars-torch
+    url: https://github.com/michaelriedl/orbit-wars-torch
+    platform: github
+    author: michaelriedl
+    claimed_score: null
+    evidence_level: C
+    license: unknown
+    main_file: unknown
+    repro_status: clone_timeout_or_missing
+    contains_world_model: unknown
+    contains_physics_prediction: unknown
+    contains_defense_logic: unknown
+    contains_opponent_modeling: unknown
+    adaptive_integration_value: low for immediate heuristic base
+    risk: unavailable in current network run; likely torch/RL dependency
+    next_action: retry only after heuristic track is evaluated
 
