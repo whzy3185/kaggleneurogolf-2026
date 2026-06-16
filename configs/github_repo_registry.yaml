@@ -1,0 +1,3091 @@
+competition: orbit-wars
+audit_date: '2026-06-16'
+collection_methods:
+- GitHub REST repository search for orbit-wars and related keywords
+- direct GitHub repo metadata calls for mandatory/high-value repositories
+- GitHub zipball download into ignored external/github_zip_repos for high-value repositories
+- filtered zipball extraction for abdulbasith5/OrbitWars_Kaggle because repository includes .venv/site-packages
+total_registered_repos: 103
+downloaded_static_scan_count: 16
+mandatory_repos:
+- automatylicza/orbit-wars-lab
+- ayushmk7/OrbitWarsKaggle
+- abdulbasith5/OrbitWars_Kaggle
+- vkhydras/orbit-wars-heuristic-bots
+- projectedanx/kaggle-orbit-wars-2026
+- michaelriedl/orbit-wars-torch
+- vinupriyesh/kaggle-environments-orbit-wars
+repos:
+- repo: 0xKunalsharma/orbit-wars-serpent
+  url: https://github.com/0xKunalsharma/orbit-wars-serpent
+  owner: 0xKunalsharma
+  description: Serpent V2 - Kaggle Orbit Wars agent built from 63,921 fleet movement replay analysis
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-20T18:59:27Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: tooling_visualizer_tournament
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit_wars agent
+  api_error: null
+- repo: AM-2304/orbit-wars
+  url: https://github.com/AM-2304/orbit-wars
+  owner: AM-2304
+  description: 'Orbits Wars Kaggle Competition '
+  stars: 0
+  forks: 0
+  last_commit: '2026-04-22T14:01:06Z'
+  last_commit_sha: null
+  license: Apache-2.0
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit-wars
+  api_error: null
+- repo: AdarshGoel2001/orbitWars
+  url: https://github.com/AdarshGoel2001/orbitWars
+  owner: AdarshGoel2001
+  description: RL self-play agent for a 1-second-per-turn CPU-budget Kaggle game. 100× inference speedup via radar + dynamic tokens + axial attention.
+  stars: 1
+  forks: 0
+  last_commit: '2026-05-20T13:03:06Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: true
+  contains_tournament: true
+  contains_visualizer: true
+  contains_rl: true
+  contains_rule_based_agents: true
+  contains_official_env: true
+  contains_native: true
+  has_agent_function: true
+  strategy_family: RL_policy_agent
+  valuable_files:
+  - AGENTS.md
+  - agents.md
+  - submission.py
+  - tests/
+  file_count: 254
+  python_file_count: 88
+  import_risk: native/C++/Rust or tooling dependencies require build validation
+  repro_status: downloaded_static_scan_ok
+  local_path: external/github_zip_repos/AdarshGoel2001__orbitWars
+  reuse_plan: inspect dependencies and model files; possible benchmark family, high import risk
+  search_queries:
+  - orbit-wars
+  - orbit_wars agent
+  api_error: '<HTTPError 403: ''rate limit exceeded''>'
+- repo: AkhileshManda/OrbitWars
+  url: https://github.com/AkhileshManda/OrbitWars
+  owner: AkhileshManda
+  description: Orbit wars
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-24T06:43:33Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: Aviv-H/OrbitWars
+  url: https://github.com/Aviv-H/OrbitWars
+  owner: Aviv-H
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-15T17:24:45Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: BXL909/OrbitalWars
+  url: https://github.com/BXL909/OrbitalWars
+  owner: BXL909
+  description: A browser based gravity/artillery game
+  stars: 0
+  forks: 0
+  last_commit: '2025-10-05T01:08:45Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: BerattCelikk/orbit_wars_competition
+  url: https://github.com/BerattCelikk/orbit_wars_competition
+  owner: BerattCelikk
+  description: 'High-performance autonomous AI agents for the Kaggle Orbit Wars simulation. Features 8-layer architecture, timeline simulation,
+    orbital prediction, and advanced game theory tactics. Top Score: 700+'
+  stars: 1
+  forks: 0
+  last_commit: '2026-04-29T09:33:03Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: world_model_forecaster
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit_wars agent
+  api_error: null
+- repo: BorrunChan/orbit-wars
+  url: https://github.com/BorrunChan/orbit-wars
+  owner: BorrunChan
+  description: kaggle
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-16T11:06:28Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: DSmmartin/orbit-wars-kaggle
+  url: https://github.com/DSmmartin/orbit-wars-kaggle
+  owner: DSmmartin
+  description: Orbit-Wars kaggle source code.
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-03T21:25:28Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit-wars
+  api_error: null
+- repo: Donot-procrastinate/orbit-wars-bot
+  url: https://github.com/Donot-procrastinate/orbit-wars-bot
+  owner: Donot-procrastinate
+  description: repository for orbit wars competition
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-11T08:40:34Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: hybrid_layered_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: DrakeJay/OrbitWars
+  url: https://github.com/DrakeJay/OrbitWars
+  owner: DrakeJay
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-20T16:02:57Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: HistoEU/orbit-wars-lab
+  url: https://github.com/HistoEU/orbit-wars-lab
+  owner: HistoEU
+  description: Orbit Wars simulator, tournament, analytics, and submission lab.
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-12T17:36:33Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: world_model_forecaster
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: Hoangson1506/Orbit-Wars-RL
+  url: https://github.com/Hoangson1506/Orbit-Wars-RL
+  owner: Hoangson1506
+  description: RL algorithm for the Orbit Wars competition on Kaggle
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-07T05:14:35Z'
+  last_commit_sha: null
+  license: Apache-2.0
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: RL_policy_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: Hugodevpro/-Planetary-AI-Agent---OrbitWars
+  url: https://github.com/Hugodevpro/-Planetary-AI-Agent---OrbitWars
+  owner: Hugodevpro
+  description: 'Development of an autonomous Artificial Intelligence agent for the Kaggle real-time strategy competition "Orbit Wars". Objective:
+    solar system conquest through fleet management in a continuous 2D space environment.'
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-18T15:36:41Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: tooling_visualizer_tournament
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit_wars agent
+  api_error: null
+- repo: JTHCode/orbit-wars-agent
+  url: https://github.com/JTHCode/orbit-wars-agent
+  owner: JTHCode
+  description: Agent for Orbit Wars Kaggle competition. Resource management, logistics, heuristics, physics simulations.
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-22T04:34:22Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: true
+  contains_tournament: false
+  contains_visualizer: true
+  contains_rl: true
+  contains_rule_based_agents: true
+  contains_official_env: true
+  contains_native: true
+  has_agent_function: true
+  strategy_family: hybrid_layered_agent
+  valuable_files:
+  - AGENTS.md
+  - agents.md
+  - main.py
+  - scripts/
+  file_count: 8
+  python_file_count: 5
+  import_risk: native/C++/Rust or tooling dependencies require build validation
+  repro_status: downloaded_static_scan_ok
+  local_path: external/github_zip_repos/JTHCode__orbit-wars-agent
+  reuse_plan: candidate public opponent/source reference after wrapper smoke test
+  search_queries:
+  - '"orbit wars" kaggle'
+  - orbit_wars agent
+  api_error: '<HTTPError 403: ''rate limit exceeded''>'
+- repo: JasperDuan111/Orbit-Wars
+  url: https://github.com/JasperDuan111/Orbit-Wars
+  owner: JasperDuan111
+  description: ''
+  stars: 2
+  forks: 1
+  last_commit: '2026-06-15T13:39:28Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: Jeeta2006/Kaggle-ORBIT-wars-
+  url: https://github.com/Jeeta2006/Kaggle-ORBIT-wars-
+  owner: Jeeta2006
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-16T10:03:55Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: JerryIshihara/kaggle-orbit-wars
+  url: https://github.com/JerryIshihara/kaggle-orbit-wars
+  owner: JerryIshihara
+  description: Agents for Orbit-Wars Kaggle competition
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-15T08:25:42Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: hybrid_layered_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit-wars
+  - orbit_wars agent
+  api_error: null
+- repo: LoveMathur/Kaggle-Orbit-Wars
+  url: https://github.com/LoveMathur/Kaggle-Orbit-Wars
+  owner: LoveMathur
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-14T02:29:00Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: MarianodelRio/OrbitWars
+  url: https://github.com/MarianodelRio/OrbitWars
+  owner: MarianodelRio
+  description: Kaggle Orbit Wars — entity-centric transformer bot trained via imitation learning + multi-phase PPO with self-play and opponent
+    pool
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-15T08:16:14Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: true
+  contains_tournament: true
+  contains_visualizer: true
+  contains_rl: true
+  contains_rule_based_agents: true
+  contains_official_env: true
+  contains_native: true
+  has_agent_function: true
+  strategy_family: RL_policy_agent
+  valuable_files:
+  - README.md
+  - requirements.txt
+  - tests/
+  - docs/
+  - submission/
+  - scripts/
+  - dataset/
+  - bots/
+  - game/
+  file_count: 149
+  python_file_count: 108
+  import_risk: native/C++/Rust or tooling dependencies require build validation
+  repro_status: downloaded_static_scan_ok
+  local_path: external/github_zip_repos/MarianodelRio__OrbitWars
+  reuse_plan: inspect dependencies and model files; possible benchmark family, high import risk
+  search_queries:
+  - '"orbit wars" kaggle'
+  - orbit-wars
+  api_error: '<HTTPError 403: ''rate limit exceeded''>'
+- repo: MassiveAggressive/OrbitalWars
+  url: https://github.com/MassiveAggressive/OrbitalWars
+  owner: MassiveAggressive
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2022-09-07T10:12:10Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: MatthewWHuang/orbit-wars
+  url: https://github.com/MatthewWHuang/orbit-wars
+  owner: MatthewWHuang
+  description: Runner and other infrastructure for Kaggle's Orbit Wars competition.
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-22T20:24:16Z'
+  last_commit_sha: null
+  license: NOASSERTION
+  contains_submission: true
+  contains_tournament: true
+  contains_visualizer: true
+  contains_rl: true
+  contains_rule_based_agents: true
+  contains_official_env: true
+  contains_native: true
+  has_agent_function: true
+  strategy_family: tooling_visualizer_tournament
+  valuable_files:
+  - README.md
+  - ORBIT_WARS_README.md
+  - AGENTS.md
+  - agents.md
+  - LICENSE
+  file_count: 21
+  python_file_count: 12
+  import_risk: native/C++/Rust or tooling dependencies require build validation
+  repro_status: downloaded_static_scan_ok
+  local_path: external/github_zip_repos/MatthewWHuang__orbit-wars
+  reuse_plan: use as tooling/reference; do not load as opponent agent
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: '<HTTPError 403: ''rate limit exceeded''>'
+- repo: Mayanksingh002/kaggle-orbit-wars-bot
+  url: https://github.com/Mayanksingh002/kaggle-orbit-wars-bot
+  owner: Mayanksingh002
+  description: AI-powered Orbit Wars bot for Kaggle competition featuring orbit prediction, economy-focused expansion, and multi-source coordinated
+    attack strategies.
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-11T14:08:19Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: hybrid_layered_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - kaggle orbit wars
+  api_error: null
+- repo: N1A1voIt/kaggle-orbit-wars
+  url: https://github.com/N1A1voIt/kaggle-orbit-wars
+  owner: N1A1voIt
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-04-25T13:39:00Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - kaggle orbit wars
+  api_error: null
+- repo: Noofbiz/orbit-wars
+  url: https://github.com/Noofbiz/orbit-wars
+  owner: Noofbiz
+  description: My solutions / files / notes / etc on the Orbit Wars kaggle competition
+  stars: 0
+  forks: 0
+  last_commit: '2026-04-25T16:30:40Z'
+  last_commit_sha: null
+  license: Unlicense
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  api_error: null
+- repo: PERO-99/nova-orbit-agent
+  url: https://github.com/PERO-99/nova-orbit-agent
+  owner: PERO-99
+  description: 'NOVA — a submission-ready Orbit Wars agent for Kaggle 2026: a single-file main.py agent with NPV planning, pincer coordination,
+    and combat simulation. Includes a FastAPI backend, React demo UI, local validation tools, and SQLite persistence for runs and replays.'
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-02T21:58:45Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: true
+  contains_tournament: true
+  contains_visualizer: true
+  contains_rl: true
+  contains_rule_based_agents: true
+  contains_official_env: true
+  contains_native: false
+  has_agent_function: true
+  strategy_family: hybrid_layered_agent
+  valuable_files:
+  - README.md
+  - main.py
+  - submission.py
+  - requirements.txt
+  - package.json
+  - src/
+  - tools/
+  - scripts/
+  file_count: 48
+  python_file_count: 9
+  import_risk: requires wrapper import and smoke test before opponent-pool use
+  repro_status: downloaded_static_scan_ok
+  local_path: external/github_zip_repos/PERO-99__nova-orbit-agent
+  reuse_plan: candidate public opponent/source reference after wrapper smoke test
+  search_queries:
+  - orbit_wars agent
+  api_error: '<HTTPError 403: ''rate limit exceeded''>'
+- repo: Pepelka/OrbitWars
+  url: https://github.com/Pepelka/OrbitWars
+  owner: Pepelka
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-17T18:18:05Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: RaameshB/OrbitWars
+  url: https://github.com/RaameshB/OrbitWars
+  owner: RaameshB
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-09T00:07:54Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: Raunaque97/orbit-wars
+  url: https://github.com/Raunaque97/orbit-wars
+  owner: Raunaque97
+  description: Kaggle competition
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-08T03:08:41Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: SAIVARUNNETHI/OrbitWars
+  url: https://github.com/SAIVARUNNETHI/OrbitWars
+  owner: SAIVARUNNETHI
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-04-27T16:32:56Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: Shintaisei/kaggle-Orbit-Wars
+  url: https://github.com/Shintaisei/kaggle-Orbit-Wars
+  owner: Shintaisei
+  description: kaggleのシュミレーションコンペ
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-07T05:09:33Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: Tienledaithandong/Orbit_wars_Kaggle
+  url: https://github.com/Tienledaithandong/Orbit_wars_Kaggle
+  owner: Tienledaithandong
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-04-30T08:32:55Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: TimKrige/orbit-wars-replays
+  url: https://github.com/TimKrige/orbit-wars-replays
+  owner: TimKrige
+  description: Orbit Wars bot replays (kaggle-rendered HTML)
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-20T12:57:27Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: tooling_visualizer_tournament
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit-wars
+  api_error: null
+- repo: TrekkieOrbiter/OrbiterStarWars
+  url: https://github.com/TrekkieOrbiter/OrbiterStarWars
+  owner: TrekkieOrbiter
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2019-11-16T12:33:44Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: TryDotAtwo/Orbit-Wars-2D-Transformer
+  url: https://github.com/TryDotAtwo/Orbit-Wars-2D-Transformer
+  owner: TryDotAtwo
+  description: Orbit Wars 2D transformer trainer and dashboard
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-15T10:47:30Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: true
+  contains_tournament: true
+  contains_visualizer: true
+  contains_rl: true
+  contains_rule_based_agents: true
+  contains_official_env: true
+  contains_native: true
+  has_agent_function: true
+  strategy_family: RL_policy_agent
+  valuable_files:
+  - AGENTS.md
+  - agents.md
+  - Cargo.toml
+  - docs/
+  - tools/
+  - kaggle_submission/
+  - native/
+  - crates/
+  file_count: 306
+  python_file_count: 8
+  import_risk: native/C++/Rust or tooling dependencies require build validation
+  repro_status: downloaded_static_scan_ok
+  local_path: external/github_zip_repos/TryDotAtwo__Orbit-Wars-2D-Transformer
+  reuse_plan: inspect dependencies and model files; possible benchmark family, high import risk
+  search_queries:
+  - orbit-wars
+  api_error: '<HTTPError 403: ''rate limit exceeded''>'
+- repo: Vinicento/orbitWars
+  url: https://github.com/Vinicento/orbitWars
+  owner: Vinicento
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-31T11:14:07Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: Wallfou/orbit-wars
+  url: https://github.com/Wallfou/orbit-wars
+  owner: Wallfou
+  description: AI Agent for 2026 Kaggle Orbit Wars Competition
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-16T03:22:32Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: hybrid_layered_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit_wars agent
+  api_error: null
+- repo: Y-Kanekoo/orbit-wars
+  url: https://github.com/Y-Kanekoo/orbit-wars
+  owner: Y-Kanekoo
+  description: Autonomous agent harness for Kaggle Orbit Wars competition
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-04T14:31:53Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: hybrid_layered_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit-wars
+  - orbit_wars agent
+  api_error: null
+- repo: abdulbasith5/OrbitWars_2026
+  url: https://github.com/abdulbasith5/OrbitWars_2026
+  owner: abdulbasith5
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-04-23T09:21:35Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: abdulbasith5/OrbitWars_Kaggle
+  url: https://github.com/abdulbasith5/OrbitWars_Kaggle
+  owner: abdulbasith5
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-02T11:09:50Z'
+  last_commit_sha: 95c7ec41595236d577135ea8ba4921343f4fb89e
+  license: unknown
+  contains_submission: true
+  contains_tournament: false
+  contains_visualizer: true
+  contains_rl: true
+  contains_rule_based_agents: true
+  contains_official_env: true
+  contains_native: true
+  has_agent_function: true
+  strategy_family: hybrid_rl_rule_agent
+  valuable_files:
+  - README.md
+  - AGENTS.md
+  - agents.md
+  - main.py
+  - reports/
+  file_count: 39
+  python_file_count: 16
+  import_risk: repository zip contains huge .venv/site-packages; filtered extraction skipped .venv; direct vendoring is unsafe
+  repro_status: downloaded_filtered_scan_ok_venv_skipped
+  local_path: external/github_zip_repos_filtered/abdulbasith5__OrbitWars_Kaggle
+  reuse_plan: inspect dependencies and model files; possible benchmark family, high import risk
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit-wars
+  api_error: null
+- repo: abstrusecore/OrbitWars
+  url: https://github.com/abstrusecore/OrbitWars
+  owner: abstrusecore
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2025-03-06T01:25:08Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: aleclaii/Orbit-Wars
+  url: https://github.com/aleclaii/Orbit-Wars
+  owner: aleclaii
+  description: Testing and Submission Nb for Kaggle Orbit Wars
+  stars: 0
+  forks: 0
+  last_commit: '2026-04-29T06:52:01Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: alvinng4/OrbitWars
+  url: https://github.com/alvinng4/OrbitWars
+  owner: alvinng4
+  description: ''
+  stars: 0
+  forks: 1
+  last_commit: '2026-06-06T11:07:32Z'
+  last_commit_sha: null
+  license: Apache-2.0
+  contains_submission: true
+  contains_tournament: true
+  contains_visualizer: true
+  contains_rl: true
+  contains_rule_based_agents: true
+  contains_official_env: true
+  contains_native: true
+  has_agent_function: true
+  strategy_family: precompute_physics_agent
+  valuable_files:
+  - README.md
+  - main.py
+  - pyproject.toml
+  - LICENSE
+  - src/
+  file_count: 45
+  python_file_count: 5
+  import_risk: native/C++/Rust or tooling dependencies require build validation
+  repro_status: downloaded_static_scan_ok
+  local_path: external/github_zip_repos/alvinng4__OrbitWars
+  reuse_plan: candidate public opponent/source reference after wrapper smoke test
+  search_queries:
+  - orbit-wars
+  api_error: '<HTTPError 403: ''rate limit exceeded''>'
+- repo: anantshri1/graph_neural_nets_rl
+  url: https://github.com/anantshri1/graph_neural_nets_rl
+  owner: anantshri1
+  description: A collection of increasingly sophisticated agent architectures designed to compete in Orbit Wars, culminating in Proximal Policy
+    Optimization (PPO) via Graph Neural Networks (GNNs).
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-16T09:44:11Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: RL_policy_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit_wars agent
+  api_error: null
+- repo: aneber20/orbit-wars-kaggle
+  url: https://github.com/aneber20/orbit-wars-kaggle
+  owner: aneber20
+  description: Training, testing, and submitting entries to the kaggle orbit wars competition
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-08T20:24:25Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: automatylicza/orbit-wars-lab
+  url: https://github.com/automatylicza/orbit-wars-lab
+  owner: automatylicza
+  description: Local tournament runner + visualizer for the Orbit Wars Kaggle competition
+  stars: 28
+  forks: 11
+  last_commit: '2026-05-02T11:02:44Z'
+  last_commit_sha: 22654dcb74cbb1deca098ce3799d59eb8750c569
+  license: NOASSERTION
+  contains_submission: true
+  contains_tournament: true
+  contains_visualizer: true
+  contains_rl: true
+  contains_rule_based_agents: true
+  contains_official_env: true
+  contains_native: true
+  has_agent_function: true
+  strategy_family: tooling_visualizer_tournament
+  valuable_files:
+  - README.md
+  - pyproject.toml
+  - requirements.txt
+  - LICENSE
+  - package.json
+  - agents/
+  - tests/
+  - docs/
+  - scripts/
+  file_count: 209
+  python_file_count: 71
+  import_risk: native/C++/Rust or tooling dependencies require build validation
+  repro_status: downloaded_static_scan_ok
+  local_path: external/github_zip_repos/automatylicza__orbit-wars-lab
+  reuse_plan: use as tooling/reference; do not load as opponent agent
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit-wars
+  api_error: null
+- repo: ayushmk7/OrbitWarsKaggle
+  url: https://github.com/ayushmk7/OrbitWarsKaggle
+  owner: ayushmk7
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-25T22:16:17Z'
+  last_commit_sha: b3877ac8981ad0e4c67e9cabed6c604a53b73920
+  license: unknown
+  contains_submission: true
+  contains_tournament: false
+  contains_visualizer: true
+  contains_rl: true
+  contains_rule_based_agents: true
+  contains_official_env: true
+  contains_native: true
+  has_agent_function: true
+  strategy_family: traceable_rule_based_agent
+  valuable_files:
+  - README.md
+  - AGENTS.md
+  - agents.md
+  - main.py
+  - pyproject.toml
+  - src/
+  - tests/
+  - docs/
+  - submission/
+  file_count: 216
+  python_file_count: 16
+  import_risk: native/C++/Rust or tooling dependencies require build validation
+  repro_status: downloaded_static_scan_ok
+  local_path: external/github_zip_repos/ayushmk7__OrbitWarsKaggle
+  reuse_plan: candidate public opponent/source reference after wrapper smoke test
+  search_queries:
+  - '"orbit wars" kaggle'
+  - OrbitWarsKaggle
+  - kaggle orbit wars
+  - orbit-wars
+  api_error: null
+- repo: azxav/orbit_warsv2
+  url: https://github.com/azxav/orbit_warsv2
+  owner: azxav
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-15T14:20:52Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: beratmertkayacan/kaggle-orbit-wars
+  url: https://github.com/beratmertkayacan/kaggle-orbit-wars
+  owner: beratmertkayacan
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-03T08:55:45Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: bhanage-viraj/OrbitWars
+  url: https://github.com/bhanage-viraj/OrbitWars
+  owner: bhanage-viraj
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-03T14:10:51Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: br4c3/orbit_wars
+  url: https://github.com/br4c3/orbit_wars
+  owner: br4c3
+  description: kaggle contest
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-19T06:33:13Z'
+  last_commit_sha: null
+  license: MIT
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: cannonfodder1/Game-OrbitWars
+  url: https://github.com/cannonfodder1/Game-OrbitWars
+  owner: cannonfodder1
+  description: Standalone Game - Orbit Wars
+  stars: 1
+  forks: 0
+  last_commit: '2018-04-29T17:43:16Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: chris0leite-ui/Orbit-wars-kaggle
+  url: https://github.com/chris0leite-ui/Orbit-wars-kaggle
+  owner: chris0leite-ui
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-16T11:18:12Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: doraem-on/kaggle_orbit_wars
+  url: https://github.com/doraem-on/kaggle_orbit_wars
+  owner: doraem-on
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-16T07:46:43Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: dougsgrott/kaggle-orbit-wars
+  url: https://github.com/dougsgrott/kaggle-orbit-wars
+  owner: dougsgrott
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-10T13:13:19Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: drosadocastro-bit/Juracan
+  url: https://github.com/drosadocastro-bit/Juracan
+  owner: drosadocastro-bit
+  description: This is the story of Juracán, an Orbit Wars agent built for the Kaggle competition by a human and an AI, pair-programming through
+    the night, across days, through failures and breakthroughs — fueled by caffeine, stubbornness, and love.
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-04T00:29:17Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: hybrid_layered_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit_wars agent
+  api_error: null
+- repo: duranyi46/orbit-wars-agent
+  url: https://github.com/duranyi46/orbit-wars-agent
+  owner: duranyi46
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-04-27T14:55:15Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: hybrid_layered_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit_wars agent
+  api_error: null
+- repo: dyyfk/Kaggle_Orbit_Wars_Refactored
+  url: https://github.com/dyyfk/Kaggle_Orbit_Wars_Refactored
+  owner: dyyfk
+  description: 'Refactored Kaggle Orbit Wars agent: minimal rule-based core + residual MLP scorer trained via REINFORCE.'
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-27T11:35:10Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: true
+  contains_tournament: false
+  contains_visualizer: true
+  contains_rl: true
+  contains_rule_based_agents: true
+  contains_official_env: true
+  contains_native: true
+  has_agent_function: true
+  strategy_family: hybrid_ml_scorer_agent
+  valuable_files:
+  - README.md
+  - main.py
+  - requirements.txt
+  - tests/
+  - viz/
+  file_count: 17
+  python_file_count: 6
+  import_risk: native/C++/Rust or tooling dependencies require build validation
+  repro_status: downloaded_static_scan_ok
+  local_path: external/github_zip_repos/dyyfk__Kaggle_Orbit_Wars_Refactored
+  reuse_plan: inspect dependencies and model files; possible benchmark family, high import risk
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit_wars agent
+  api_error: '<HTTPError 403: ''rate limit exceeded''>'
+- repo: ee2625/kaggle-orbit-wars
+  url: https://github.com/ee2625/kaggle-orbit-wars
+  owner: ee2625
+  description: orbit wars kaggle competition
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-26T01:23:11Z'
+  last_commit_sha: null
+  license: MIT
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit-wars
+  api_error: null
+- repo: emanuellcs/orbit-wars-beam-search
+  url: https://github.com/emanuellcs/orbit-wars-beam-search
+  owner: emanuellcs
+  description: High-performance C++ continuous physics engine and Geometric Beam Search agent for the Kaggle's Orbit Wars competition.
+  stars: 1
+  forks: 0
+  last_commit: '2026-06-11T19:35:10Z'
+  last_commit_sha: null
+  license: Apache-2.0
+  contains_submission: true
+  contains_tournament: false
+  contains_visualizer: true
+  contains_rl: true
+  contains_rule_based_agents: true
+  contains_official_env: true
+  contains_native: true
+  has_agent_function: true
+  strategy_family: world_model_beam_search_agent
+  valuable_files:
+  - README.md
+  - main.py
+  - submission.py
+  - LICENSE
+  - CMakeLists.txt
+  - src/
+  - opponents/
+  - rules/
+  file_count: 35
+  python_file_count: 10
+  import_risk: native/C++/Rust or tooling dependencies require build validation
+  repro_status: downloaded_static_scan_ok
+  local_path: external/github_zip_repos/emanuellcs__orbit-wars-beam-search
+  reuse_plan: candidate public opponent/source reference after wrapper smoke test
+  search_queries:
+  - orbit_wars agent
+  api_error: '<HTTPError 403: ''rate limit exceeded''>'
+- repo: gmei6/orbit_wars_kaggle
+  url: https://github.com/gmei6/orbit_wars_kaggle
+  owner: gmei6
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-15T17:12:11Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: goldbar123467/OrbitWarsCLI
+  url: https://github.com/goldbar123467/OrbitWarsCLI
+  owner: goldbar123467
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-02T23:18:59Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: hayato-matsuzawa/kaggle-orbit-wars
+  url: https://github.com/hayato-matsuzawa/kaggle-orbit-wars
+  owner: hayato-matsuzawa
+  description: Titanicデータの機械学習分析
+  stars: 0
+  forks: 0
+  last_commit: '2026-03-24T05:54:03Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: historicalsource/orbit-space-wars
+  url: https://github.com/historicalsource/orbit-space-wars
+  owner: historicalsource
+  description: A game about ships and orbiting
+  stars: 2
+  forks: 0
+  last_commit: '2021-10-14T21:25:23Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: hungvv109/orbit-wars-kaggle
+  url: https://github.com/hungvv109/orbit-wars-kaggle
+  owner: hungvv109
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-09T02:52:19Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: init-anun/rts-agent-OrbitWars
+  url: https://github.com/init-anun/rts-agent-OrbitWars
+  owner: init-anun
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-10T20:02:02Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: hybrid_layered_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  - orbit_wars agent
+  api_error: null
+- repo: jannatsamadov/orbit_wars_simulation
+  url: https://github.com/jannatsamadov/orbit_wars_simulation
+  owner: jannatsamadov
+  description: Orbit Wars is a fast-paced, real-time strategy space game where players conquer planets by dispatching fleets of ships. This repository
+    provides a Complete Local Framework to build, test, and run an automated ELO tournament for your AI agents before submitting them to the Kaggle
+    competition
+  stars: 1
+  forks: 0
+  last_commit: '2026-06-07T19:26:54Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: world_model_forecaster
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit_wars agent
+  api_error: null
+- repo: jeffhurst/OrbitWarsTrainer
+  url: https://github.com/jeffhurst/OrbitWarsTrainer
+  owner: jeffhurst
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-30T17:29:12Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: johnsmartaidoo/orbit-wars-agent
+  url: https://github.com/johnsmartaidoo/orbit-wars-agent
+  owner: johnsmartaidoo
+  description: A heuristic-based agent for the Orbit Wars Kaggle competition, including a strategy website.
+  stars: 0
+  forks: 0
+  last_commit: '2026-04-21T15:27:10Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: hybrid_layered_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars-heuristic
+  - orbit_wars agent
+  api_error: null
+- repo: jurek1989/orbit-wars
+  url: https://github.com/jurek1989/orbit-wars
+  owner: jurek1989
+  description: Kaggle Orbit Wars competition agent — Hybrid LLM + algorithmic strategy
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-13T18:49:34Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: hybrid_layered_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit_wars agent
+  api_error: null
+- repo: kkambayashi/orbit-wars-kaggle
+  url: https://github.com/kkambayashi/orbit-wars-kaggle
+  owner: kkambayashi
+  description: Kaggle Orbit Wars コンペの試行錯誤記録
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-24T02:00:07Z'
+  last_commit_sha: null
+  license: MIT
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: kurt-luis/orbit-wars
+  url: https://github.com/kurt-luis/orbit-wars
+  owner: kurt-luis
+  description: A repository for my participation in Kaggle's Orbit Wars competition
+  stars: 0
+  forks: 0
+  last_commit: '2026-04-18T15:51:06Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  api_error: null
+- repo: lanAI-B/kaggle-orbit-wars
+  url: https://github.com/lanAI-B/kaggle-orbit-wars
+  owner: lanAI-B
+  description: Apr26 competition
+  stars: 0
+  forks: 0
+  last_commit: '2026-04-23T16:02:16Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: lijiaweiphilip-web/orbit-wars-codex
+  url: https://github.com/lijiaweiphilip-web/orbit-wars-codex
+  owner: lijiaweiphilip-web
+  description: Orbit Wars competition workspace with remote CI and cloud-agent tooling
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-11T11:14:35Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: tooling_visualizer_tournament
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit_wars agent
+  api_error: null
+- repo: lsngmin/orbitwaaa
+  url: https://github.com/lsngmin/orbitwaaa
+  owner: lsngmin
+  description: Kaggle Competition - Orbit War
+  stars: 0
+  forks: 0
+  last_commit: '2026-04-28T23:53:35Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit-wars
+  api_error: null
+- repo: lukaszkasprzakepoch-design/Orbit-wars
+  url: https://github.com/lukaszkasprzakepoch-design/Orbit-wars
+  owner: lukaszkasprzakepoch-design
+  description: Winning orbit wars
+  stars: 0
+  forks: 0
+  last_commit: '2026-04-20T09:47:23Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: manurupan2007/Orbit-wars
+  url: https://github.com/manurupan2007/Orbit-wars
+  owner: manurupan2007
+  description: Kaggle Orbit Wars
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-29T15:52:58Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit-wars
+  api_error: null
+- repo: mars-127/orbit-wars
+  url: https://github.com/mars-127/orbit-wars
+  owner: mars-127
+  description: Creating AI bots to play a novel multi-agent 1v1 or 4p FFA game against other submitted agents.
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-31T03:31:11Z'
+  last_commit_sha: null
+  license: MIT
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: hybrid_layered_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit_wars agent
+  api_error: null
+- repo: mdshiblinoman/Orbit-Wars
+  url: https://github.com/mdshiblinoman/Orbit-Wars
+  owner: mdshiblinoman
+  description: ''
+  stars: 2
+  forks: 0
+  last_commit: '2026-05-06T01:25:31Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: michaelriedl/orbit-wars-torch
+  url: https://github.com/michaelriedl/orbit-wars-torch
+  owner: michaelriedl
+  description: A GPU-native, batched PyTorch port of the Kaggle [Orbit Wars](https://www.kaggle.com/competitions) game engine.
+  stars: 4
+  forks: 2
+  last_commit: '2026-05-17T03:01:48Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: true
+  contains_rule_based_agents: true
+  contains_official_env: true
+  contains_native: true
+  has_agent_function: false
+  strategy_family: fast_env_rl_tooling
+  valuable_files:
+  - README.md
+  - orbit_wars_torch/
+  file_count: 11
+  python_file_count: 9
+  import_risk: native/C++/Rust or tooling dependencies require build validation
+  repro_status: downloaded_static_scan_ok
+  local_path: external/github_zip_repos/michaelriedl__orbit-wars-torch
+  reuse_plan: use as tooling/reference; do not load as opponent agent
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit-wars
+  - orbit-wars-torch
+  api_error: '<HTTPError 403: ''rate limit exceeded''>'
+- repo: mundaron/sin-orbit-wars-kaggle
+  url: https://github.com/mundaron/sin-orbit-wars-kaggle
+  owner: mundaron
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-23T15:07:08Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - kaggle orbit wars
+  api_error: null
+- repo: murabacha/Orbit_wars
+  url: https://github.com/murabacha/Orbit_wars
+  owner: murabacha
+  description: a reinforcement  learing agent for orbit wars on kaggle
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-15T08:35:02Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: RL_policy_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - '"orbit wars" reinforcement'
+  - kaggle orbit wars
+  - orbit_wars agent
+  api_error: null
+- repo: nhdzTVlxb/Orbit-Wars
+  url: https://github.com/nhdzTVlxb/Orbit-Wars
+  owner: nhdzTVlxb
+  description: Orbit Wars-agent
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-13T18:55:39Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: hybrid_layered_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  - orbit_wars agent
+  api_error: null
+- repo: nkhanhtung/orbit-wars-kaggle
+  url: https://github.com/nkhanhtung/orbit-wars-kaggle
+  owner: nkhanhtung
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-10T07:00:53Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: notPhani/OrbitWars
+  url: https://github.com/notPhani/OrbitWars
+  owner: notPhani
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-10T17:15:51Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: oivler/orbit-wars
+  url: https://github.com/oivler/orbit-wars
+  owner: oivler
+  description: https://www.kaggle.com/competitions/orbit-wars
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-10T16:37:00Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit-wars
+  api_error: null
+- repo: pantrucas/orbit-wars
+  url: https://github.com/pantrucas/orbit-wars
+  owner: pantrucas
+  description: orbit-wars competitions kaggle
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-11T01:45:55Z'
+  last_commit_sha: null
+  license: NOASSERTION
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit-wars
+  api_error: null
+- repo: phamkimhoan/orbit-wars-kaggle
+  url: https://github.com/phamkimhoan/orbit-wars-kaggle
+  owner: phamkimhoan
+  description: Orbit Wars Kaggle competition — autoresearch loop, agent evolution, replay analysis
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-31T07:13:13Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: world_model_forecaster
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit_wars agent
+  api_error: null
+- repo: projectedanx/kaggle-orbit-wars-2026
+  url: https://github.com/projectedanx/kaggle-orbit-wars-2026
+  owner: projectedanx
+  description: kaggle-orbit-wars-2026
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-02T19:09:19Z'
+  last_commit_sha: null
+  license: MIT
+  contains_submission: true
+  contains_tournament: true
+  contains_visualizer: true
+  contains_rl: true
+  contains_rule_based_agents: true
+  contains_official_env: true
+  contains_native: true
+  has_agent_function: true
+  strategy_family: experimental_hybrid_workspace
+  valuable_files:
+  - README.md
+  - AGENTS.md
+  - agents.md
+  - LICENSE
+  - tests/
+  - reports/
+  - docs/
+  file_count: 224
+  python_file_count: 38
+  import_risk: native/C++/Rust or tooling dependencies require build validation
+  repro_status: downloaded_static_scan_ok
+  local_path: external/github_zip_repos/projectedanx__kaggle-orbit-wars-2026
+  reuse_plan: candidate public opponent/source reference after wrapper smoke test
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit-wars
+  api_error: '<HTTPError 403: ''rate limit exceeded''>'
+- repo: rishaviitd/kaggle.orbit.wars.game.agent
+  url: https://github.com/rishaviitd/kaggle.orbit.wars.game.agent
+  owner: rishaviitd
+  description: The goal of this competition was to create and/or train AI bots to play a novel multi-agent 1v1 or 4p FFA game against other submitted
+    agents.
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-06T12:56:01Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: hybrid_layered_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit_wars agent
+  api_error: null
+- repo: rubenalejandrocalderoncorona/Orbit-Wars
+  url: https://github.com/rubenalejandrocalderoncorona/Orbit-Wars
+  owner: rubenalejandrocalderoncorona
+  description: AI bot for the Kaggle Orbit Wars competition — greedy heuristic agent with orbit intercept and sun avoidance
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-04T01:19:41Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: hybrid_layered_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars-heuristic
+  - orbit_wars agent
+  api_error: null
+- repo: shrinathmadde/Kaggle-orbit-wars
+  url: https://github.com/shrinathmadde/Kaggle-orbit-wars
+  owner: shrinathmadde
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-04-20T17:13:11Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: smhasg/kaggle-orbit-wars
+  url: https://github.com/smhasg/kaggle-orbit-wars
+  owner: smhasg
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-20T20:09:33Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
+- repo: stewie-stew/orbit-wars-kaggle-competition
+  url: https://github.com/stewie-stew/orbit-wars-kaggle-competition
+  owner: stewie-stew
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-16T10:07:45Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - kaggle orbit wars
+  api_error: null
+- repo: tedtop/orbit-wars
+  url: https://github.com/tedtop/orbit-wars
+  owner: tedtop
+  description: Kaggle Orbit Wars competition — heuristic bots, 4-player arena, Streamlit monitoring dashboard with live leaderboard, episode replay
+    charts, and replay ingestion pipeline
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-14T22:51:19Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: tooling_visualizer_tournament
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars-heuristic
+  api_error: null
+- repo: toxzak-svg/OrbitWars
+  url: https://github.com/toxzak-svg/OrbitWars
+  owner: toxzak-svg
+  description: OW Agent repo
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-04T16:27:46Z'
+  last_commit_sha: null
+  license: Apache-2.0
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: hybrid_layered_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  - orbit_wars agent
+  api_error: null
+- repo: toxzak-svg/OrbitWarsAgents
+  url: https://github.com/toxzak-svg/OrbitWarsAgents
+  owner: toxzak-svg
+  description: 'Orbit Wars agent corpus (v2.0.0): 24 rule-based + RL agents, bug fixes, test suite, 17 submittable tarballs. Forked from the silver-medal
+    lineage on the Kaggle Orbit Wars leaderboard.'
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-13T04:15:28Z'
+  last_commit_sha: null
+  license: NOASSERTION
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: RL_policy_agent
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  - orbit_wars agent
+  api_error: null
+- repo: tuaanh666/OrbitWars
+  url: https://github.com/tuaanh666/OrbitWars
+  owner: tuaanh666
+  description: ''
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-24T12:48:27Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - orbit-wars
+  api_error: null
+- repo: tuannm3812/kaggle-orbit-wars
+  url: https://github.com/tuannm3812/kaggle-orbit-wars
+  owner: tuannm3812
+  description: Python notebook workflow for Kaggle Orbit Wars agents, replay diagnostics, and heuristic strategy iteration.
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-05T07:46:10Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: tooling_visualizer_tournament
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit-wars-heuristic
+  - orbit_wars agent
+  api_error: null
+- repo: vinupriyesh/kaggle-environments-orbit-wars
+  url: https://github.com/vinupriyesh/kaggle-environments-orbit-wars
+  owner: vinupriyesh
+  description: ''
+  stars: null
+  forks: null
+  last_commit: unknown_api_not_in_search
+  last_commit_sha: null
+  license: unknown
+  contains_submission: true
+  contains_tournament: false
+  contains_visualizer: true
+  contains_rl: true
+  contains_rule_based_agents: true
+  contains_official_env: true
+  contains_native: false
+  has_agent_function: true
+  strategy_family: official_env_fork
+  valuable_files:
+  - README.md
+  - pyproject.toml
+  - LICENSE
+  - kaggle_environments/
+  file_count: 29
+  python_file_count: 9
+  import_risk: requires wrapper import and smoke test before opponent-pool use
+  repro_status: downloaded_static_scan_ok
+  local_path: external/github_zip_repos/vinupriyesh__kaggle-environments-orbit-wars
+  reuse_plan: use as tooling/reference; do not load as opponent agent
+  search_queries:
+  - mandatory_or_high_value_direct
+  api_error: '<HTTPError 403: ''rate limit exceeded''>'
+- repo: vkhydras/orbit-wars-heuristic-bots
+  url: https://github.com/vkhydras/orbit-wars-heuristic-bots
+  owner: vkhydras
+  description: ''
+  stars: 4
+  forks: 1
+  last_commit: '2026-06-03T05:45:26Z'
+  last_commit_sha: 44dbbd19ef2efeb2add44a8699afad5e329c920f
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: true
+  contains_rl: true
+  contains_rule_based_agents: true
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: hybrid_layered_agent
+  valuable_files:
+  - README.md
+  file_count: 15
+  python_file_count: 14
+  import_risk: training/tooling repo, not direct submission agent
+  repro_status: downloaded_static_scan_ok
+  local_path: external/github_zip_repos/vkhydras__orbit-wars-heuristic-bots
+  reuse_plan: candidate public opponent/source reference after wrapper smoke test
+  search_queries:
+  - orbit-wars
+  - orbit-wars-heuristic
+  api_error: null
+- repo: wanderduck/Orbit_Wars
+  url: https://github.com/wanderduck/Orbit_Wars
+  owner: wanderduck
+  description: 'My codebase for the Kaggle Competition: Orbit Wars'
+  stars: 0
+  forks: 0
+  last_commit: '2026-05-15T18:54:58Z'
+  last_commit_sha: null
+  license: unknown
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  - orbit-wars
+  api_error: null
+- repo: wmar-dev/orbit-wars
+  url: https://github.com/wmar-dev/orbit-wars
+  owner: wmar-dev
+  description: Kaggle competition
+  stars: 0
+  forks: 0
+  last_commit: '2026-06-14T18:21:14Z'
+  last_commit_sha: null
+  license: NOASSERTION
+  contains_submission: false
+  contains_tournament: false
+  contains_visualizer: false
+  contains_rl: false
+  contains_rule_based_agents: false
+  contains_official_env: false
+  contains_native: false
+  has_agent_function: false
+  strategy_family: unknown_or_low_signal
+  valuable_files: []
+  file_count: null
+  python_file_count: null
+  import_risk: not locally inspected
+  repro_status: api_search_only_not_downloaded
+  local_path: null
+  reuse_plan: registry lead only; inspect before reuse
+  search_queries:
+  - '"orbit wars" kaggle'
+  - kaggle orbit wars
+  api_error: null
