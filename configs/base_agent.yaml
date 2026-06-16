@@ -1,0 +1,27 @@
+base_agent:
+  source_id: pilkwang_structured
+  name: Pilkwang Structured Baseline v11
+  tracked_main: agents/public/pilkwang_structured/main.py
+  wrapper: agents/base_agent.py
+  sha256: 0F297612110D28A5A15F4564A1C36F87FDB5C895D557DE10876AF6F64D5E4B4C
+  license: Apache 2.0
+  author: Pilkwang Kim
+  kernel_slug: pilkwang/orbit-wars-structured-baseline
+  kernel_version: 45
+  selection_status: selected_after_smoke_round_robin
+  local_smoke_result:
+    wins: 8
+    losses: 0
+    draws: 0
+    errors: 0
+    games: 8
+  reasons:
+    - strongest local smoke result among tested P0/P1 candidates
+    - has world model and physics-aware strategy layers
+    - exposes build_world for later adapter integration
+    - easier to patch than larger or less documented variants
+  risks:
+    - smoke tournament used only two seeds
+    - author notes weak 1v3 behavior
+    - local score is not official Kaggle score
+
