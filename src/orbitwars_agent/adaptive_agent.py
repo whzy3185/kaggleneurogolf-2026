@@ -1,27 +1,67 @@
 from __future__ import annotations
 
-from typing import List
+import importlib.util
+import math
+import time
+from pathlib import Path
+from types import ModuleType
+from typing import Any, List
 
-from .counter_policy import StrategyModifiers, build_strategy_modifiers
-from .opponent_profiler import OpponentProfiler
+from .counter_policy import StrategyModifiers, build_strategy_modifiers, effective
+from .opponent_profiler import OpponentProfile, OpponentProfiler
 from .physics import angle_to_planet, distance, eta
 from .types import GameState, PlanetState
-from .world_model import build_game_state, incoming_fleets_by_planet
+from .world_model import build_game_state, detect_threatened_own_planets, incoming_fleets_by_planet
 
 _PROFILER = OpponentProfiler()
 _STEP = 0
+_BASE_MODULE: ModuleType | None = None
+_ROOT = Path(__file__).resolve().parents[2]
+_BASE_AGENT_PATH = _ROOT / "agents" / "base_agent.py"
 
 
-def agent(obs):
+def _load_base_module() -> ModuleType:
+    global _BASE_MODULE
+    if _BASE_MODULE is not None:
+        return _BASE_MODULE
+    spec = importlib.util.spec_from_file_location("orbitwars_selected_base_agent", _BASE_AGENT_PATH)
+    if spec is None or spec.loader is None:
+        raise ImportError(f"Cannot load base agent from {_BASE_AGENT_PATH}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    _BASE_MODULE = module
+    return module
+
+
+def _call_base_agent(obs: Any, config: Any = None) -> list:
+    module = _load_base_module()
+    if config is None:
+        result = module.agent(obs)
+    else:
+        result = module.agent(obs, config=config)
+    return result if isinstance(result, list) else []
+
+
+def agent(obs, config=None):
     global _STEP
+    start = time.perf_counter()
     try:
         state = build_game_state(obs, inferred_step=_STEP)
         _STEP = state.step + 1
+        base_actions = _validate_actions(state, _call_base_agent(obs, config=config))
         profiles = _PROFILER.update(state)
         modifiers = build_strategy_modifiers(profiles)
-        return choose_actions(state, modifiers)
+        if time.perf_counter() - start > 0.75:
+            return base_actions
+        if not _should_add_supplement(state, profiles):
+            return base_actions
+        supplemental = choose_actions(state, modifiers)
+        return _merge_actions(state, base_actions, supplemental)
     except Exception:
-        return []
+        try:
+            return _call_base_agent(obs, config=config)
+        except Exception:
+            return []
 
 
 def choose_actions(state: GameState, modifiers: StrategyModifiers) -> List[List[float]]:
@@ -61,6 +101,69 @@ def choose_actions(state: GameState, modifiers: StrategyModifiers) -> List[List[
         committed_by_source[source.id] = already + int(send)
 
     return moves[:12]
+
+
+def _validate_actions(state: GameState, actions: list) -> list[list[float]]:
+    own = {planet.id: planet for planet in state.my_planets}
+    committed: dict[int, int] = {}
+    valid: list[list[float]] = []
+    if not isinstance(actions, list):
+        return valid
+    for action in actions:
+        if not isinstance(action, (list, tuple)) or len(action) != 3:
+            continue
+        from_id, angle, ships = action
+        try:
+            from_id = int(from_id)
+            angle = float(angle)
+            ships = int(ships)
+        except (TypeError, ValueError):
+            continue
+        source = own.get(from_id)
+        if source is None or ships <= 0 or not math.isfinite(angle):
+            continue
+        already = committed.get(from_id, 0)
+        allowed = max(0, source.ships - already)
+        if allowed <= 0:
+            continue
+        send = min(ships, allowed)
+        if send > 0:
+            valid.append([from_id, angle, send])
+            committed[from_id] = already + send
+    return valid
+
+
+def _merge_actions(state: GameState, base_actions: list, supplemental: list) -> list[list[float]]:
+    own = {planet.id: planet for planet in state.my_planets}
+    merged: list[list[float]] = []
+    committed: dict[int, int] = {}
+    for action in base_actions + supplemental:
+        if not isinstance(action, (list, tuple)) or len(action) != 3:
+            continue
+        from_id, angle, ships = int(action[0]), float(action[1]), int(action[2])
+        source = own.get(from_id)
+        if source is None or ships <= 0 or not math.isfinite(angle):
+            continue
+        already = committed.get(from_id, 0)
+        remaining = max(0, source.ships - already)
+        if remaining <= 0:
+            continue
+        send = min(ships, remaining)
+        merged.append([from_id, angle, send])
+        committed[from_id] = already + send
+    return merged[:16]
+
+
+def _should_add_supplement(state: GameState, profiles: dict[int, OpponentProfile]) -> bool:
+    if detect_threatened_own_planets(state, horizon_turns=45):
+        return True
+    for profile in profiles.values():
+        if profile.confidence < 0.55:
+            continue
+        for key in ("enemy_rusher", "neutral_rusher", "turtle", "big_stack", "overcommitter", "comet_greedy"):
+            if effective(profile, key) >= 0.55:
+                return True
+    return False
 
 
 def _reinforce_threatened_planets(
