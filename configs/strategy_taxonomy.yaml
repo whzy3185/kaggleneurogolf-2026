@@ -1,0 +1,338 @@
+competition: orbit-wars
+audit_date: '2026-06-16'
+families:
+  nearest_expander:
+    definition: Starter-like nearest neutral expansion with limited forward projection.
+    public_prevalence: common in tutorials and low-signal notebooks
+    counter: Outvalue it with production-discount scoring and punish overcommits/late defense.
+  production_greedy_expander:
+    definition: ROI / future production planner that sends only when capture/defense improves projected production.
+    public_prevalence: very important public family after Producer release
+    counter: Deny high-production targets, reinforce just-in-time, and exploit predictable ROI thresholds.
+  distance_prioritized_rusher:
+    definition: Prioritizes nearby opponents/frontiers and short-distance pressure, often on top of world-model code.
+    public_prevalence: visible in ykhnkf lineage and descendants
+    counter: Reserve against closest-front pressure and counterattack drained sources.
+  center_control_agent:
+    definition: Targets central/high-value orbital positions to control travel geometry.
+    public_prevalence: weak direct evidence in sampled high-rank replays; exists as design idea
+    counter: Treat center as contested only when production/ETA justifies it; do not over-reserve for low-value center planets.
+  sun_dodge_physics_agent:
+    definition: Focuses on safe aiming, sun collision checks, moving planet prediction, and valid intercepts.
+    public_prevalence: broadly embedded in most strong public heuristics
+    counter: Benchmark our own aimer; exploit agents that reject valid indirect shots or over-constrain sun safety.
+  world_model_forecaster:
+    definition: Maintains future ownership/garrison/arrival timelines and scores actions against projected state.
+    public_prevalence: dominant in Pilkwang/Tamrazov/Yuriy/Sigmaborov-style public code
+    counter: Create situations with reactive reinforcement/recapture not captured by static forecasts.
+  defense_reinforcement_agent:
+    definition: Detects threatened planets and sends reinforcements/rescues/recaptures.
+    public_prevalence: very common in strong public agents
+    counter: Use multi-source or delayed recapture windows; attack support planets after defense drains.
+  multi_source_gangup_agent:
+    definition: Coordinates several source planets against one target, often to hit same ETA or overwhelm garrison.
+    public_prevalence: visible in layered public agents and some replay samples
+    counter: Identify converging fleets early, reinforce target or counterattack depleted sources.
+  comet_greedy_agent:
+    definition: Prioritizes comet-spawned temporary planets or times actions around comet windows.
+    public_prevalence: uneven; comet logic is common but primary comet greed is less universal
+    counter: Preposition before spawn windows and avoid overpaying for low-lifetime comet planets.
+  big_stack_hammer:
+    definition: Aggregates large fleets/stacks to make hard-to-react attacks or hammer key targets.
+    public_prevalence: explicit in vkhydras archive and discussion comments
+    counter: Anti-stack reinforcement, source disruption, and target evacuation/recapture.
+  total_war_endgame_agent:
+    definition: Late-game all-in or total-war mode when remaining turns make reserves less valuable.
+    public_prevalence: embedded in layered public agents but not visible in sampled short high-rank replays
+    counter: Recognize remaining-turn threshold and mirror/evacuate rather than over-defend doomed planets.
+  crash_exploit_or_collision_agent:
+    definition: Uses simultaneous enemy collisions, post-crash snipes, or old collision/path quirks.
+    public_prevalence: crash exploit logic appears in Pilkwang/Yuriy descriptions; old engine bugs fixed
+    counter: Avoid predictable simultaneous arrivals and update local env to current collision rules.
+  turtle_defender:
+    definition: Conservative reserve-heavy/economic turtle with defense and counterattack emphasis.
+    public_prevalence: appears in replay dataset clustering language and defense-heavy code, but not a single dominant public release
+    counter: Out-expand production, force inefficient reserves, and attack multiple fronts.
+  RL_policy_agent:
+    definition: PPO/BC/neural/transformer policy trained from self-play or public replays.
+    public_prevalence: active but high-cost; public code often training infrastructure rather than drop-in agents
+    counter: Benchmark against neural policy families; exploit off-distribution and lookahead gaps.
+  hybrid_layered_agent:
+    definition: Combines physics, world model, expansion, defense, recapture, multi-source, comet and endgame layers.
+    public_prevalence: largest high-value public family
+    counter: Profiler must identify sub-behaviors rather than one broad hybrid label.
+agent_labels:
+- agent_id: official_getting_started
+  source: bovard/getting-started
+  primary_family: nearest_expander
+  secondary_families:
+  - sun_dodge_physics_agent
+  opening_style: nearest/simple expansion
+  midgame_style: limited reactive play
+  endgame_style: none/simple
+  strengths: correct starter interface and baseline mechanics
+  weaknesses: travel-time/value blindness
+  counter_ideas: production-discount expansion and early high-value capture
+  evidence: official notebook listing and rules pages
+  confidence: high
+- agent_id: sigmaborov_starter
+  source: sigmaborov/orbit-wars-2026-starter
+  primary_family: sun_dodge_physics_agent
+  secondary_families:
+  - nearest_expander
+  - comet_greedy_agent
+  opening_style: ETA/sun-aware starter expansion
+  midgame_style: simple tactical actions
+  endgame_style: limited
+  strengths: loads and smokes locally; simple physics safer than starter
+  weaknesses: less layered than later world-model agents
+  counter_ideas: outvalue with ROI and punish missing multi-source defense
+  evidence: loaded public agent smoke ok
+  confidence: high
+- agent_id: pilkwang_structured
+  source: pilkwang/orbit-wars-structured-baseline
+  primary_family: hybrid_layered_agent
+  secondary_families:
+  - world_model_forecaster
+  - defense_reinforcement_agent
+  - multi_source_gangup_agent
+  - crash_exploit_or_collision_agent
+  - total_war_endgame_agent
+  opening_style: value/ETA-aware expansion
+  midgame_style: mission queue with rescue, recapture, swarm, defense
+  endgame_style: total-war thresholds
+  strengths: broadest public layered baseline; stable local load
+  weaknesses: complex and potentially predictable mission scoring
+  counter_ideas: profile sub-behaviors; attack after reserve drain and recapture windows
+  evidence: loaded source + notebook markdown + smoke ok
+  confidence: high
+- agent_id: tamrazov_starwars
+  source: romantamrazov/orbit-star-wars-lb-max-1224
+  primary_family: hybrid_layered_agent
+  secondary_families:
+  - world_model_forecaster
+  - defense_reinforcement_agent
+  - multi_source_gangup_agent
+  - comet_greedy_agent
+  opening_style: layered value/ETA expansion
+  midgame_style: high-action mission planner
+  endgame_style: layered finish/pressure
+  strengths: P0 load/smoke ok; strong public lineage
+  weaknesses: shares lineage counters with Pilkwang family
+  counter_ideas: detect world-model swarm/recapture; counterattack depleted sources
+  evidence: loaded source + smoke ok
+  confidence: high
+- agent_id: ykhnkf_distance_prioritized
+  source: ykhnkf/distance-prioritized-agent-lb-max-score-1100
+  primary_family: distance_prioritized_rusher
+  secondary_families:
+  - hybrid_layered_agent
+  - world_model_forecaster
+  - defense_reinforcement_agent
+  opening_style: distance/opponent-priority expansion
+  midgame_style: pressure closest/frontier opponents
+  endgame_style: hybrid pressure
+  strengths: explicit distance pressure family; P0 smoke ok
+  weaknesses: can over-focus nearest threat and ignore global 4P balance
+  counter_ideas: reserve against nearest frontier, exploit cross-map neglect
+  evidence: loaded source + notebook summary + smoke ok
+  confidence: high
+- agent_id: sigmaborov_reinforce
+  source: sigmaborov/lb-958-1-orbit-wars-2026-reinforce
+  primary_family: defense_reinforcement_agent
+  secondary_families:
+  - world_model_forecaster
+  - hybrid_layered_agent
+  - multi_source_gangup_agent
+  opening_style: safe expansion with reinforcement margins
+  midgame_style: threatened-planet reinforcement and recapture
+  endgame_style: layered pressure
+  strengths: clear defense family; P0 smoke ok
+  weaknesses: may commit too many ships to defense under multi-front pressure
+  counter_ideas: force defense drain then hit sources/other fronts
+  evidence: loaded source + smoke ok
+  confidence: high
+- agent_id: vkhydras_peak_heuristic
+  source: vkhydras/orbit-wars-heuristic-bots
+  primary_family: big_stack_hammer
+  secondary_families:
+  - hybrid_layered_agent
+  - defense_reinforcement_agent
+  - total_war_endgame_agent
+  opening_style: heuristic expansion with stack/phase variants
+  midgame_style: front-stack aggregation and reinforcement
+  endgame_style: doom evacuation/mega hammer variants
+  strengths: P0 peak heuristic archive; strong local smoke
+  weaknesses: standalone versions may be overfit to public meta
+  counter_ideas: anti-big-stack reinforcement, source disruption, evacuation/recapture
+  evidence: GitHub archive filenames + loaded peak file + smoke ok
+  confidence: high
+- agent_id: producer_agent
+  source: slawekbiel/the-producer-agent
+  primary_family: production_greedy_expander
+  secondary_families:
+  - defense_reinforcement_agent
+  - turtle_defender
+  opening_style: ROI/high-production expansion
+  midgame_style: production-positive captures and frontline redeployment
+  endgame_style: production horizon based
+  strengths: compact public baseline that changed meta
+  weaknesses: threshold/prediction assumptions; reactive reinforcement can break ROI
+  counter_ideas: deny production-positive captures, bait bad ROI, recapture after capture
+  evidence: discussion 704113 + pulled notebook
+  confidence: high
+- agent_id: producer_v2
+  source: slawekbiel/the-producer-v2
+  primary_family: production_greedy_expander
+  secondary_families:
+  - defense_reinforcement_agent
+  opening_style: ROI producer with improved reinforcement awareness
+  midgame_style: enemy-flow-aware production planning
+  endgame_style: producer horizon
+  strengths: important public evolution of Producer
+  weaknesses: local wrapper missing orbit_lite in current extraction
+  counter_ideas: complete wrapper then benchmark; attack threshold edge cases
+  evidence: pulled notebook, load failed missing dependency
+  confidence: medium
+- agent_id: kuni05_producer_submission
+  source: kuni05/lb-1240-5-orbit-wars-producer-agent-submission
+  primary_family: production_greedy_expander
+  secondary_families:
+  - defense_reinforcement_agent
+  - comet_greedy_agent
+  opening_style: multi-file ProducerLite package
+  midgame_style: flow-diff and capture-floor planning
+  endgame_style: producer horizon
+  strengths: includes orbit_lite package missing from Producer V2 pull
+  weaknesses: multi-file dependency/path risk
+  counter_ideas: use as Producer wrapper source, then target ROI thresholds
+  evidence: pulled notebook static scan
+  confidence: medium
+- agent_id: konbu17_rule_ml_validator
+  source: konbu17/orbit-wars-rule-base-ml-shot-validator-hybrid
+  primary_family: hybrid_layered_agent
+  secondary_families:
+  - sun_dodge_physics_agent
+  - world_model_forecaster
+  - multi_source_gangup_agent
+  opening_style: rule-based baseline with shot validation
+  midgame_style: ML validator filters tactical shots
+  endgame_style: layered public heuristic
+  strengths: loads and smokes locally; covers ML-assisted validator family
+  weaknesses: validator can reject rare valid shots; model dependency embedded
+  counter_ideas: stress with unusual but valid intercepts and bait validator thresholds
+  evidence: loaded source + decode_weights + smoke ok
+  confidence: high
+- agent_id: yuriygreben_architect
+  source: yuriygreben/orbit-wars-physics-aware-architect
+  primary_family: world_model_forecaster
+  secondary_families:
+  - hybrid_layered_agent
+  - multi_source_gangup_agent
+  - crash_exploit_or_collision_agent
+  opening_style: physics/ETA safe expansion
+  midgame_style: mission generation, swarm, rescue, crash exploit
+  endgame_style: total war threshold
+  strengths: clear architecture writeup and load/smoke ok
+  weaknesses: similar counters to Pilkwang-family world models
+  counter_ideas: detect swarm/rescue and counter depleted sources
+  evidence: pulled notebook markdown + loaded smoke ok
+  confidence: high
+- agent_id: aidensong_search_value
+  source: aidensong123/lb-highest-1000-search-learned-value-function
+  primary_family: world_model_forecaster
+  secondary_families:
+  - hybrid_layered_agent
+  - RL_policy_agent
+  opening_style: candidate simulation ranked by learned value
+  midgame_style: search/value model action scoring
+  endgame_style: value horizon
+  strengths: explicit search + learned value family
+  weaknesses: dataset/model dependency and possible off-policy value errors
+  counter_ideas: test against states outside value training distribution
+  evidence: pulled notebook static scan
+  confidence: medium
+- agent_id: yashm917_sim_value
+  source: yashm917/orbit-wars-sim-value-search-agent
+  primary_family: world_model_forecaster
+  secondary_families:
+  - defense_reinforcement_agent
+  opening_style: sim/value expansion
+  midgame_style: defense phase then search-ranked attack phase
+  endgame_style: sim horizon
+  strengths: main.py direct; explicit sim+value architecture
+  weaknesses: value heuristic may be brittle
+  counter_ideas: force conflicting defense/attack priorities
+  evidence: pulled notebook static scan
+  confidence: medium
+- agent_id: debugendless_sun_dodging
+  source: debugendless/orbit-wars-sun-dodging-baseline
+  primary_family: sun_dodge_physics_agent
+  secondary_families:
+  - world_model_forecaster
+  - defense_reinforcement_agent
+  opening_style: safe launch/aiming
+  midgame_style: physics-safe layered actions
+  endgame_style: limited/unknown
+  strengths: covers sun-safety family
+  weaknesses: may skip valid risky-looking shots
+  counter_ideas: compare aiming benchmark and exploit over-conservative path filters
+  evidence: pulled notebook static scan
+  confidence: medium
+- agent_id: emanuellcs_beam_search
+  source: emanuellcs/orbit-wars-beam-search
+  primary_family: world_model_forecaster
+  secondary_families:
+  - sun_dodge_physics_agent
+  - multi_source_gangup_agent
+  opening_style: beam candidates
+  midgame_style: native continuous physics + geometric beam search
+  endgame_style: search horizon
+  strengths: strategically important search/native family
+  weaknesses: build/import risk; not yet wrapper-smoked
+  counter_ideas: benchmark separately, look for search horizon traps
+  evidence: GitHub static scan
+  confidence: medium
+- agent_id: alvinng4_precompute
+  source: alvinng4/OrbitWars
+  primary_family: sun_dodge_physics_agent
+  secondary_families:
+  - world_model_forecaster
+  opening_style: precomputed intercept/ETA
+  midgame_style: arrival-event lookup and physics-speed planning
+  endgame_style: unknown
+  strengths: fast aiming/precompute ideas
+  weaknesses: +/-1 ETA errors and wrapper risk
+  counter_ideas: use as benchmark/reference more than opponent first
+  evidence: discussion 704817 + GitHub static scan
+  confidence: medium
+- agent_id: kashiwaba_rl_tutorial
+  source: kashiwaba/orbit-wars-reinforcement-learning-tutorial
+  primary_family: RL_policy_agent
+  secondary_families:
+  - nearest_expander
+  opening_style: learned candidate policy after training
+  midgame_style: PPO policy
+  endgame_style: policy-dependent
+  strengths: clear PPO tutorial and feature pipeline
+  weaknesses: not a direct loaded agent; training cost high
+  counter_ideas: use as RL family reference, not immediate opponent
+  evidence: pulled tutorial static scan
+  confidence: medium
+- agent_id: souldrive_clone_analysis
+  source: souldrive/why-cloning-the-1-bot-loses-to-greedy
+  primary_family: RL_policy_agent
+  secondary_families:
+  - world_model_forecaster
+  opening_style: behavior cloning analysis, not agent
+  midgame_style: shows BC missing search/lookahead
+  endgame_style: n/a
+  strengths: strong evidence against blind imitation
+  weaknesses: not opponent code
+  counter_ideas: prefer planner/search improvements over raw BC
+  evidence: discussion 708209 + pulled notebook
+  confidence: high
+notes:
+- Labels combine static code scan, public discussion, notebook markdown, GitHub repo structure, and small replay samples.
+- Scores in titles are not official evidence.
+- Final gold strategy is not labeled because gold teams are not final yet.
