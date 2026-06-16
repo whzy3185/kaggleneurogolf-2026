@@ -15,14 +15,23 @@ def run_round_robin(
     seeds: list[int],
     mode: str = "fast",
     output_dir: Path,
+    bidirectional: bool = False,
 ) -> dict:
     output_dir.mkdir(parents=True, exist_ok=True)
     matches: list[dict] = []
     for agent_a, agent_b in itertools.combinations(agent_ids, 2):
         for seed in seeds:
             matches.append(run_match([agent_a, agent_b], seed=seed, mode=mode))
+            if bidirectional:
+                matches.append(run_match([agent_b, agent_a], seed=seed, mode=mode))
     summary = summarize_matches(matches)
-    result = {"shape": "round_robin", "mode": mode, "matches": matches, "summary": summary}
+    result = {
+        "shape": "round_robin",
+        "mode": mode,
+        "bidirectional": bidirectional,
+        "matches": matches,
+        "summary": summary,
+    }
     (output_dir / "results.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
     _write_csv(output_dir / "matches.csv", matches)
     return result
@@ -35,17 +44,21 @@ def run_gauntlet(
     seeds: list[int],
     mode: str = "fast",
     output_dir: Path,
+    bidirectional: bool = False,
 ) -> dict:
     output_dir.mkdir(parents=True, exist_ok=True)
     matches: list[dict] = []
     for opponent in opponents:
         for seed in seeds:
             matches.append(run_match([challenger, opponent], seed=seed, mode=mode))
+            if bidirectional:
+                matches.append(run_match([opponent, challenger], seed=seed, mode=mode))
     summary = summarize_matches(matches)
     result = {
         "shape": "gauntlet",
         "challenger": challenger,
         "mode": mode,
+        "bidirectional": bidirectional,
         "matches": matches,
         "summary": summary,
     }
@@ -75,4 +88,3 @@ def _write_csv(path: Path, matches: list[dict]) -> None:
                     "seed": match.get("seed"),
                 }
             )
-
