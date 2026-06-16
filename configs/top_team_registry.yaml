@@ -1,0 +1,489 @@
+competition: orbit-wars
+audit_date: '2026-06-16'
+leaderboard_snapshot: outputs/audit/leaderboard/unzipped/orbit-wars-publicleaderboard-2026-06-16T12_06_58.csv
+final_leaderboard_status: not_final_active_competition
+gold_medal_status: not_available_yet
+public_replay_access_status: public replays visible when episode id or daily dataset file is known; agent logs remain private
+top_teams:
+- team_name: Isaiah @ Tufa Labs
+  rank: 1
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1782.5
+  team_id: 15654628
+  team_member_usernames:
+  - pressman1
+  profile_url:
+  - https://www.kaggle.com/pressman1
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: true
+  episode_visible: true
+  visible_episode_ids:
+  - '79968955'
+  agent_code_visible: false
+  strategy_evidence: visible public replay actions only
+  confidence: high_for_replay_visibility
+  notes: Daily official replay dataset sample includes this team.
+- team_name: Jake Will
+  rank: 2
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1745.1
+  team_id: 15649057
+  team_member_usernames:
+  - jakewwill
+  profile_url:
+  - https://www.kaggle.com/jakewwill
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: true
+  episode_visible: true
+  visible_episode_ids:
+  - '79968955'
+  agent_code_visible: false
+  strategy_evidence: visible public replay actions only
+  confidence: high_for_replay_visibility
+  notes: Daily official replay dataset sample includes this team.
+- team_name: Xiangyu Liu
+  rank: 3
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1675.2
+  team_id: 15653847
+  team_member_usernames:
+  - xiangyuliu007
+  profile_url:
+  - https://www.kaggle.com/xiangyuliu007
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: false
+  episode_visible: false
+  visible_episode_ids: []
+  agent_code_visible: false
+  strategy_evidence: no episode id found from current CLI/session sample
+  confidence: unknown
+  notes: Leaderboard gives TeamId but no submissionId; competitions episodes <TeamId> returned no episodes.
+- team_name: Ender
+  rank: 4
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1613.6
+  team_id: 15821351
+  team_member_usernames:
+  - sinkingpoint
+  profile_url:
+  - https://www.kaggle.com/sinkingpoint
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: true
+  episode_visible: true
+  visible_episode_ids:
+  - '79968955'
+  agent_code_visible: false
+  strategy_evidence: visible public replay actions only
+  confidence: high_for_replay_visibility
+  notes: Daily official replay dataset sample includes this team.
+- team_name: M & J & M.ver2
+  rank: 5
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1601.1
+  team_id: 15634651
+  team_member_usernames:
+  - jackvd
+  - marisyn
+  - wscmisx
+  profile_url:
+  - https://www.kaggle.com/jackvd
+  - https://www.kaggle.com/marisyn
+  - https://www.kaggle.com/wscmisx
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: false
+  episode_visible: false
+  visible_episode_ids: []
+  agent_code_visible: false
+  strategy_evidence: no episode id found from current CLI/session sample
+  confidence: unknown
+  notes: Leaderboard gives TeamId but no submissionId; competitions episodes <TeamId> returned no episodes.
+- team_name: Boey
+  rank: 6
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1598.2
+  team_id: 15733507
+  team_member_usernames:
+  - boeychenjun
+  profile_url:
+  - https://www.kaggle.com/boeychenjun
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: true
+  episode_visible: true
+  visible_episode_ids:
+  - '79968870'
+  agent_code_visible: false
+  strategy_evidence: visible public replay actions only
+  confidence: high_for_replay_visibility
+  notes: Daily official replay dataset sample includes this team.
+- team_name: Hober Malloc
+  rank: 7
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1576.5
+  team_id: 15660477
+  team_member_usernames:
+  - simjeg
+  profile_url:
+  - https://www.kaggle.com/simjeg
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: true
+  episode_visible: true
+  visible_episode_ids:
+  - '79968955'
+  agent_code_visible: false
+  strategy_evidence: visible public replay actions only
+  confidence: high_for_replay_visibility
+  notes: Daily official replay dataset sample includes this team.
+- team_name: flg
+  rank: 8
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1569.7
+  team_id: 15635910
+  team_member_usernames:
+  - ferdinandlimburg
+  profile_url:
+  - https://www.kaggle.com/ferdinandlimburg
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: true
+  episode_visible: true
+  visible_episode_ids:
+  - '79968841'
+  agent_code_visible: false
+  strategy_evidence: visible public replay actions only
+  confidence: high_for_replay_visibility
+  notes: Daily official replay dataset sample includes this team.
+- team_name: Vadasz & Ascalon
+  rank: 9
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1568.2
+  team_id: 15635790
+  team_member_usernames:
+  - ascalon
+  - vadasz
+  profile_url:
+  - https://www.kaggle.com/ascalon
+  - https://www.kaggle.com/vadasz
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: false
+  episode_visible: false
+  visible_episode_ids: []
+  agent_code_visible: false
+  strategy_evidence: no episode id found from current CLI/session sample
+  confidence: unknown
+  notes: Leaderboard gives TeamId but no submissionId; competitions episodes <TeamId> returned no episodes.
+- team_name: TonyK
+  rank: 10
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1564.3
+  team_id: 15719716
+  team_member_usernames:
+  - tonyk98
+  profile_url:
+  - https://www.kaggle.com/tonyk98
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: false
+  episode_visible: false
+  visible_episode_ids: []
+  agent_code_visible: false
+  strategy_evidence: no episode id found from current CLI/session sample
+  confidence: unknown
+  notes: Leaderboard gives TeamId but no submissionId; competitions episodes <TeamId> returned no episodes.
+- team_name: Felix M Neumann
+  rank: 11
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1560.6
+  team_id: 15827519
+  team_member_usernames:
+  - felixmneumann
+  profile_url:
+  - https://www.kaggle.com/felixmneumann
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: false
+  episode_visible: false
+  visible_episode_ids: []
+  agent_code_visible: false
+  strategy_evidence: no episode id found from current CLI/session sample
+  confidence: unknown
+  notes: Leaderboard gives TeamId but no submissionId; competitions episodes <TeamId> returned no episodes.
+- team_name: 213tubo
+  rank: 12
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1549.7
+  team_id: 15636758
+  team_member_usernames:
+  - tubotubo
+  profile_url:
+  - https://www.kaggle.com/tubotubo
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: true
+  episode_visible: true
+  visible_episode_ids:
+  - '79968923'
+  agent_code_visible: false
+  strategy_evidence: visible public replay actions only
+  confidence: high_for_replay_visibility
+  notes: Daily official replay dataset sample includes this team.
+- team_name: Gregor Lied
+  rank: 13
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1510.5
+  team_id: 15917496
+  team_member_usernames:
+  - gregorlied
+  profile_url:
+  - https://www.kaggle.com/gregorlied
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: true
+  episode_visible: true
+  visible_episode_ids:
+  - '79968923'
+  agent_code_visible: false
+  strategy_evidence: visible public replay actions only
+  confidence: high_for_replay_visibility
+  notes: Daily official replay dataset sample includes this team.
+- team_name: Nebraskinator
+  rank: 14
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1503.0
+  team_id: 15855037
+  team_member_usernames:
+  - zacharyruhe
+  profile_url:
+  - https://www.kaggle.com/zacharyruhe
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: false
+  episode_visible: false
+  visible_episode_ids: []
+  agent_code_visible: false
+  strategy_evidence: no episode id found from current CLI/session sample
+  confidence: unknown
+  notes: Leaderboard gives TeamId but no submissionId; competitions episodes <TeamId> returned no episodes.
+- team_name: dragon warrior
+  rank: 15
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1488.0
+  team_id: 15633678
+  team_member_usernames:
+  - loonypenguin
+  profile_url:
+  - https://www.kaggle.com/loonypenguin
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: false
+  episode_visible: false
+  visible_episode_ids: []
+  agent_code_visible: false
+  strategy_evidence: no episode id found from current CLI/session sample
+  confidence: unknown
+  notes: Leaderboard gives TeamId but no submissionId; competitions episodes <TeamId> returned no episodes.
+- team_name: Controlvector
+  rank: 16
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1485.9
+  team_id: 16074461
+  team_member_usernames:
+  - controlvector
+  - niehsta
+  - yxdu01
+  profile_url:
+  - https://www.kaggle.com/controlvector
+  - https://www.kaggle.com/niehsta
+  - https://www.kaggle.com/yxdu01
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: false
+  episode_visible: false
+  visible_episode_ids: []
+  agent_code_visible: false
+  strategy_evidence: no episode id found from current CLI/session sample
+  confidence: unknown
+  notes: Leaderboard gives TeamId but no submissionId; competitions episodes <TeamId> returned no episodes.
+- team_name: typeIIIfairy
+  rank: 17
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1480.2
+  team_id: 15654425
+  team_member_usernames:
+  - typeiiifairy
+  profile_url:
+  - https://www.kaggle.com/typeiiifairy
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: false
+  episode_visible: false
+  visible_episode_ids: []
+  agent_code_visible: false
+  strategy_evidence: no episode id found from current CLI/session sample
+  confidence: unknown
+  notes: Leaderboard gives TeamId but no submissionId; competitions episodes <TeamId> returned no episodes.
+- team_name: Audun Ljone Henriksen
+  rank: 18
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1477.4
+  team_id: 15708412
+  team_member_usernames:
+  - audunljonehenriksen
+  - eiriktorp
+  profile_url:
+  - https://www.kaggle.com/audunljonehenriksen
+  - https://www.kaggle.com/eiriktorp
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: false
+  episode_visible: false
+  visible_episode_ids: []
+  agent_code_visible: false
+  strategy_evidence: no episode id found from current CLI/session sample
+  confidence: unknown
+  notes: Leaderboard gives TeamId but no submissionId; competitions episodes <TeamId> returned no episodes.
+- team_name: moriiiiiiiiim
+  rank: 19
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1473.8
+  team_id: 15637898
+  team_member_usernames:
+  - morimo
+  - msd0110
+  - piiiiiiiii
+  - qistripute
+  profile_url:
+  - https://www.kaggle.com/morimo
+  - https://www.kaggle.com/msd0110
+  - https://www.kaggle.com/piiiiiiiii
+  - https://www.kaggle.com/qistripute
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: false
+  episode_visible: false
+  visible_episode_ids: []
+  agent_code_visible: false
+  strategy_evidence: no episode id found from current CLI/session sample
+  confidence: unknown
+  notes: Leaderboard gives TeamId but no submissionId; competitions episodes <TeamId> returned no episodes.
+- team_name: One Man Wrecking Machine
+  rank: 20
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1468.9
+  team_id: 15730576
+  team_member_usernames:
+  - flynnfei
+  profile_url:
+  - https://www.kaggle.com/flynnfei
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: false
+  episode_visible: false
+  visible_episode_ids: []
+  agent_code_visible: false
+  strategy_evidence: no episode id found from current CLI/session sample
+  confidence: unknown
+  notes: Leaderboard gives TeamId but no submissionId; competitions episodes <TeamId> returned no episodes.
+- team_name: Yuki Okumura
+  rank: 21
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1468.3
+  team_id: 16098523
+  team_member_usernames:
+  - yukiokumura1
+  profile_url:
+  - https://www.kaggle.com/yukiokumura1
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: false
+  episode_visible: false
+  visible_episode_ids: []
+  agent_code_visible: false
+  strategy_evidence: no episode id found from current CLI/session sample
+  confidence: unknown
+  notes: Leaderboard gives TeamId but no submissionId; competitions episodes <TeamId> returned no episodes.
+- team_name: Ebi
+  rank: 22
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1456.1
+  team_id: 15642431
+  team_member_usernames:
+  - ebinan92
+  profile_url:
+  - https://www.kaggle.com/ebinan92
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: false
+  episode_visible: false
+  visible_episode_ids: []
+  agent_code_visible: false
+  strategy_evidence: no episode id found from current CLI/session sample
+  confidence: unknown
+  notes: Leaderboard gives TeamId but no submissionId; competitions episodes <TeamId> returned no episodes.
+- team_name: bowwowforeach
+  rank: 23
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1453.5
+  team_id: 15648364
+  team_member_usernames:
+  - bowwowforeach
+  profile_url:
+  - https://www.kaggle.com/bowwowforeach
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: true
+  episode_visible: true
+  visible_episode_ids:
+  - '79968910'
+  - '79968923'
+  agent_code_visible: false
+  strategy_evidence: visible public replay actions only
+  confidence: high_for_replay_visibility
+  notes: Daily official replay dataset sample includes this team.
+- team_name: CPMP
+  rank: 24
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1449.8
+  team_id: 15670325
+  team_member_usernames:
+  - cpmpml
+  profile_url:
+  - https://www.kaggle.com/cpmpml
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: true
+  episode_visible: true
+  visible_episode_ids:
+  - '79968870'
+  - '79968910'
+  agent_code_visible: false
+  strategy_evidence: visible public replay actions only
+  confidence: high_for_replay_visibility
+  notes: Daily official replay dataset sample includes this team.
+- team_name: 3Comets
+  rank: 25
+  medal: not_final_active_leaderboard
+  public_score_or_rating: 1444.5
+  team_id: 15634434
+  team_member_usernames:
+  - javelin1991
+  - lightmk
+  profile_url:
+  - https://www.kaggle.com/javelin1991
+  - https://www.kaggle.com/lightmk
+  public_notebooks: []
+  discussion_posts: []
+  replay_visible: false
+  episode_visible: false
+  visible_episode_ids: []
+  agent_code_visible: false
+  strategy_evidence: no episode id found from current CLI/session sample
+  confidence: unknown
+  notes: Leaderboard gives TeamId but no submissionId; competitions episodes <TeamId> returned no episodes.
