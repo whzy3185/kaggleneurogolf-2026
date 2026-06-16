@@ -31,6 +31,10 @@ def angle_to_planet(source: PlanetState, target: PlanetState) -> float:
     return angle_to_xy(source.x, source.y, target.x, target.y)
 
 
+def angle_to(source: PlanetState, target: PlanetState) -> float:
+    return angle_to_planet(source, target)
+
+
 def fleet_speed(ships: int, max_speed: float = 6.0) -> float:
     ships = max(1, int(ships))
     scale = (math.log(ships) / math.log(1000.0)) ** 1.5
@@ -41,9 +45,17 @@ def eta(distance_value: float, ships: int) -> int:
     return max(1, int(math.ceil(distance_value / fleet_speed(ships))))
 
 
+def eta_turns(distance_value: float, ships: int) -> int:
+    return eta(distance_value, ships)
+
+
 def is_orbiting(planet: PlanetState) -> bool:
     orbital_radius = distance_xy(planet.x, planet.y, CENTER_X, CENTER_Y)
     return orbital_radius + planet.radius < ROTATION_RADIUS_LIMIT
+
+
+def is_orbiting_planet(planet: PlanetState) -> bool:
+    return is_orbiting(planet)
 
 
 def predict_orbit_position(
@@ -97,3 +109,21 @@ def segment_intersects_circle(
 def crosses_sun(ax: float, ay: float, bx: float, by: float, margin: float = 0.0) -> bool:
     return segment_intersects_circle(ax, ay, bx, by, CENTER_X, CENTER_Y, SUN_RADIUS + margin)
 
+
+def segment_intersects_sun(ax: float, ay: float, bx: float, by: float, margin: float = 0.0) -> bool:
+    return crosses_sun(ax, ay, bx, by, margin=margin)
+
+
+def predict_comet_position(comet: dict, future_step: int) -> Tuple[float, float] | None:
+    paths = comet.get("paths") if isinstance(comet, dict) else None
+    path_index = comet.get("path_index", 0) if isinstance(comet, dict) else 0
+    if not paths:
+        return None
+    first_path = paths[0]
+    if not first_path:
+        return None
+    idx = min(len(first_path) - 1, max(0, int(path_index) + int(future_step)))
+    point = first_path[idx]
+    if len(point) < 2:
+        return None
+    return float(point[0]), float(point[1])

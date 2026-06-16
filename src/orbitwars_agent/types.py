@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Dict, List, Set
+from typing import Any, Dict, List, Set
 
 
 @dataclass(frozen=True)
@@ -35,6 +35,12 @@ class GameState:
     fleets: List[FleetState]
     initial_planets: List[PlanetState]
     comet_planet_ids: Set[int]
+    comets: List[Any] | None = None
+    remaining_overage_time: float | None = None
+
+    @property
+    def player_id(self) -> int:
+        return self.player
 
     @property
     def planets_by_id(self) -> Dict[int, PlanetState]:
@@ -63,4 +69,8 @@ class GameState:
     @property
     def my_fleets(self) -> List[FleetState]:
         return [fleet for fleet in self.fleets if fleet.owner == self.player]
+
+
+Planet = PlanetState
+Fleet = FleetState
 
