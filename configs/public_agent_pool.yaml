@@ -1,0 +1,173 @@
+competition: orbit-wars
+audit_date: '2026-06-16'
+load_policy: public sources only; title/LB strings are claims, not official scores; smoke tests are local only
+agents:
+- id: pilkwang_structured
+  path: agents/public/pilkwang_structured/main.py
+  source: pilkwang/orbit-wars-structured-baseline
+  priority: P0
+  family: hybrid_layered_agent
+  install_status: already_present
+  load_ok: true
+  load_error: ''
+  smoke_seed1:
+    match_ok: true
+    winner: local/agents/public/pilkwang_structured
+    scores:
+    - 1049
+    - 0
+    turns: 131
+    duration_s: 3.5236869000000297
+    error: ''
+    timeout: false
+    output_path: outputs/public_agent_smoke/pilkwang_structured_vs_main_seed1.json
+- id: tamrazov_starwars
+  path: agents/public/tamrazov_starwars/main.py
+  source: romantamrazov/orbit-star-wars-lb-max-1224
+  priority: P0
+  family: hybrid_layered_agent
+  install_status: installed
+  load_ok: true
+  load_error: ''
+  smoke_seed1:
+    match_ok: true
+    winner: local/agents/public/tamrazov_starwars
+    scores:
+    - 7298
+    - 0
+    turns: 247
+    duration_s: 8.379539099994872
+    error: ''
+    timeout: false
+    output_path: outputs/public_agent_smoke/tamrazov_starwars_vs_main_seed1.json
+- id: sigmaborov_reinforce
+  path: agents/public/sigmaborov_reinforce/main.py
+  source: sigmaborov/lb-958-1-orbit-wars-2026-reinforce
+  priority: P0
+  family: defense_reinforcement_agent
+  install_status: installed
+  load_ok: true
+  load_error: ''
+  smoke_seed1:
+    match_ok: true
+    winner: local/agents/public/sigmaborov_reinforce
+    scores:
+    - 3882
+    - 0
+    turns: 171
+    duration_s: 1.6754190999999992
+    error: ''
+    timeout: false
+    output_path: outputs/public_agent_smoke/sigmaborov_reinforce_vs_main_seed1.json
+- id: ykhnkf_distance_prioritized
+  path: agents/public/ykhnkf_distance_prioritized/main.py
+  source: ykhnkf/distance-prioritized-agent-lb-max-score-1100
+  priority: P0
+  family: distance_prioritized_rusher
+  install_status: installed
+  load_ok: true
+  load_error: ''
+  smoke_seed1:
+    match_ok: true
+    winner: local/agents/public/ykhnkf_distance_prioritized
+    scores:
+    - 4309
+    - 0
+    turns: 165
+    duration_s: 6.006701099999191
+    error: ''
+    timeout: false
+    output_path: outputs/public_agent_smoke/ykhnkf_distance_prioritized_vs_main_seed1.json
+- id: vkhydras_peak_heuristic
+  path: agents/public/vkhydras_peak_heuristic/main.py
+  source: vkhydras/orbit-wars-heuristic-bots
+  priority: P0
+  family: hybrid_layered_agent
+  install_status: installed
+  load_ok: true
+  load_error: ''
+  smoke_seed1:
+    match_ok: true
+    winner: local/agents/public/vkhydras_peak_heuristic
+    scores:
+    - 2868
+    - 0
+    turns: 79
+    duration_s: 0.8509137000000919
+    error: ''
+    timeout: false
+    output_path: outputs/public_agent_smoke/vkhydras_peak_heuristic_vs_main_seed1.json
+- id: producer_v2
+  path: agents/public/producer_v2/main.py
+  source: slawekbiel/the-producer-v2
+  priority: P1
+  family: production_greedy_expander
+  install_status: installed
+  load_ok: false
+  load_error: 'ModuleNotFoundError: No module named ''orbit_lite'''
+  smoke_seed1:
+    match_ok: false
+    winner: null
+    scores: null
+    turns: null
+    duration_s: null
+    error: 'ModuleNotFoundError: No module named ''orbit_lite'''
+    timeout: false
+    output_path: null
+- id: sigmaborov_starter
+  path: agents/public/sigmaborov_starter/main.py
+  source: sigmaborov/orbit-wars-2026-starter
+  priority: P1
+  family: sun_dodge_physics_agent
+  install_status: installed
+  load_ok: true
+  load_error: ''
+  smoke_seed1:
+    match_ok: true
+    winner: local/agents/public/sigmaborov_starter
+    scores:
+    - 3045
+    - 0
+    turns: 102
+    duration_s: 0.8653383999990183
+    error: ''
+    timeout: false
+    output_path: outputs/public_agent_smoke/sigmaborov_starter_vs_main_seed1.json
+- id: yuriygreben_architect
+  path: agents/public/yuriygreben_architect/main.py
+  source: yuriygreben/orbit-wars-physics-aware-architect
+  priority: P1
+  family: world_model_forecaster
+  install_status: installed
+  load_ok: true
+  load_error: ''
+  smoke_seed1:
+    match_ok: true
+    winner: local/agents/public/yuriygreben_architect
+    scores:
+    - 2376
+    - 0
+    turns: 119
+    duration_s: 2.686978400000953
+    error: ''
+    timeout: false
+    output_path: outputs/public_agent_smoke/yuriygreben_architect_vs_main_seed1.json
+- id: konbu17_rule_ml_validator
+  path: agents/public/konbu17_rule_ml_validator/main.py
+  source: konbu17/orbit-wars-rule-base-ml-shot-validator-hybrid
+  priority: P1
+  family: hybrid_layered_agent
+  install_status: installed
+  load_ok: true
+  load_error: ''
+  smoke_seed1:
+    match_ok: true
+    winner: local/agents/public/konbu17_rule_ml_validator
+    scores:
+    - 2846
+    - 0
+    turns: 175
+    duration_s: 11.882863799997722
+    error: ''
+    timeout: false
+    output_path: outputs/public_agent_smoke/konbu17_rule_ml_validator_vs_main_seed1.json
