@@ -1,23 +1,9 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
 from typing import Dict
 
 from .opponent_profiler import OpponentProfile
-
-
-@dataclass
-class StrategyModifiers:
-    reserve_floor_delta: int = 0
-    defense_weight_mult: float = 1.0
-    expansion_weight_mult: float = 1.0
-    attack_weight_mult: float = 1.0
-    center_weight_mult: float = 1.0
-    comet_weight_mult: float = 1.0
-    counterattack_bonus: float = 0.0
-    risky_expand_penalty: float = 1.0
-    max_commit_ratio_delta: float = 0.0
-    target_enemy_bias: float = 1.0
+from .strategy_modifiers import StrategyModifiers
 
 
 def effective(profile: OpponentProfile, key: str) -> float:
@@ -40,13 +26,15 @@ def build_strategy_modifiers(profiles: Dict[int, OpponentProfile]) -> StrategyMo
         mods.reserve_floor_delta += 6
         mods.defense_weight_mult *= 1.4
         mods.expansion_weight_mult *= 0.9
-        mods.risky_expand_penalty *= 1.25
+        mods.risky_expansion_penalty += 0.25
         mods.max_commit_ratio_delta -= 0.10
 
     if neutral_rush > 0.55:
         mods.counterattack_bonus += 10.0
         mods.expansion_weight_mult *= 0.95
-        mods.target_enemy_bias *= 1.08
+        for enemy_id, profile in profiles.items():
+            if effective(profile, "neutral_rusher") > 0.55:
+                mods.target_enemy_bias[enemy_id] = max(mods.target_enemy_bias.get(enemy_id, 1.0), 1.08)
 
     if turtle > 0.55:
         mods.attack_weight_mult *= 0.80
@@ -58,7 +46,8 @@ def build_strategy_modifiers(profiles: Dict[int, OpponentProfile]) -> StrategyMo
         mods.counterattack_bonus += 8.0
 
     if overcommit > 0.55:
-        mods.counterattack_bonus += 12.0
+        mods.counterattack_bonus += 15.0
+        mods.risky_expansion_penalty = max(0.0, mods.risky_expansion_penalty - 0.10)
         mods.max_commit_ratio_delta += 0.08
 
     if comet > 0.55:
@@ -66,3 +55,5 @@ def build_strategy_modifiers(profiles: Dict[int, OpponentProfile]) -> StrategyMo
 
     return mods
 
+
+__all__ = ["StrategyModifiers", "build_strategy_modifiers", "effective"]

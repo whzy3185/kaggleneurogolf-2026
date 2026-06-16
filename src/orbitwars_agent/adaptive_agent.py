@@ -115,7 +115,8 @@ def _target_score(state: GameState, target: PlanetState, modifiers: StrategyModi
     if target.owner == -1:
         base *= modifiers.expansion_weight_mult
     else:
-        base *= modifiers.attack_weight_mult * modifiers.target_enemy_bias
+        enemy_bias = modifiers.target_enemy_bias.get(target.owner, 1.0)
+        base *= modifiers.attack_weight_mult * enemy_bias
     if target.id in state.comet_planet_ids:
         base *= modifiers.comet_weight_mult
     center_distance = ((target.x - 50.0) ** 2 + (target.y - 50.0) ** 2) ** 0.5
@@ -142,4 +143,3 @@ def _best_target_for_source(
             best_score = score
             best_target = target
     return best_target
-
