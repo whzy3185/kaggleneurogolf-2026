@@ -21,8 +21,11 @@ class OpponentProfile:
     conflict_target_count: int = 0
     center_target_count: int = 0
     high_prod_target_count: int = 0
+    low_prod_target_count: int = 0
     comet_target_count: int = 0
+    unknown_target_count: int = 0
     total_ships_sent: int = 0
+    small_fleet_count: int = 0
     large_fleet_count: int = 0
     overcommit_count: int = 0
     first_attack_turn: Optional[int] = None
@@ -95,6 +98,33 @@ class OpponentProfile:
     def weakest_targeter(self) -> float:
         return self.scores.get("weakest_targeter", 0.0)
 
+    def to_dict(self) -> dict:
+        return {
+            "enemy_id": self.enemy_id,
+            "observed_turns": self.observed_turns,
+            "new_fleets_count": self.new_fleets_count,
+            "neutral_target_count": self.neutral_target_count,
+            "own_target_count": self.own_target_count,
+            "enemy_target_count": self.enemy_target_count,
+            "self_target_count": self.self_target_count,
+            "weak_enemy_target_count": self.weak_enemy_target_count,
+            "conflict_target_count": self.conflict_target_count,
+            "center_target_count": self.center_target_count,
+            "high_prod_target_count": self.high_prod_target_count,
+            "low_prod_target_count": self.low_prod_target_count,
+            "comet_target_count": self.comet_target_count,
+            "unknown_target_count": self.unknown_target_count,
+            "total_ships_sent": self.total_ships_sent,
+            "small_fleet_count": self.small_fleet_count,
+            "large_fleet_count": self.large_fleet_count,
+            "overcommit_count": self.overcommit_count,
+            "first_attack_turn": self.first_attack_turn,
+            "max_commit_ratio": self.max_commit_ratio,
+            "confidence": self.confidence,
+            "observed_new_fleets": self.observed_new_fleets,
+            "scores": dict(self.scores),
+        }
+
 
 class OpponentProfiler:
     def __init__(self) -> None:
@@ -103,9 +133,18 @@ class OpponentProfiler:
         self.previous_state: Optional[GameState] = None
 
     def update(self, state: GameState) -> Dict[int, OpponentProfile]:
-        for planet in state.planets:
-            if planet.owner not in (-1, state.player):
-                self._profile(planet.owner).observed_turns += 1
+        observed_enemy_ids = {
+            planet.owner
+            for planet in state.planets
+            if planet.owner not in (-1, state.player)
+        }
+        observed_enemy_ids.update(
+            fleet.owner
+            for fleet in state.fleets
+            if fleet.owner not in (-1, state.player)
+        )
+        for enemy_id in observed_enemy_ids:
+            self._profile(enemy_id).observed_turns += 1
 
         for fleet in state.fleets:
             if fleet.owner == state.player or fleet.owner == -1:
@@ -127,6 +166,15 @@ class OpponentProfiler:
     def get_all_profiles(self) -> Dict[int, OpponentProfile]:
         return dict(self.profiles)
 
+    def export_profiles(self, step: int | None = None) -> dict:
+        return {
+            "step": step,
+            "profiles": {
+                str(enemy_id): profile.to_dict()
+                for enemy_id, profile in sorted(self.profiles.items())
+            },
+        }
+
     def _profile(self, enemy_id: int) -> OpponentProfile:
         if enemy_id not in self.profiles:
             self.profiles[enemy_id] = OpponentProfile(enemy_id=enemy_id)
@@ -136,12 +184,16 @@ class OpponentProfiler:
         profile = self._profile(fleet.owner)
         profile.new_fleets_count += 1
         profile.total_ships_sent += max(0, fleet.ships)
+        if 0 < fleet.ships <= 2:
+            profile.small_fleet_count += 1
         if fleet.ships >= 25:
             profile.large_fleet_count += 1
 
         target = likely_fleet_target(fleet, state)
         if target is not None:
             self._record_target(state, profile, fleet, target)
+        else:
+            profile.unknown_target_count += 1
 
         commit_ratio = self._estimate_commit_ratio(fleet)
         profile.max_commit_ratio = max(profile.max_commit_ratio, commit_ratio)
@@ -172,6 +224,8 @@ class OpponentProfiler:
             profile.center_target_count += 1
         if target.production >= 4:
             profile.high_prod_target_count += 1
+        if target.production <= 1:
+            profile.low_prod_target_count += 1
         if target.id in state.comet_planet_ids:
             profile.comet_target_count += 1
         if self._targets_existing_conflict(state, fleet, target):
@@ -192,7 +246,10 @@ class OpponentProfiler:
         own_ratio = profile.own_target_count / total
         center_ratio = profile.center_target_count / total
         high_prod_ratio = profile.high_prod_target_count / total
+        low_prod_ratio = profile.low_prod_target_count / total
         comet_ratio = profile.comet_target_count / total
+        unknown_ratio = profile.unknown_target_count / total
+        small_ratio = profile.small_fleet_count / total
         big_ratio = profile.large_fleet_count / total
         overcommit_ratio = profile.overcommit_count / total
         self_ratio = profile.self_target_count / total
@@ -204,6 +261,10 @@ class OpponentProfiler:
         early_attack = 0.0
         if profile.first_attack_turn is not None and profile.first_attack_turn <= 80:
             early_attack = 1.0 - profile.first_attack_turn / 80.0
+
+        no_reinforce_signal = 0.0
+        if profile.new_fleets_count >= 6 and profile.self_target_count == 0:
+            no_reinforce_signal = 1.0
 
         profile.scores = {
             "neutral_rusher": clamp(0.55 * neutral_ratio + 0.25 * send_pressure + 0.20 * profile.max_commit_ratio - 0.20 * own_ratio),
@@ -217,7 +278,7 @@ class OpponentProfiler:
             "reinforce_heavy": clamp(0.80 * self_ratio + 0.20 * low_send),
             "crash_exploiter": clamp(conflict_ratio),
             "weakest_targeter": clamp(weak_enemy_ratio),
-            "weak_bot": 0.0,
+            "weak_bot": clamp(0.35 * low_prod_ratio + 0.25 * unknown_ratio + 0.25 * small_ratio + 0.15 * no_reinforce_signal),
             "confidence": profile.confidence,
         }
 
