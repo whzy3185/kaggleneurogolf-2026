@@ -1,0 +1,70 @@
+competition: orbit-wars
+date: '2026-06-16'
+local_only: true
+notes:
+  - Local tournament results are not official leaderboard scores.
+  - No Kaggle submit command is used by these variants.
+variants:
+  base:
+    agent_path: local/agents/base_agent_entry
+    use_profiler: false
+    use_counter_policy: false
+    use_supplemental_moves: false
+    description: Selected Pilkwang base through agents/base_agent.py wrapper.
+  adaptive_agent:
+    agent_path: local/agents/adaptive_agent
+    use_profiler: true
+    use_counter_policy: true
+    use_supplemental_moves: true
+    enabled_policies:
+      - enemy_rusher
+      - neutral_rusher
+      - turtle
+      - big_stack
+      - overcommitter
+      - comet_greedy
+      - reinforce_heavy
+      - crash_exploiter
+      - weakest_targeter
+    description: Existing default adaptive entrypoint.
+  adaptive_no_profiler:
+    agent_path: local/agents/variants/adaptive_no_profiler
+    use_profiler: false
+    use_counter_policy: false
+    use_supplemental_moves: true
+    enabled_policies: []
+    description: Base plus generic supplemental defense/targeting only when state-level threat gate fires.
+  adaptive_defense_only:
+    agent_path: local/agents/variants/adaptive_defense_only
+    use_profiler: true
+    use_counter_policy: true
+    use_supplemental_moves: true
+    enabled_policies:
+      - enemy_rusher
+      - big_stack
+      - weakest_targeter
+    description: Conservative profiler-driven defensive counters only.
+  adaptive_full:
+    agent_path: local/agents/variants/adaptive_full
+    use_profiler: true
+    use_counter_policy: true
+    use_supplemental_moves: true
+    enabled_policies:
+      - enemy_rusher
+      - neutral_rusher
+      - turtle
+      - big_stack
+      - overcommitter
+      - comet_greedy
+      - reinforce_heavy
+      - crash_exploiter
+      - weakest_targeter
+    description: Full current adaptive wrapper through explicit variant entrypoint.
+opponent_pool:
+  starter: baselines/starter
+  pilkwang_structured: local/agents/public/pilkwang_structured
+  tamrazov_starwars: local/agents/public/tamrazov_starwars
+  sigmaborov_reinforce: local/agents/public/sigmaborov_reinforce
+  ykhnkf_distance_prioritized: local/agents/public/ykhnkf_distance_prioritized
+  vkhydras_peak_heuristic: local/agents/public/vkhydras_peak_heuristic
+  vkhydras_last_heuristic: local/agents/public/vkhydras_last_heuristic

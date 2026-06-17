@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict
+from typing import Collection, Dict
 
 from .opponent_profiler import OpponentProfile
 from .strategy_modifiers import StrategyModifiers
@@ -10,7 +10,15 @@ def effective(profile: OpponentProfile, key: str) -> float:
     return profile.scores.get(key, 0.0) * profile.confidence
 
 
-def build_strategy_modifiers(profiles: Dict[int, OpponentProfile]) -> StrategyModifiers:
+def _enabled(enabled_policies: Collection[str] | None, key: str) -> bool:
+    return enabled_policies is None or key in enabled_policies
+
+
+def build_strategy_modifiers(
+    profiles: Dict[int, OpponentProfile],
+    *,
+    enabled_policies: Collection[str] | None = None,
+) -> StrategyModifiers:
     mods = StrategyModifiers()
     if not profiles:
         return mods
@@ -25,48 +33,48 @@ def build_strategy_modifiers(profiles: Dict[int, OpponentProfile]) -> StrategyMo
     crash_exploiter = max(effective(profile, "crash_exploiter") for profile in profiles.values())
     weakest_targeter = max(effective(profile, "weakest_targeter") for profile in profiles.values())
 
-    if enemy_rush > 0.55:
+    if _enabled(enabled_policies, "enemy_rusher") and enemy_rush > 0.55:
         mods.reserve_floor_delta += 6
         mods.defense_weight_mult *= 1.4
         mods.expansion_weight_mult *= 0.9
         mods.risky_expansion_penalty += 0.25
         mods.max_commit_ratio_delta -= 0.10
 
-    if neutral_rush > 0.55:
+    if _enabled(enabled_policies, "neutral_rusher") and neutral_rush > 0.55:
         mods.counterattack_bonus += 10.0
         mods.expansion_weight_mult *= 0.95
         for enemy_id, profile in profiles.items():
             if effective(profile, "neutral_rusher") > 0.55:
                 mods.target_enemy_bias[enemy_id] = max(mods.target_enemy_bias.get(enemy_id, 1.0), 1.08)
 
-    if turtle > 0.55:
+    if _enabled(enabled_policies, "turtle") and turtle > 0.55:
         mods.attack_weight_mult *= 0.80
         mods.expansion_weight_mult *= 1.25
         mods.comet_weight_mult *= 1.15
 
-    if big_stack > 0.55:
+    if _enabled(enabled_policies, "big_stack") and big_stack > 0.55:
         mods.defense_weight_mult *= 1.25
         mods.counterattack_bonus += 8.0
 
-    if overcommit > 0.55:
+    if _enabled(enabled_policies, "overcommitter") and overcommit > 0.55:
         mods.counterattack_bonus += 15.0
         mods.risky_expansion_penalty = max(0.0, mods.risky_expansion_penalty - 0.10)
         mods.max_commit_ratio_delta += 0.08
 
-    if comet > 0.55:
+    if _enabled(enabled_policies, "comet_greedy") and comet > 0.55:
         mods.comet_weight_mult *= 1.25
 
-    if reinforce_heavy > 0.55:
+    if _enabled(enabled_policies, "reinforce_heavy") and reinforce_heavy > 0.55:
         mods.attack_weight_mult *= 1.08
         mods.expansion_weight_mult *= 0.95
         mods.counterattack_bonus += 6.0
 
-    if crash_exploiter > 0.55:
+    if _enabled(enabled_policies, "crash_exploiter") and crash_exploiter > 0.55:
         mods.reserve_floor_delta += 4
         mods.defense_weight_mult *= 1.15
         mods.max_commit_ratio_delta -= 0.06
 
-    if weakest_targeter > 0.55:
+    if _enabled(enabled_policies, "weakest_targeter") and weakest_targeter > 0.55:
         mods.reserve_floor_delta += 3
         mods.defense_weight_mult *= 1.10
 

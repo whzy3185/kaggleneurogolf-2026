@@ -52,3 +52,17 @@ def test_crash_and_weakest_targeter_raise_defensive_reserve():
     assert mods.reserve_floor_delta >= 7
     assert mods.defense_weight_mult > 1.0
     assert mods.max_commit_ratio_delta < 0
+
+
+def test_enabled_policies_filter_counter_branches():
+    mods = build_strategy_modifiers(
+        {
+            1: _profile(1, "neutral_rusher", 0.8),
+            2: _profile(2, "enemy_rusher", 0.8),
+        },
+        enabled_policies=("enemy_rusher",),
+    )
+    assert mods.reserve_floor_delta >= 5
+    assert mods.defense_weight_mult > 1.0
+    assert mods.counterattack_bonus == 0.0
+    assert mods.target_enemy_bias == {}
