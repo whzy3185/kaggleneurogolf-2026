@@ -1,0 +1,131 @@
+competition: orbit-wars
+audit_date: "2026-06-17"
+registry_type: kaggle_public_output_candidates
+policy:
+  - "These entries are downloaded Kaggle output packages, not our official scores."
+  - "external/ paths are local ignored cache paths and must not be committed."
+  - "Local screens are evidence for base selection only; they are not leaderboard scores."
+  - "License and redistribution risk must be reviewed before public release or reuse."
+primary_candidates:
+  - id: ranjeet_producer
+    slug: ranjeet258/orbit-wars-producer
+    output_path: external/kaggle_outputs/ranjeet258__orbit-wars-producer/submission_extracted
+    package_type: multi_file_submission
+    entrypoint: main.py
+    smoke: pass
+    min_screen_vs_vkhydras_last: "6-0"
+    tar_gz_bytes: 55220
+    extracted_bytes_observed: 449212
+    notes: "Kaggle output package with main.py plus orbit_lite support files."
+  - id: tamrazov_stronger
+    slug: romantamrazov/orbit-wars-i-m-stronger
+    output_path: external/kaggle_outputs/romantamrazov__orbit-wars-i-m-stronger/submission_extracted
+    package_type: multi_file_submission
+    entrypoint: main.py
+    smoke: pass
+    min_screen_vs_vkhydras_last: "6-0"
+    tar_gz_bytes: 54902
+    extracted_bytes_observed: 451017
+    notes: "Kaggle output package with main.py plus orbit_lite support files."
+  - id: alyce_intruder
+    slug: alycemiki/light-ver-1200-simple-orbit-intruder
+    output_path: external/kaggle_outputs/alycemiki__light-ver-1200-simple-orbit-intruder/submission_extracted
+    package_type: multi_file_submission
+    entrypoint: main.py
+    smoke: pass
+    min_screen_vs_vkhydras_last: "6-0"
+    tar_gz_bytes: 55051
+    extracted_bytes_observed: 456108
+    notes: "Kaggle output package with main.py plus orbit_lite support files."
+  - id: caoyupeng_gru
+    slug: caoyupeng/v2-gru
+    output_path: external/kaggle_outputs/caoyupeng__v2-gru/submission_extracted
+    package_type: multi_file_submission
+    entrypoint: main.py
+    smoke: pass
+    min_screen_vs_vkhydras_last: "5-1"
+    tar_gz_bytes: 56487
+    extracted_bytes_observed: 474567
+    notes: "Kaggle output package with main.py plus orbit_lite support files."
+  - id: shumming_exp50
+    slug: shummingfang/orbit-wars-exp50
+    output_path: external/kaggle_outputs/shummingfang__orbit-wars-exp50/submission_extracted
+    package_type: multi_file_submission
+    entrypoint: main.py
+    smoke: pass
+    min_screen_vs_vkhydras_last: "6-0"
+    tar_gz_bytes: 52898
+    extracted_bytes_observed: 447434
+    notes: "Kaggle output package with main.py plus orbit_lite support files."
+optional_candidates:
+  - id: reyhan
+    slug: reyhanksatria/orbit-wars-reyhan-ksatria
+    output_path: external/kaggle_outputs/reyhanksatria__orbit-wars-reyhan-ksatria/submission_extracted
+    package_type: multi_file_submission
+    entrypoint: main.py
+    smoke: pass
+    tar_gz_bytes: 54984
+    extracted_bytes_observed: 455711
+  - id: mirza_best
+    slug: mirzayasirabdullah07/best-orbit-wars-notebook
+    output_path: external/kaggle_outputs/mirzayasirabdullah07__best-orbit-wars-notebook/submission_extracted
+    package_type: multi_file_submission
+    entrypoint: main.py
+    smoke: pass
+    tar_gz_bytes: 54984
+    extracted_bytes_observed: 455795
+  - id: jek_build
+    slug: jek1wantaufik/orbit-wars-submission-build-and-testing
+    output_path: external/kaggle_outputs/jek1wantaufik__orbit-wars-submission-build-and-testing/submission_extracted
+    package_type: multi_file_submission
+    entrypoint: main.py
+    smoke: pass
+    tar_gz_bytes: 53179
+    extracted_bytes_observed: 441833
+  - id: jek_simple
+    slug: jek1wantaufik/simplified-orbit-wars-agent
+    output_path: external/kaggle_outputs/jek1wantaufik__simplified-orbit-wars-agent/submission_extracted
+    package_type: multi_file_submission
+    entrypoint: main.py
+    smoke: pass
+    tar_gz_bytes: 53614
+    extracted_bytes_observed: 446447
+  - id: alyce_ffa
+    slug: alycemiki/intervention-command-w-ffa
+    output_path: external/kaggle_outputs/alycemiki__intervention-command-w-ffa/submission_extracted
+    package_type: multi_file_submission
+    entrypoint: main.py
+    smoke: pass
+    tar_gz_bytes: 59627
+    extracted_bytes_observed: 499122
+baselines:
+  - id: vkhydras_last
+    path: agents/public/vkhydras_last_heuristic
+    package_type: light_single_file_heuristic
+    role: current_official_workspace_best
+    latest_observed_official_score: 810.6
+  - id: pilkwang_structured
+    path: agents/public/pilkwang_structured
+    package_type: light_single_file_heuristic
+    role: previous_official_best_light_single_file
+    latest_observed_official_score: 653.9
+  - id: tamrazov_starwars
+    path: agents/public/tamrazov_starwars
+    package_type: single_file_or_directory_agent
+    role: public_p0_benchmark
+  - id: sigmaborov_reinforce
+    path: agents/public/sigmaborov_reinforce
+    package_type: single_file_or_directory_agent
+    role: public_p0_benchmark
+  - id: ykhnkf_distance_prioritized
+    path: agents/public/ykhnkf_distance_prioritized
+    package_type: single_file_or_directory_agent
+    role: public_p0_benchmark
+  - id: vkhydras_peak_heuristic
+    path: agents/public/vkhydras_peak_heuristic
+    package_type: light_single_file_heuristic
+    role: public_p0_benchmark
+  - id: current_dist_main
+    path: dist/main.py
+    package_type: packaged_single_file_candidate
+    role: current_local_package
