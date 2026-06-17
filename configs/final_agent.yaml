@@ -4,8 +4,8 @@ local_only: true
 submit_status: complete
 official_score_reference:
   agent: vkhydras_last_heuristic single-file candidate
-  submission_id: 53772702
-  public_score: 713.0
+  submission_id: 53772607
+  public_score: 810.6
   status: SubmissionStatus.COMPLETE
 selected_candidate:
   id: vkhydras_last_base_candidate
@@ -38,5 +38,5 @@ rejected_candidates:
     reason: "Not selected because supplemental post-actions remain unproven and base fallback is stronger."
 blocked_until:
   - "Do not submit more copies of the same Vkhydras Last file while 53772197 remains pending."
-  - "If optimizing further, use Vkhydras Last 713.0 as the official baseline."
+  - "If optimizing further, use Vkhydras Last 810.6 as the official baseline."
   - "Targeted variants must prove they do not regress against Vkhydras Last before packaging."

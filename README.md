@@ -23,8 +23,8 @@ Competition:
 Current official best in this workspace:
 
 - Agent: `vkhydras_last_heuristic` single-file candidate
-- Submission: `53772702`
-- Public score: `713.0`
+- Submission: `53772607`
+- Public score: `810.6`
 - Package: `dist/main.py`
 - SHA256: `73679EC04C1521E2538FCF61013034B32729ED18CD0A5658C68090B65EC20049`
 

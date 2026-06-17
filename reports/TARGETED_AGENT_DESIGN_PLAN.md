@@ -15,8 +15,8 @@ Current official baseline:
 
 ```yaml
 agent: vkhydras_last_heuristic single-file candidate
-submission_id: 53772702
-public_score: 713.0
+submission_id: 53772607
+public_score: 810.6
 status: COMPLETE
 package: dist/main.py
 ```
@@ -732,7 +732,7 @@ or:
 
 If failed:
 
-- keep official best as Vkhydras Last 713.0;
+- keep official best as Vkhydras Last 810.6;
 - write failure analysis;
 - do not package;
 - do not submit.
@@ -796,7 +796,7 @@ Required content:
 competition_slug: orbit-wars
 current_official_best:
   agent: vkhydras_last_heuristic
-  score: 713.0
+  score: 810.6
 candidate:
   id: vkh_last_targeted_v1
   package: dist/main.py
@@ -846,7 +846,7 @@ Action:
 If still weak:
 
 - abandon targeted V1;
-- keep official best as Vkhydras Last 713.0.
+- keep official best as Vkhydras Last 810.6.
 
 ### If public pool improves but 4-player collapses
 

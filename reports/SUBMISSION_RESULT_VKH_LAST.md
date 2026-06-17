@@ -5,11 +5,7 @@ Date: 2026-06-17
 ## Status
 
 The user explicitly requested direct upload after local validation was in
-progress:
-
-```text
-别打本地了 直接传上去  训练过程都完了吗
-```
+progress. The request was to stop local evaluation and upload directly.
 
 No training process exists for this candidate. `vkhydras_last_heuristic` is a
 public heuristic single-file agent. The interrupted process was local match
@@ -28,9 +24,24 @@ submitted: true
 submit_command: kaggle competitions submit -c orbit-wars -f dist\main.py -m "vkhydras_last_single_file_candidate_d7d937e"
 ```
 
+The user reported the pending state as problematic and requested a resubmit.
+Kaggle CLI help did not expose a cancel/stop/withdraw command for pending
+submissions. A single resubmission was uploaded with the same `dist/main.py`.
+
+The user then requested format verification before another upload. `dist/main.py`
+passed:
+
+- sha256 check;
+- `def agent(obs, config=None)` presence check;
+- `python -m py_compile dist\main.py`;
+- banned-pattern scan for `kaggle.json`, `open(`, network libraries, secrets,
+  external/data/output paths, and debug print;
+- `scripts/smoke_single_file_agent.py dist\main.py --seed 33`;
+- starter file-agent smoke, seed 13, bidirectional.
+
 ## Current Kaggle Status
 
-Latest checked CLI output:
+Latest checked CLI output from this workspace:
 
 ```yaml
 initial_submission:
@@ -42,45 +53,36 @@ resubmission:
   submission_id: 53772607
   message: vkhydras_last_single_file_candidate_d7d937e_resubmit1
   status: SubmissionStatus.COMPLETE
-  public_score: 631.1
+  public_score: 810.6
   private_score: null
 format_checked_submission:
   submission_id: 53772702
   message: vkhydras_last_single_file_candidate_d7d937e_formatcheck
   status: SubmissionStatus.COMPLETE
-  public_score: 713.0
+  public_score: 763.8
   private_score: null
 ```
 
-The user reported the pending state as problematic and requested a resubmit.
-Kaggle CLI help did not expose a cancel/stop/withdraw command for pending
-submissions. A single resubmission was uploaded with the same `dist/main.py`.
+Both completed Vkhydras Last submissions used the same `dist/main.py` sha256:
 
-The user then requested format verification before resubmitting. `dist/main.py`
-passed:
+```text
+73679EC04C1521E2538FCF61013034B32729ED18CD0A5658C68090B65EC20049
+```
 
-- sha256 check;
-- `def agent(obs, config=None)` presence check;
-- `python -m py_compile dist\main.py`;
-- banned-pattern scan for `kaggle.json`, `open(`, network libraries, secrets,
-  external/data/output paths, and debug print;
-- `scripts/smoke_single_file_agent.py dist\main.py --seed 33`;
-- starter file-agent smoke, seed 13, bidirectional.
-
-After those checks, submission `53772702` completed with public score `713.0`
-and is the current official best in this workspace. The older initial
-submission `53772197` remains pending in the latest CLI query.
+Kaggle rating values can drift between CLI checks. In the latest query,
+submission `53772607` is the current completed official best in this workspace.
+The older initial submission `53772197` remains pending.
 
 ## Current Completed Official Best
 
 ```yaml
 agent: vkhydras_last_heuristic single-file candidate
-submission_id: 53772702
+submission_id: 53772607
 status: SubmissionStatus.COMPLETE
-public_score_latest_cli: 713.0
+public_score_latest_cli: 810.6
 ```
 
-The previous Pilkwang best is now:
+The previous Pilkwang best is:
 
 ```yaml
 agent: pilkwang_structured single-file fallback
@@ -89,7 +91,7 @@ status: SubmissionStatus.COMPLETE
 public_score_latest_cli: 678.9
 ```
 
-Vkhydras Last `53772702` beats the latest observed Pilkwang score by `34.1`
+Vkhydras Last `53772607` beats the latest observed Pilkwang score by `131.7`
 public rating points.
 
 ## Local Validation State Before Upload

@@ -10,13 +10,16 @@ behavior and does not submit to Kaggle.
 
 ```yaml
 agent: vkhydras_last_heuristic single-file candidate
-submission_id: 53772702
-message: vkhydras_last_single_file_candidate_d7d937e_formatcheck
-public_score: 713.0
+submission_id: 53772607
+message: vkhydras_last_single_file_candidate_d7d937e_resubmit1
+public_score: 810.6
 status: SubmissionStatus.COMPLETE
 package: dist/main.py
 sha256: 73679EC04C1521E2538FCF61013034B32729ED18CD0A5658C68090B65EC20049
 ```
+
+The same file also completed as submission `53772702` with latest observed
+public score `763.8`. Kaggle rating values can drift between CLI checks.
 
 Previous completed best:
 

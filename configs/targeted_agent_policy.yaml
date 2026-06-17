@@ -6,8 +6,8 @@ base:
   source_id: vkhydras_last_heuristic
   source_path: agents/public/vkhydras_last_heuristic/main.py
   current_package: dist/main.py
-  official_best_submission_id: 53772702
-  official_best_public_score: 713.0
+  official_best_submission_id: 53772607
+  official_best_public_score: 810.6
   official_best_status: COMPLETE
 
 principles:
@@ -233,5 +233,5 @@ go_no_go:
     filter_benefit_explained_by_traces: true
   if_failed:
     keep_official_best: vkhydras_last_heuristic
-    official_best_public_score: 713.0
+    official_best_public_score: 810.6
     do_not_submit: true
