@@ -1,10 +1,12 @@
 competition: orbit-wars
 date: '2026-06-17'
 local_only: true
-submit_status: no
+submit_status: complete
 official_score_reference:
-  agent: starter baseline
-  public_score: 317.8
+  agent: vkhydras_last_heuristic single-file candidate
+  submission_id: 53772702
+  public_score: 713.0
+  status: SubmissionStatus.COMPLETE
 selected_candidate:
   id: vkhydras_last_base_candidate
   agent_path: local/agents/base_agent_entry
@@ -19,8 +21,8 @@ selected_candidate:
     that Pilkwang itself is not the strongest available public foundation:
     vkhydras_last_heuristic beat the P0 local public pool 16-0 and beat
     vkhydras_peak_heuristic 15-5 in local bidirectional screens. The current
-    safest score-improvement candidate is therefore the stronger single-file
-    base, not the incomplete adaptive wrapper.
+    official best is the stronger single-file Vkhydras Last base, not the
+    incomplete adaptive wrapper.
 rejected_candidates:
   pilkwang_structured_base:
     agent_path: local/agents/public/pilkwang_structured
@@ -35,6 +37,6 @@ rejected_candidates:
     agent_path: local/agents/variants/adaptive_no_profiler
     reason: "Not selected because supplemental post-actions remain unproven and base fallback is stronger."
 blocked_until:
-  - "Package and smoke-test the vkhydras_last single-file candidate."
-  - "Submit only after explicit user confirmation, then update SCORECARD."
-  - "If optimizing further, start by porting minimal proven logic from vkhydras_last instead of wrapping weak post-actions around Pilkwang."
+  - "Do not submit more copies of the same Vkhydras Last file while 53772197 remains pending."
+  - "If optimizing further, use Vkhydras Last 713.0 as the official baseline."
+  - "Targeted variants must prove they do not regress against Vkhydras Last before packaging."

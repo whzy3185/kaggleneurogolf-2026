@@ -41,8 +41,14 @@ initial_submission:
 resubmission:
   submission_id: 53772607
   message: vkhydras_last_single_file_candidate_d7d937e_resubmit1
-  status: SubmissionStatus.PENDING
-  public_score: null
+  status: SubmissionStatus.COMPLETE
+  public_score: 631.1
+  private_score: null
+format_checked_submission:
+  submission_id: 53772702
+  message: vkhydras_last_single_file_candidate_d7d937e_formatcheck
+  status: SubmissionStatus.COMPLETE
+  public_score: 713.0
   private_score: null
 ```
 
@@ -50,20 +56,41 @@ The user reported the pending state as problematic and requested a resubmit.
 Kaggle CLI help did not expose a cancel/stop/withdraw command for pending
 submissions. A single resubmission was uploaded with the same `dist/main.py`.
 
-Do not submit another copy while `53772197` or `53772607` remains pending.
+The user then requested format verification before resubmitting. `dist/main.py`
+passed:
+
+- sha256 check;
+- `def agent(obs, config=None)` presence check;
+- `python -m py_compile dist\main.py`;
+- banned-pattern scan for `kaggle.json`, `open(`, network libraries, secrets,
+  external/data/output paths, and debug print;
+- `scripts/smoke_single_file_agent.py dist\main.py --seed 33`;
+- starter file-agent smoke, seed 13, bidirectional.
+
+After those checks, submission `53772702` completed with public score `713.0`
+and is the current official best in this workspace. The older initial
+submission `53772197` remains pending in the latest CLI query.
 
 ## Current Completed Official Best
+
+```yaml
+agent: vkhydras_last_heuristic single-file candidate
+submission_id: 53772702
+status: SubmissionStatus.COMPLETE
+public_score_latest_cli: 713.0
+```
+
+The previous Pilkwang best is now:
 
 ```yaml
 agent: pilkwang_structured single-file fallback
 submission_id: 53767789
 status: SubmissionStatus.COMPLETE
-public_score_latest_cli: 666.2
+public_score_latest_cli: 678.9
 ```
 
-The Pilkwang score has drifted from earlier observations (`653.7` / `653.9`) to
-`666.2` in the latest CLI query. Whether Vkhydras Last beats the current best
-cannot be determined until submission `53772197` completes.
+Vkhydras Last `53772702` beats the latest observed Pilkwang score by `34.1`
+public rating points.
 
 ## Local Validation State Before Upload
 
@@ -100,7 +127,7 @@ Poll:
 kaggle competitions submissions -c orbit-wars
 ```
 
-When `53772197` and/or `53772607` changes to `COMPLETE` or `ERROR`, update:
+When `53772197` changes to `COMPLETE` or `ERROR`, update:
 
 ```text
 reports/SCORECARD.md
