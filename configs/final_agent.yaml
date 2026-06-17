@@ -1,0 +1,33 @@
+competition: orbit-wars
+date: '2026-06-17'
+local_only: true
+submit_status: no
+official_score_reference:
+  agent: starter baseline
+  public_score: 317.8
+selected_candidate:
+  id: base_safe_fallback
+  agent_path: local/agents/base_agent_entry
+  package_source: agents/base_agent_entry/main.py
+  base_agent: pilkwang_structured
+  use_profiler: false
+  use_counter_policy: false
+  use_supplemental_moves: false
+  reason: >
+    The full adaptive wrapper lost 97-3 to the selected base in a 50-seed
+    bidirectional local tournament. A defense-only smoke check also lost 0-2
+    to base, so the safest current candidate is the selected base fallback.
+rejected_candidates:
+  adaptive_full:
+    agent_path: local/agents/variants/adaptive_full
+    reason: "Lost 3-97 versus base in local 50-seed bidirectional evaluation."
+  adaptive_defense_only:
+    agent_path: local/agents/variants/adaptive_defense_only
+    reason: "Seed-1 bidirectional smoke versus base lost 0-2; needs more work before selection."
+  adaptive_no_profiler:
+    agent_path: local/agents/variants/adaptive_no_profiler
+    reason: "Not selected because supplemental post-actions remain unproven and base fallback is stronger."
+blocked_until:
+  - "Implement budget-protected integration instead of unconstrained post-base supplemental moves."
+  - "Re-run base-vs-adaptive direct tournament and public-opponent screen."
+  - "Show no regression against base before packaging or submit confirmation."
