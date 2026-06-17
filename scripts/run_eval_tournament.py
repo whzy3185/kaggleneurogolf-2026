@@ -2,12 +2,10 @@ from __future__ import annotations
 
 import argparse
 import csv
-import importlib.util
 import json
 import logging
 import sys
 import time
-import uuid
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
@@ -18,6 +16,7 @@ if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
 from orbitwars_eval.loader import DEFAULT_ZOO, resolve_agents  # noqa: E402
+from orbitwars_agent.candidate_loader import load_candidate  # noqa: E402
 
 logging.getLogger("kaggle_environments").setLevel(logging.ERROR)
 logging.getLogger("kaggle_environments.envs.open_spiel_env.open_spiel_env").setLevel(logging.ERROR)
@@ -68,16 +67,7 @@ def _clear_adaptive_module() -> None:
 
 def _load_agent(agent_dir: Path):
     _clear_adaptive_module()
-    module_name = f"orbitwars_eval_agent_{uuid.uuid4().hex}"
-    spec = importlib.util.spec_from_file_location(module_name, agent_dir / "main.py")
-    if spec is None or spec.loader is None:
-        raise ImportError(f"Cannot load agent at {agent_dir}")
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    agent_fn = getattr(module, "agent", None)
-    if agent_fn is None:
-        raise AttributeError(f"{agent_dir / 'main.py'} does not expose agent(obs)")
-    return agent_fn
+    return load_candidate(agent_dir).agent
 
 
 def _extract_outcome(replay: dict[str, Any], agent_ids: list[str]) -> tuple[str | None, int | None, list[int], int, str]:
