@@ -1,0 +1,237 @@
+competition: orbit-wars
+status: design_only
+created: 2026-06-17
+
+base:
+  source_id: vkhydras_last_heuristic
+  source_path: agents/public/vkhydras_last_heuristic/main.py
+  current_package: dist/main.py
+  official_best_submission_id: 53772702
+  official_best_public_score: 713.0
+  official_best_status: COMPLETE
+
+principles:
+  preserve_base_tempo: true
+  exact_opponent_name_recognition: false
+  hardcoded_public_agent_ids: false
+  supplemental_attacks_v1: false
+  supplemental_expansion_v1: false
+  action_filter_only_v1: true
+  submit_requires_manual_confirmation: true
+
+profiles:
+  enemy_rusher:
+    meaning: Direct pressure against our owned planets, especially early or with short ETA.
+    signals:
+      - early_enemy_fleets_to_own_planets
+      - high_own_target_ratio
+      - short_eta_frontier_pressure
+      - high_commit_to_owned_targets
+    allowed_response:
+      - raise_local_reserve_floor_on_threatened_planets
+      - delete_or_shrink_outgoing_actions_from_threatened_sources
+      - protect_high_production_planets_under_threat
+    forbidden_response:
+      - blind_counterattack
+      - new_revenge_attack
+      - global_reserve_increase_without_local_threat
+
+  neutral_rusher:
+    meaning: Fast neutral expansion with many capture-sized neutral-target fleets.
+    signals:
+      - high_neutral_target_ratio
+      - many_capture_sized_neutral_sends
+      - high_opening_send_pressure
+    allowed_response:
+      - avoid_exposing_sources_to_short_eta_pressure
+      - shrink_low_value_contested_neutral_expansions
+      - protect_recently_captured_neutrals_when_enemy_eta_is_short
+    forbidden_response:
+      - unconditional_counterattack
+      - blocking_all_expansion
+
+  production_greedy:
+    meaning: Preference for high-production and production-positive captures.
+    signals:
+      - high_production_target_ratio
+      - repeated_high_future_value_targets
+      - defense_of_high_production_holdings
+    allowed_response:
+      - preserve_high_production_source_reserve
+      - shrink_outgoing_actions_from_threatened_production_centers
+      - block_low_margin_attacks_that_expose_production
+    forbidden_response:
+      - overpay_every_production_denial
+      - new_attack_action_in_v1
+
+  turtle:
+    meaning: Low send rate, high garrison retention, or defensive reinforcement.
+    signals:
+      - low_send_rate_after_corrected_observed_turns
+      - high_garrison_retention
+      - repeated_own_planet_reinforcement
+    allowed_response:
+      - keep_safe_base_expansion
+      - delete_low_margin_attacks_into_heavy_defense
+    forbidden_response:
+      - forced_all_in
+      - passive_filtering_of_safe_expansion
+
+  big_stack:
+    meaning: Large send or stack buildup that can flip a key planet.
+    signals:
+      - large_fleet_ratio
+      - high_max_commit_ratio
+      - converging_fleets_to_same_target
+      - depleted_source_after_large_send
+    allowed_response:
+      - block_outgoing_actions_from_likely_target
+      - raise_reserve_floor_on_likely_target
+      - delete_low_value_actions_that_prevent_survival
+    forbidden_response:
+      - split_weak_counterattacks
+      - new_attack_from_big_stack_score_only
+
+  overcommitter:
+    meaning: Opponent repeatedly empties sources or leaves sources vulnerable after sends.
+    signals:
+      - high_source_send_fraction
+      - source_garrison_below_nearby_threat_threshold
+      - repeated_underreserved_attacks
+    allowed_response:
+      - preserve_base_attack_if_already_targeting_depleted_source
+      - avoid_filtering_safe_base_attacks_into_depleted_sources
+      - preserve_ships_for_later_base_exploit
+    forbidden_response:
+      - add_new_attack_from_overcommit_score_only
+
+  comet_greedy:
+    meaning: Over-prioritizes comet targets or poor comet windows.
+    signals:
+      - high_comet_target_ratio
+      - repeated_comet_window_contests
+      - low_value_or_low_lifetime_comet_sends
+    allowed_response:
+      - blacklist_low_quality_comet_base_actions
+      - shrink_poor_eta_or_poor_lifetime_comet_sends
+      - keep_positive_value_base_comet_actions
+    forbidden_response:
+      - global_comet_boost
+      - new_comet_mission_in_v1
+
+  weakest_targeter:
+    meaning: Attacks low-garrison planets or the weakest player in multi-player states.
+    signals:
+      - repeated_low_garrison_targets
+      - target_selection_tracks_weakness
+      - concentrated_pressure_on_weak_frontier
+    allowed_response:
+      - protect_low_garrison_planets
+      - block_actions_that_make_source_the_weakest_target
+      - raise_reserve_on_exposed_frontier_only
+    forbidden_response:
+      - revenge_attack
+      - treating_all_enemies_as_equal_threats
+
+action_filter_v1:
+  allowed_operations:
+    - keep_action
+    - delete_action
+    - reduce_ships
+    - block_source_this_turn
+  forbidden_operations:
+    - add_attack_action
+    - add_expansion_action
+    - increase_ships
+    - retarget_to_new_planet
+    - hard_switch_whole_strategy
+  reserve:
+    default_floor_ratio: 0.20
+    threatened_floor_ratio: 0.55
+    high_production_floor_ratio: 0.45
+    comet_floor_ratio: 0.15
+  eta:
+    incoming_threat_horizon: 80
+    enemy_response_margin: 3
+    source_vulnerability_horizon: 60
+  filter_thresholds:
+    min_profile_confidence: 0.45
+    min_local_threat_score: 0.50
+    max_safe_send_fraction_when_threatened: 0.45
+    low_value_comet_min_score: 0.0
+
+trace:
+  enabled_for_local_eval_only: true
+  output_dir: outputs/profile_traces
+  snapshots:
+    - 20
+    - 50
+    - 100
+    - 200
+    - final
+  fields:
+    - step
+    - player
+    - enemy_id
+    - scores
+    - confidence
+    - base_action_count
+    - kept_action_count
+    - deleted_action_count
+    - shrunk_action_count
+    - blocked_sources
+
+evaluation_gates:
+  base_nonregression:
+    matchup: vkhydras_last_heuristic_vs_vkh_last_targeted_v1
+    seeds: 50
+    bidirectional: true
+    min_targeted_winrate: 0.45
+    preferred_targeted_winrate: 0.50
+    max_errors: 0
+    max_timeouts: 0
+  public_pool:
+    opponents:
+      - pilkwang_structured
+      - tamrazov_starwars
+      - sigmaborov_reinforce
+      - ykhnkf_distance_prioritized
+      - vkhydras_peak_heuristic
+      - sigmaborov_starter
+    seeds_per_opponent: 20
+    bidirectional: true
+    require_no_major_regression_vs_base: true
+    max_errors: 0
+    max_timeouts: 0
+  four_player:
+    seeds_per_pool: 20
+    rotate_positions_if_supported: true
+    require_avg_rank_not_worse_than_base: true
+    max_errors: 0
+    max_timeouts: 0
+  packaging:
+    require_single_file: true
+    package_path: dist/main.py
+    py_compile_required: true
+    smoke_required: true
+    banned_patterns:
+      - kaggle.json
+      - requests
+      - urllib
+      - socket
+      - external/
+      - outputs/
+      - data/
+
+go_no_go:
+  package_only_if:
+    errors: 0
+    timeouts: 0
+    base_nonregression_passed: true
+    public_pool_not_worse_than_base: true
+    four_player_not_worse_than_base: true
+    filter_benefit_explained_by_traces: true
+  if_failed:
+    keep_official_best: vkhydras_last_heuristic
+    official_best_public_score: 713.0
+    do_not_submit: true
