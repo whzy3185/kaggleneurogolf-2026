@@ -731,3 +731,23 @@ The most important implementation insight is that attack selection and regroup
 selection are separate. A complete decision explanation must label both layers;
 otherwise key replay moves will be misattributed to the attack scorer.
 
+## 24. Addendum: Alyce ELO / Opponent Strategy Recheck
+
+Follow-up recheck: `reports/ALYCE_ELO_AND_OPPONENT_STRATEGY_RECHECK.md`.
+
+Correction to framing: this report describes the submitted Light Intruder package.
+It should not be read as a full description of Alyce Miki's broader Orbit Wars
+strategy line. Alyce's related notebooks include explicit ELO/mode/opponent-state
+ideas:
+
+- separate 2P / 4P strategy presets
+- low-ELO vs high-ELO meta-game comments
+- ahead/even/behind ROI and wave control
+- stronger-enemy reinforcement-risk handling
+- 4P leader pressure and anti-kingmaker logic
+- late-game urgency / regroup fade in heavier variants
+
+Light Intruder removes many of those modules on purpose. A stronger reproduction
+should keep the Light Intruder movement/projection core, then selectively restore
+the safer Intervention/ver.02 controller pieces instead of treating Light Intruder
+as the complete Alyce strategy.
