@@ -80,14 +80,14 @@ class ProducerLiteConfig:
     # 4P FFA safety layer. Disabled for 2P/3P presets.
     enable_ffa_mission_filter: bool = False
     ffa_safe_neutral_gap: float = 4.0
-    ffa_contested_neutral_gap: float = 3.0
-    ffa_trap_neutral_gap: float = -1.0
-    ffa_contested_min_surplus: float = 3.0
-    ffa_contested_pressure_mult: float = 0.03
-    ffa_source_reserve_frac: float = 0.12
-    ffa_source_reserve_prod_mult: float = 1.0
-    ffa_source_reserve_pressure_mult: float = 0.04
-    ffa_source_pressure_gate: float = 0.35
+    ffa_contested_neutral_gap: float = 1.0
+    ffa_trap_neutral_gap: float = -2.0
+    ffa_contested_min_surplus: float = 1.0
+    ffa_contested_pressure_mult: float = 0.01
+    ffa_source_reserve_frac: float = 0.05
+    ffa_source_reserve_prod_mult: float = 0.5
+    ffa_source_reserve_pressure_mult: float = 0.02
+    ffa_source_pressure_gate: float = 0.75
     ffa_enemy_rear_eta: float = 9.0
     ffa_enemy_rear_prod_max: float = 2.0
     ffa_leader_bonus_weight: float = 0.08
