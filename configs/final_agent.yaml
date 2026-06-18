@@ -1,32 +1,32 @@
 competition: orbit-wars
 date: '2026-06-17'
 local_only: true
-submit_status: alyce_intruder_pending
+submit_status: alyce_intruder_complete_underperformed
 official_score_reference:
   agent: vkhydras_last_heuristic single-file candidate
   submission_id: 53772702
   public_score: 838.1
   status: SubmissionStatus.COMPLETE
 selected_candidate:
-  id: alyce_intruder_repro
-  agent_path: local/agents/public/alyce_intruder_repro
-  package_source: dist/alyce_intruder_repro_20260618.tar.gz
-  base_agent: alyce_intruder_repro
+  id: vkhydras_last_base_candidate
+  agent_path: local/agents/base_agent_entry
+  package_source: agents/base_agent_entry/main.py
+  base_agent: vkhydras_last_heuristic
   use_profiler: false
   use_counter_policy: false
   use_supplemental_moves: false
   reason: >
     The full adaptive wrapper was rejected after severe local regression. A
     later public-output recheck showed that the Vkhydras line should not remain
-    the only base candidate. Per user direction, the current active submitted
-    candidate is the public Alyce Intruder multi-file output reproduction. The
-    completed official score baseline remains Vkhydras Last until the Alyce
-    submission finishes.
+    the only base candidate. Per user direction, the public Alyce Intruder
+    multi-file output reproduction was submitted once, but it completed at
+    public score 600.0. Therefore the final completed official baseline remains
+    Vkhydras Last 838.1.
   submission:
-    id: 53793561
-    status: SubmissionStatus.PENDING
-    public_score: null
-    sha256: E7407E0ECA360114FAB5C84884FCE7D609F470A0DD069A35782B62961F14E43F
+    id: 53772702
+    status: SubmissionStatus.COMPLETE
+    public_score: 838.1
+    sha256: 73679EC04C1521E2538FCF61013034B32729ED18CD0A5658C68090B65EC20049
 rejected_candidates:
   pilkwang_structured_base:
     agent_path: local/agents/public/pilkwang_structured
@@ -40,7 +40,10 @@ rejected_candidates:
   adaptive_no_profiler:
     agent_path: local/agents/variants/adaptive_no_profiler
     reason: "Not selected because supplemental post-actions remain unproven and base fallback is stronger."
+  alyce_intruder_repro:
+    agent_path: local/agents/public/alyce_intruder_repro
+    reason: "Submitted once as 53793561 and completed at public score 600.0, below Vkhydras 838.1 and Pilkwang 678.9. Retain as implementation reference, not final."
 blocked_until:
-  - "Do not submit another Alyce Intruder copy while 53793561 remains pending."
-  - "Use Vkhydras Last 838.1 as the completed official baseline until Alyce completes."
-  - "If Alyce completes above baseline, promote alyce_intruder_repro to official best."
+  - "Use Vkhydras Last 838.1 as the completed official baseline."
+  - "Do not submit another exact Alyce Intruder reproduction; it completed at 600.0."
+  - "Future work should benchmark fresh public outputs with the fixed multi-file loader before the next submission."

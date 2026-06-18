@@ -308,6 +308,7 @@ submission_id: 53793561
 package: dist/alyce_intruder_repro_20260618.tar.gz
 package_sha256: E7407E0ECA360114FAB5C84884FCE7D609F470A0DD069A35782B62961F14E43F
 package_bytes: 54548
-latest_status: SubmissionStatus.PENDING
-official_score: unknown
+latest_status: SubmissionStatus.COMPLETE
+official_score: 600.0
+official_decision: do_not_promote_final
 ```

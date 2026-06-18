@@ -15,8 +15,8 @@ package_bytes: 54548
 submission_id: 53793561
 message: alyce_intruder_repro_20260618
 submitted_at_utc: 2026-06-18 02:42:29.803000
-latest_status: SubmissionStatus.PENDING
-public_score: null
+latest_status: SubmissionStatus.COMPLETE
+public_score: 600.0
 private_score: null
 ```
 
@@ -47,15 +47,17 @@ or secrets.
 ## Latest CLI Snapshot
 
 ```text
-53793561  alyce_intruder_repro_20260618.tar.gz  2026-06-18 02:42:29.803000  alyce_intruder_repro_20260618  SubmissionStatus.PENDING
+53793561  alyce_intruder_repro_20260618.tar.gz  2026-06-18 02:42:29.803000  alyce_intruder_repro_20260618  SubmissionStatus.COMPLETE  600.0
 53772702  main.py                               2026-06-17 10:33:52.853000  vkhydras_last_single_file_candidate_d7d937e_formatcheck  SubmissionStatus.COMPLETE  838.1
 53772607  main.py                               2026-06-17 10:30:06.617000  vkhydras_last_single_file_candidate_d7d937e_resubmit1    SubmissionStatus.COMPLETE  812.2
 ```
 
 ## Current Interpretation
 
-Alyce Intruder has been uploaded once and is pending. There is no official score
-yet. The current completed official best remains Vkhydras Last formatcheck
-submission `53772702` with latest observed public score `838.1`.
+Alyce Intruder completed with public score `600.0`. It underperformed both the
+current completed official best Vkhydras Last formatcheck submission `53772702`
+with public score `838.1`, and the previous Pilkwang fallback at `678.9`.
 
-Do not submit another copy of this Alyce package while `53793561` is pending.
+Do not promote Alyce Intruder as final. Keep it as a reproduced public-output
+reference for its implementation ideas: safe drain, ETA-aware capture floor,
+dynamic ROI, late-game suppression, and `orbit_lite` movement forecasting.
