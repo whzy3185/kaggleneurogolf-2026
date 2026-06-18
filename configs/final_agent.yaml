@@ -1,28 +1,32 @@
 competition: orbit-wars
 date: '2026-06-17'
 local_only: true
-submit_status: complete
+submit_status: alyce_intruder_pending
 official_score_reference:
   agent: vkhydras_last_heuristic single-file candidate
-  submission_id: 53772607
-  public_score: 810.6
+  submission_id: 53772702
+  public_score: 838.1
   status: SubmissionStatus.COMPLETE
 selected_candidate:
-  id: vkhydras_last_base_candidate
-  agent_path: local/agents/base_agent_entry
-  package_source: agents/base_agent_entry/main.py
-  base_agent: vkhydras_last_heuristic
+  id: alyce_intruder_repro
+  agent_path: local/agents/public/alyce_intruder_repro
+  package_source: dist/alyce_intruder_repro_20260618.tar.gz
+  base_agent: alyce_intruder_repro
   use_profiler: false
   use_counter_policy: false
   use_supplemental_moves: false
   reason: >
-    The full adaptive wrapper lost 97-3 to the previous Pilkwang base in a
-    50-seed bidirectional local tournament. A later base reselection showed
-    that Pilkwang itself is not the strongest available public foundation:
-    vkhydras_last_heuristic beat the P0 local public pool 16-0 and beat
-    vkhydras_peak_heuristic 15-5 in local bidirectional screens. The current
-    official best is the stronger single-file Vkhydras Last base, not the
-    incomplete adaptive wrapper.
+    The full adaptive wrapper was rejected after severe local regression. A
+    later public-output recheck showed that the Vkhydras line should not remain
+    the only base candidate. Per user direction, the current active submitted
+    candidate is the public Alyce Intruder multi-file output reproduction. The
+    completed official score baseline remains Vkhydras Last until the Alyce
+    submission finishes.
+  submission:
+    id: 53793561
+    status: SubmissionStatus.PENDING
+    public_score: null
+    sha256: E7407E0ECA360114FAB5C84884FCE7D609F470A0DD069A35782B62961F14E43F
 rejected_candidates:
   pilkwang_structured_base:
     agent_path: local/agents/public/pilkwang_structured
@@ -37,6 +41,6 @@ rejected_candidates:
     agent_path: local/agents/variants/adaptive_no_profiler
     reason: "Not selected because supplemental post-actions remain unproven and base fallback is stronger."
 blocked_until:
-  - "Do not submit more copies of the same Vkhydras Last file while 53772197 remains pending."
-  - "If optimizing further, use Vkhydras Last 810.6 as the official baseline."
-  - "Targeted variants must prove they do not regress against Vkhydras Last before packaging."
+  - "Do not submit another Alyce Intruder copy while 53793561 remains pending."
+  - "Use Vkhydras Last 838.1 as the completed official baseline until Alyce completes."
+  - "If Alyce completes above baseline, promote alyce_intruder_repro to official best."

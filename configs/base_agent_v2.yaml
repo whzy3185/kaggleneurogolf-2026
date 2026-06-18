@@ -1,0 +1,33 @@
+competition: orbit-wars
+date: "2026-06-18"
+selected_base:
+  id: alyce_intruder_repro
+  source_slug: alycemiki/light-ver-1200-simple-orbit-intruder
+  source_author: Alyce Miki
+  path: agents/public/alyce_intruder_repro
+  package_type: multi_file_submission
+  entrypoint: main.py
+  reason: >
+    User directed the next attempt to continue from Alyce Intruder. The public
+    output package is a Producer/orbit_lite-based multi-file agent with safe
+    drain, ETA-aware capture floors, dynamic ROI, late-game suppression, and
+    pressure regroup. It is a stronger structural base than the previous
+    single-file Vkhydras heuristic line.
+  official_score_status: pending_submission
+  local_validation_status: smoke_passed
+  submission:
+    id: 53793561
+    status: SubmissionStatus.PENDING
+    package: dist/alyce_intruder_repro_20260618.tar.gz
+    sha256: E7407E0ECA360114FAB5C84884FCE7D609F470A0DD069A35782B62961F14E43F
+    package_bytes: 54548
+superseded_for_next_attempt:
+  id: vkhydras_last_heuristic
+  official_workspace_best_score: 810.6
+  reason: >
+    Vkhydras Last remains the current recorded official workspace best, but the
+    public output recheck showed it should not remain the only base candidate.
+constraints:
+  - Do not rewrite this package into a single file before official validation.
+  - Keep attribution to Alyce Miki and slawekbiel/producer-orbit-wars-utils.
+  - Do not treat title score as our score.
