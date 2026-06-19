@@ -9,8 +9,8 @@ competition: orbit-wars
 submission_id: 53851968
 message: alyce_v5_v2_trace_filter_fd3c2b7
 file: alyce_v5_v2_trace_filter_20260619.tar.gz
-status_latest_cli: SubmissionStatus.PENDING
-public_score_latest_cli: n/a
+status_latest_cli: SubmissionStatus.COMPLETE
+public_score_latest_cli: 756.7
 private_score_latest_cli: n/a
 ```
 
@@ -76,9 +76,8 @@ CLI query immediately after submission:
 
 ## Interpretation
 
-V5 is now in the official queue, but no official score exists yet. Do not treat
-this as an improvement over V2 unless `53851968` completes above the latest V2
-rating snapshot.
+V5 completed at `756.7`. This is a clear rejection result: it is far below V2,
+V3, and the Alyce reproduction.
 
 Local V5 evidence before submission was mixed:
 
@@ -92,20 +91,22 @@ determinism audit: repeated same seed/order was not stable
 The package was submitted because the user explicitly requested a V5 upload, not
 because the local 4P gate justified promotion.
 
+## Status Update
+
+Latest CLI query after the V6 upload:
+
+```text
+53851968  alyce_v5_v2_trace_filter_20260619.tar.gz  SubmissionStatus.COMPLETE  756.7
+```
+
+Do not continue V5 as a candidate. The local 4P warning was predictive enough:
+V5's low-frequency selected-action changes did not generalize on the official
+ladder.
+
 ## Next Check
 
-Poll status without resubmitting:
+Poll V6 status without resubmitting:
 
 ```bash
 kaggle competitions submissions -c orbit-wars
 ```
-
-If the status becomes `COMPLETE`, update:
-
-```text
-reports/SCORECARD.md
-reports/ALYCE_V5_SUBMISSION_RESULT_20260619.md
-```
-
-If the status becomes `ERROR`, inspect the Kaggle error and do not submit a fix
-without a fresh package audit.
