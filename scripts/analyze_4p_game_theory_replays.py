@@ -31,6 +31,15 @@ def _dist(a: tuple[float, float], b: tuple[float, float]) -> float:
     return math.hypot(a[0] - b[0], a[1] - b[1])
 
 
+def _corner_dist(pos: tuple[float, float]) -> float:
+    corners = ((0.0, 0.0), (0.0, 100.0), (100.0, 0.0), (100.0, 100.0))
+    return min(_dist(pos, corner) for corner in corners)
+
+
+def _edge_dist(pos: tuple[float, float]) -> float:
+    return min(pos[0], pos[1], 100.0 - pos[0], 100.0 - pos[1])
+
+
 def _angle_delta(a: float, b: float) -> float:
     return abs((a - b + math.pi) % (2 * math.pi) - math.pi)
 
@@ -330,12 +339,18 @@ def _summarize_replay(path: Path, variant: str, include_validation: bool) -> tup
                 if source is None:
                     continue
                 source_ships = _ships(source)
+                source_pos = _planet_pos(source)
                 target = _infer_target(obs, source_id, angle)
                 if target is None:
                     continue
                 target_owner = int(target["target_owner"])
                 target_kind = _target_type(target_owner, our_idx)
                 commit = sent / max(source_ships + sent, 1.0)
+                source_center_dist = _dist(source_pos, (50.0, 50.0))
+                source_corner_dist = _corner_dist(source_pos)
+                source_edge_dist = _edge_dist(source_pos)
+                target_corner_dist = _corner_dist((float(target["target_x"]), float(target["target_y"])))
+                target_edge_dist = _edge_dist((float(target["target_x"]), float(target["target_y"])))
                 reaction = _reaction_features(obs, player_count, our_idx, target, float(target["distance"]))
                 response = _future_response_counts(
                     replay,
@@ -363,6 +378,38 @@ def _summarize_replay(path: Path, variant: str, include_validation: bool) -> tup
                     and target_kind in {"neutral", "enemy"}
                     and (reaction.get("third_party_cleanup_risk") == 1 or float(target["target_prod"]) <= 2)
                 )
+                force_preservation_risk = int(
+                    commit >= 0.80
+                    and target_kind in {"neutral", "enemy"}
+                    and (
+                        _prod(source) >= 3.0
+                        or source_corner_dist <= 32.0
+                        or source_edge_dist <= 12.0
+                    )
+                    and (
+                        float(target["target_prod"]) <= 2.0
+                        or reaction.get("third_party_cleanup_risk") == 1
+                        or (
+                            reaction.get("reaction_gap") not in ("", None)
+                            and float(reaction["reaction_gap"]) <= 2.0
+                        )
+                    )
+                )
+                corner_overcommit_risk = int(
+                    player_count == 2
+                    and step_idx < 90
+                    and source_corner_dist <= 35.0
+                    and commit >= 0.75
+                    and target_kind in {"neutral", "enemy"}
+                    and (
+                        float(target["distance"]) >= 35.0
+                        or target_corner_dist > 35.0
+                        or (
+                            reaction.get("reaction_gap") not in ("", None)
+                            and float(reaction["reaction_gap"]) <= 3.0
+                        )
+                    )
+                )
                 leader_target = int(target_owner == leader and target_kind == "enemy")
                 action_rows.append(
                     {
@@ -376,6 +423,11 @@ def _summarize_replay(path: Path, variant: str, include_validation: bool) -> tup
                         "phase": _phase(step_idx),
                         "source_id": source_id,
                         "source_prod": round(_prod(source), 4),
+                        "source_center_dist": round(source_center_dist, 4),
+                        "source_corner_dist": round(source_corner_dist, 4),
+                        "source_edge_dist": round(source_edge_dist, 4),
+                        "corner_source": int(source_corner_dist <= 35.0),
+                        "edge_source": int(source_edge_dist <= 12.0),
                         "source_ships_before": round(source_ships + sent, 4),
                         "source_ships_after_obs": round(source_ships, 4),
                         "sent": round(sent, 4),
@@ -387,6 +439,10 @@ def _summarize_replay(path: Path, variant: str, include_validation: bool) -> tup
                         "target_ships": round(float(target["target_ships"]), 4),
                         "distance": round(float(target["distance"]), 4),
                         "target_center_dist": round(float(target["target_center_dist"]), 4),
+                        "target_corner_dist": round(target_corner_dist, 4),
+                        "target_edge_dist": round(target_edge_dist, 4),
+                        "corner_target": int(target_corner_dist <= 35.0),
+                        "edge_target": int(target_edge_dist <= 12.0),
                         "center_target": center_target,
                         "angle_delta": round(float(target["angle_delta"]), 4),
                         "prod_gap": round(prod[our_idx] - prod[leader], 4),
@@ -395,6 +451,8 @@ def _summarize_replay(path: Path, variant: str, include_validation: bool) -> tup
                         "leader_target": leader_target,
                         "low_impact_enemy": low_impact_enemy,
                         "early_sacrifice": early_sacrifice,
+                        "force_preservation_risk": force_preservation_risk,
+                        "corner_overcommit_risk": corner_overcommit_risk,
                         "captured_by_us_at": captured_by_us_at,
                         "lost_after_capture_at": lost_after_capture_at,
                         **reaction,
@@ -448,9 +506,15 @@ def _aggregate(episode_rows: list[dict[str, Any]], snapshot_rows: list[dict[str,
                 "mine_rate": round(sum(1 for row in rows if row["target_type"] == "mine") / len(rows), 4),
                 "center_rate": round(sum(int(row["center_target"]) for row in rows) / len(rows), 4),
                 "early_sacrifice_count": sum(int(row["early_sacrifice"]) for row in rows),
+                "force_preservation_risk_count": sum(int(row["force_preservation_risk"]) for row in rows),
+                "corner_overcommit_risk_count": sum(int(row["corner_overcommit_risk"]) for row in rows),
                 "third_party_cleanup_risk_rate": round(
                     sum(int(row["third_party_cleanup_risk"]) for row in rows) / len(rows), 4
                 ),
+                "corner_source_rate": round(sum(int(row["corner_source"]) for row in rows) / len(rows), 4),
+                "corner_target_rate": round(sum(int(row["corner_target"]) for row in rows) / len(rows), 4),
+                "edge_source_rate": round(sum(int(row["edge_source"]) for row in rows) / len(rows), 4),
+                "edge_target_rate": round(sum(int(row["edge_target"]) for row in rows) / len(rows), 4),
                 "avg_commit": round(_avg(rows, "commit_ratio"), 4),
                 "avg_distance": round(_avg(rows, "distance"), 4),
                 "future_direct_attacks_on_us": sum(int(row["future_direct_attacks_on_us"]) for row in rows),
