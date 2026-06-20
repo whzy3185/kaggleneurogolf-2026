@@ -58,12 +58,12 @@ zip, or nested previous tarball is included.
 
 ## Kaggle Submissions
 
-Latest CLI query immediately after upload:
+Latest CLI query after completion:
 
 | Submission ID | File | Message | Status | Public score |
 |---:|---|---|---|---:|
-| 53874852 | `alyce_v7_continuous_recovery_20260620.tar.gz` | `alyce_v7_continuous_recovery_4097566` | `SubmissionStatus.PENDING` | n/a |
-| 53874866 | `alyce_v8_md_coverage_mission_20260620.tar.gz` | `alyce_v8_md_coverage_mission_4097566` | `SubmissionStatus.PENDING` | n/a |
+| 53874852 | `alyce_v7_continuous_recovery_20260620.tar.gz` | `alyce_v7_continuous_recovery_4097566` | `SubmissionStatus.COMPLETE` | 920.2 |
+| 53874866 | `alyce_v8_md_coverage_mission_20260620.tar.gz` | `alyce_v8_md_coverage_mission_4097566` | `SubmissionStatus.COMPLETE` | 1134.8 |
 
 Current completed official best remains:
 
@@ -74,14 +74,26 @@ public score snapshot: 1177.8
 status: COMPLETE
 ```
 
-## Immediate Decision
+## Replay Follow-up
 
-Do not submit another package while V7/V8 are pending.
-
-Next action:
+Visible replays were downloaded after completion:
 
 ```text
-poll Kaggle submissions after enough official games complete
-if COMPLETE, download latest V7/V8 visible replays to D:
-compare official score and replay phase metrics against V6
+V7: D:\orbitwars_replays\alyce_v7_latest
+V8: D:\orbitwars_replays\alyce_v8_latest
+combined V6/V7/V8 review: reports/ALYCE_V678_4P_GAME_THEORY_REPLAY_REVIEW_20260620.md
+```
+
+## Decision
+
+Do not promote V7 or V8.
+
+Interpretation:
+
+```text
+V7 is rejected.
+V8 is below V6 and should be treated as data collection, not a new base.
+Keep V6 as official best.
+Next code direction should start from V6 and implement a 4P mission router
+instead of another selected-action recovery threshold.
 ```
