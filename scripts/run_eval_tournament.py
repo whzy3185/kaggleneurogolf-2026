@@ -21,6 +21,7 @@ from orbitwars_agent.candidate_loader import load_candidate  # noqa: E402
 logging.getLogger("kaggle_environments").setLevel(logging.ERROR)
 logging.getLogger("kaggle_environments.envs.open_spiel_env.open_spiel_env").setLevel(logging.ERROR)
 
+PHASE_SNAPSHOT_STEPS = [20, 50, 100, 150, 200]
 
 FIELDNAMES = [
     "series",
@@ -45,6 +46,11 @@ FIELDNAMES = [
     "rank_1",
     "rank_2",
     "rank_3",
+    "snapshot_20",
+    "snapshot_50",
+    "snapshot_100",
+    "snapshot_150",
+    "snapshot_200",
     "error",
 ]
 
@@ -125,6 +131,48 @@ def _ranks(scores: list[int]) -> list[int]:
     return ranks
 
 
+def _phase_snapshots(replay: dict[str, Any], player_count: int) -> dict[int, list[dict[str, Any]]]:
+    steps = replay.get("steps") or []
+    snapshots: dict[int, list[dict[str, Any]]] = {}
+    if not steps:
+        return snapshots
+    for requested_step in PHASE_SNAPSHOT_STEPS:
+        step_index = min(int(requested_step), max(0, len(steps) - 1))
+        step_states = steps[step_index] or []
+        observation = (step_states[0].get("observation", {}) if step_states else {}) or {}
+        prod = [0.0] * int(player_count)
+        planets = [0] * int(player_count)
+        ships = [0.0] * int(player_count)
+        for planet in observation.get("planets", []):
+            owner = planet[1] if len(planet) > 1 else -1
+            planet_ships = planet[5] if len(planet) > 5 else 0
+            production = planet[6] if len(planet) > 6 else 0
+            if 0 <= owner < int(player_count):
+                planets[owner] += 1
+                ships[owner] += float(planet_ships)
+                prod[owner] += float(production)
+        for fleet in observation.get("fleets", []):
+            owner = fleet[1] if len(fleet) > 1 else -1
+            fleet_ships = fleet[6] if len(fleet) > 6 else 0
+            if 0 <= owner < int(player_count):
+                ships[owner] += float(fleet_ships)
+
+        prod_ranks = _ranks([int(value) for value in prod])
+        max_prod = max(prod) if prod else 0.0
+        snapshots[int(requested_step)] = [
+            {
+                "actual_step": int(step_index),
+                "prod": round(float(prod[idx]), 4),
+                "prod_gap": round(float(prod[idx] - max_prod), 4),
+                "prod_rank": int(prod_ranks[idx]) if idx < len(prod_ranks) else "",
+                "planets": int(planets[idx]),
+                "ships": round(float(ships[idx]), 4),
+            }
+            for idx in range(int(player_count))
+        ]
+    return snapshots
+
+
 def _run_match(agent_ids: list[str], *, seed: int, match_id: int, series: str) -> dict[str, Any]:
     from kaggle_environments import make
 
@@ -137,6 +185,7 @@ def _run_match(agent_ids: list[str], *, seed: int, match_id: int, series: str) -
         duration_s = time.monotonic() - start
         replay = env.toJSON()
         winner, winner_index, scores, turns, status = _extract_outcome(replay, agent_ids)
+        snapshots = _phase_snapshots(replay, len(agent_ids))
         error = ""
     except Exception as exc:
         duration_s = time.monotonic() - start
@@ -145,6 +194,7 @@ def _run_match(agent_ids: list[str], *, seed: int, match_id: int, series: str) -
         scores = []
         turns = 0
         status = "crashed"
+        snapshots = {}
         error = f"{type(exc).__name__}: {exc}"
 
     ranks = _ranks(scores) if scores else []
@@ -165,6 +215,11 @@ def _run_match(agent_ids: list[str], *, seed: int, match_id: int, series: str) -
         row[f"agent_{idx}"] = agent_ids[idx] if idx < len(agent_ids) else ""
         row[f"score_{idx}"] = scores[idx] if idx < len(scores) else ""
         row[f"rank_{idx}"] = ranks[idx] if idx < len(ranks) else ""
+    for snapshot_step in PHASE_SNAPSHOT_STEPS:
+        row[f"snapshot_{snapshot_step}"] = json.dumps(
+            snapshots.get(snapshot_step, []),
+            separators=(",", ":"),
+        )
     return row
 
 
