@@ -72,6 +72,14 @@ status: SubmissionStatus.PENDING
 public_score: n/a
 ```
 
+Later CLI refresh during the V9 replay review:
+
+```text
+submission_id: 53904277
+status: SubmissionStatus.COMPLETE
+public_score: 1081.3
+```
+
 Latest visible completed best at upload time:
 
 ```text
@@ -83,13 +91,23 @@ status: SubmissionStatus.COMPLETE
 
 ## Decision
 
-No promotion decision yet.
+Do not promote V9.
 
-Next required check:
+V9 completed below the current official best V6 score `1177.8`. Visible replay
+analysis is recorded in:
 
 ```text
-kaggle competitions submissions -c orbit-wars
+reports/ALYCE_V9_OFFICIAL_REPLAY_CODE_DISCUSSION_REVIEW_20260621.md
 ```
 
-If V9 completes, compare the public score against V6 `1177.8`, then download
-visible V9 replays for review before making a code direction decision.
+User also requested a V6 re-upload after the V9 review:
+
+```text
+submission_id: 53907214
+file: alyce_v6_prod_gap_mode_20260619.tar.gz
+message: alyce_v6_prod_gap_mode_resubmit_after_v9_5da551f
+status: SubmissionStatus.PENDING
+```
+
+The completed official best remains the earlier V6 submission `53852919` at
+`1177.8` until the V6 re-upload completes and is reviewed.
