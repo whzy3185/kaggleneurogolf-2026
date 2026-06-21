@@ -1,0 +1,61 @@
+strategy_id: alyce_v10_v6_role_lock_safe_frontier
+date: 2026-06-21
+
+current_official_best:
+  variant: alyce_v6_prod_gap_mode
+  package: dist/alyce_v6_prod_gap_mode_20260619.tar.gz
+  submission_id: 53852919
+  public_score: 1177.8
+  status: COMPLETE
+
+rejected_followups:
+  - id: alyce_v7_continuous_recovery
+    reason: lower official score and weaker four-player evidence than v6
+  - id: alyce_v8_md_coverage_mission
+    reason: lower official score and failed to preserve early living force
+  - id: alyce_v9_4p_mission_router
+    reason: lower official score; increased third-party cleanup risk versus v6
+
+selected_base:
+  id: alyce_v6_prod_gap_mode
+  path: agents/variants/alyce_v6_prod_gap_mode
+  reason: best completed official score and best prior replay evidence among local Alyce variants
+
+research_inputs:
+  txt_design_note: user_summary_judgment_txt
+  current_leaderboard_cache: external/leaderboard_orbit_wars_20260621_refresh.txt
+  code_score_cache: external/kaggle_code_score_desc_20260621_refresh.txt
+  code_recent_cache: external/kaggle_code_date_run_20260621_refresh.txt
+  topics_cache:
+    - external/kaggle_topics_hot_20260621_refresh.txt
+    - external/kaggle_topics_top_20260621_refresh.txt
+    - external/kaggle_topics_active_20260621_refresh.txt
+  replay_parquet_summary: outputs/high_rank_strategy_20260621
+
+selected_strategy:
+  mode_scope:
+    two_player: unchanged
+    three_player: unchanged
+    four_player: enabled
+  core_goal: reduce third-party cleanup and public-good sacrifice while preserving v6 production tempo
+  modules:
+    - mission_identity_lock
+    - source_region_commitment_lock
+    - launch_blackout_and_source_cooldown
+    - anti_public_good_action_veto
+    - forward_holdability_check_lite
+    - replay_metric_guardrail
+
+implementation_constraints:
+  - start from v6, not v7/v8/v9
+  - do not add broad aggression
+  - do not alter 2p until a separate 2p gate passes
+  - do not submit before local smoke and replay-metric comparison
+  - do not treat local or public notebook claims as official scores
+
+go_no_go_metrics:
+  opening_cleanup_risk_target: "strictly below v9 and preferably below v6"
+  step50_prod_target: "not materially worse than v6"
+  step100_prod_gap_target: "better than v6 non-first 4p baseline if possible"
+  local_4p_gate: "not weaker than v6 in v6/v8/v9/Alyce mixed pool"
+  official_gate: "submit only after package report and explicit user confirmation"
