@@ -77,7 +77,7 @@ Later CLI refresh during the V9 replay review:
 ```text
 submission_id: 53904277
 status: SubmissionStatus.COMPLETE
-public_score: 1081.3
+public_score: 1077.5
 ```
 
 Latest visible completed best at upload time:
@@ -106,8 +106,10 @@ User also requested a V6 re-upload after the V9 review:
 submission_id: 53907214
 file: alyce_v6_prod_gap_mode_20260619.tar.gz
 message: alyce_v6_prod_gap_mode_resubmit_after_v9_5da551f
-status: SubmissionStatus.PENDING
+status: SubmissionStatus.COMPLETE
+public_score: 600.0
 ```
 
 The completed official best remains the earlier V6 submission `53852919` at
-`1177.8` until the V6 re-upload completes and is reviewed.
+`1177.8`. The V6 re-upload should be treated as a fresh official run for data,
+not as a replacement for the prior best snapshot.

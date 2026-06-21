@@ -18,13 +18,14 @@ Latest CLI query during this review:
 
 | Submission | Message | Status | Public score |
 |---:|---|---|---:|
-| `53907214` | `alyce_v6_prod_gap_mode_resubmit_after_v9_5da551f` | `SubmissionStatus.PENDING` | n/a |
-| `53904277` | `alyce_v9_4p_mission_router_de5bd16` | `SubmissionStatus.COMPLETE` | `1081.3` |
+| `53907214` | `alyce_v6_prod_gap_mode_resubmit_after_v9_5da551f` | `SubmissionStatus.COMPLETE` | `600.0` |
+| `53904277` | `alyce_v9_4p_mission_router_de5bd16` | `SubmissionStatus.COMPLETE` | `1077.5` |
 | `53852919` | `alyce_v6_prod_gap_mode_1db7614` | `SubmissionStatus.COMPLETE` | `1177.8` |
 
 Conclusion: V9 is rejected as a promotion candidate. The current completed
 official best remains V6 at `1177.8`. V6 was re-uploaded as requested and is
-pending at the time of this report.
+visible at `600.0` in the latest CLI snapshot; this fresh run does not replace
+the earlier completed V6 best snapshot.
 
 ## V9 Replay Download
 
@@ -495,8 +496,8 @@ Immediate result:
 
 ```text
 submission_id: 53907214
-status: SubmissionStatus.PENDING
-public_score: n/a
+status: SubmissionStatus.COMPLETE
+public_score: 600.0
 ```
 
 ## Next Optimization Route
