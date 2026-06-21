@@ -46,6 +46,14 @@ selected_strategy:
     - forward_holdability_check_lite
     - replay_metric_guardrail
 
+implementation_status:
+  status: built_local_no_go
+  candidate_path: agents/variants/alyce_v10_v6_role_lock_safe_frontier
+  retained_version: tuned_role_lock
+  reason: local four-player gate did not beat v6
+  do_not_submit_without_new_evidence: true
+  latest_report: reports/ALYCE_V10_IMPLEMENTATION_AND_LOCAL_EVAL_20260621.md
+
 implementation_constraints:
   - start from v6, not v7/v8/v9
   - do not add broad aggression
