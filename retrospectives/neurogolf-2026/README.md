@@ -110,6 +110,8 @@ The Jul 13 archive analysis initially placed direct models on compliance hold, t
 
 ## Files
 
+- `guides/LOCAL_KAGGLE_SUBMISSION_PLAYBOOK.md`: reusable local Kaggle CLI, token setup, kernel, submission, polling, and failure-handling workflow.
+- `guides/KAGGLE_OPTIMIZATION_STRATEGY_PLAYBOOK.md`: validation-first experiment selection, expected-value prioritization, rebasing, and submission-budget strategy.
 - `PERSONAL_TIMELINE.md`: all 29 personal commits in chronological order.
 - `TEAM_CONTEXT.md`: all-commit context and team integration.
 - `SCORE_AND_FAILURES.md`: score milestones, runtime failures, and hidden-distribution lessons.
