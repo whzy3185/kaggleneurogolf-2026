@@ -1,0 +1,1802 @@
+[
+  {
+    "ref": 54736568,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T18:12:25.283000",
+    "description": "submission5 all400 GitHub audit safe11 +1.025027 sha bcef5a06",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7420.93",
+    "privateScore": "7420.93"
+  },
+  {
+    "ref": 54733885,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T16:51:10.143000",
+    "description": "B submission4 exact batch2 +1.020945 local",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7388.17",
+    "privateScore": "7388.17"
+  },
+  {
+    "ref": 54733776,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T16:47:35.180000",
+    "description": "final v138 exact ref54729703 audited GitHub local20 +9.233928 sha4dcf46e7",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7419.90",
+    "privateScore": "7419.90"
+  },
+  {
+    "ref": 54732385,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T16:05:47.813000",
+    "description": "B-only own rewrites team4 +1.028545 local 20260715",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7369.57",
+    "privateScore": "7369.57"
+  },
+  {
+    "ref": 54730760,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T15:20:29.190000",
+    "description": "v137 exact constant components tasks075 383 local +0.033581 base54729703 sha e5fe5879",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7393.09",
+    "privateScore": "7393.09"
+  },
+  {
+    "ref": 54729703,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T14:50:48.287000",
+    "description": "v136 exact transpose108 precontract217 275 local +0.112944 base54729003 sha d33de170",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7410.67",
+    "privateScore": "7410.67"
+  },
+  {
+    "ref": 54729003,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T14:31:21.293000",
+    "description": "v135 exact terminal factors tasks002 224 249 local +0.153399 base54725120 sha87859993",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7410.55",
+    "privateScore": "7410.55"
+  },
+  {
+    "ref": 54725120,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T12:27:41.847000",
+    "description": "v134 exact factors no055 tasks084 085 217 275 +0.392988 base54723486 sha dd31c40e",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7410.40",
+    "privateScore": "7410.40"
+  },
+  {
+    "ref": 54724494,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T12:07:08.617000",
+    "description": "v133 exact factor tasks055 084 085 217 275 +0.402231 base54723486 sha cfc64023",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7392.80",
+    "privateScore": "7392.80"
+  },
+  {
+    "ref": 54723486,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T11:32:24.627000",
+    "description": "v132 task110 exact CP65 task243 selector +0.781175 base54720080 sha d8a524fe",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7410.01",
+    "privateScore": "7410.01"
+  },
+  {
+    "ref": 54720080,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T09:35:58.723000",
+    "description": "v131 exact cleanup12 task267 direct +0.365796 base54716955 sha866c83cd",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7409.23",
+    "privateScore": "7409.23"
+  },
+  {
+    "ref": 54716955,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T07:40:03.200000",
+    "description": "v130 isolate task187 safe dilated local +1.161809 base54715535 sha5d6f6533",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7408.86",
+    "privateScore": "7408.86"
+  },
+  {
+    "ref": 54716159,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T07:10:17.137000",
+    "description": "v129 r37 safe crop task187 task251 local +0.990600 base54715535 sha89a1c840",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7391.08",
+    "privateScore": "7391.08"
+  },
+  {
+    "ref": 54715535,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T06:47:05.373000",
+    "description": "v128 r36 source safe37 add13 +0.932784 base54715181 sha a4aac250",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7407.70",
+    "privateScore": "7407.70"
+  },
+  {
+    "ref": 54715181,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T06:33:19.727000",
+    "description": "v127 r35 source safe24 local +10.978315 base54713674 sha402ee71a",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7406.77",
+    "privateScore": "7406.77"
+  },
+  {
+    "ref": 54713674,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T05:36:34.970000",
+    "description": "v126 r33 base54711326 exact self-Einsum task017 task197 local +8.641841 sha f8d91bf2",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7395.79",
+    "privateScore": "7395.79"
+  },
+  {
+    "ref": 54711939,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T04:32:47.727000",
+    "description": "v125 base54709399 exact038 083 287 delta1.074348 sha6cbc9c62",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7388.02",
+    "privateScore": "7388.02"
+  },
+  {
+    "ref": 54711365,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T04:07:37.247000",
+    "description": "E isolate task013 on exact7385.93 cost1424to1419 fuzz0of5000",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7385.93",
+    "privateScore": "7385.93"
+  },
+  {
+    "ref": 54711326,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T04:05:20.550000",
+    "description": "r32 rebase highest54709399 tasks118 133 174 local +0.203269 sha 03849373",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7387.15",
+    "privateScore": "7387.15"
+  },
+  {
+    "ref": 54711267,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T04:02:25.537000",
+    "description": "E isolate task050 on exact7385.93 cost3000to2981 fuzz0of5000",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7385.89",
+    "privateScore": "7385.89"
+  },
+  {
+    "ref": 54711156,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T03:57:32.773000",
+    "description": "E isolate task324 on exact7385.93 cost8635to8556 fuzz0of5000",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7385.94",
+    "privateScore": "7385.94"
+  },
+  {
+    "ref": 54711035,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T03:51:59.373000",
+    "description": "E exact7385.93 + task324 050 013 fuzz0of15000 delta0.0191",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7385.91",
+    "privateScore": "7385.91"
+  },
+  {
+    "ref": 54710570,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T03:31:16.773000",
+    "description": "E isolate task118 on exact7385.88 cost8699to8266 fuzz0of5000",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7385.93",
+    "privateScore": "7385.93"
+  },
+  {
+    "ref": 54709399,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T02:46:53.960000",
+    "description": "v122 team7385.88 + exact249 315 321 delta1.062696 sha0ea1fad6",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7386.94",
+    "privateScore": "7386.94"
+  },
+  {
+    "ref": 54708724,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T02:19:37.307000",
+    "description": "E cumulative 7385.77 task064 cost8356to7507 fuzz0of5000",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7385.88",
+    "privateScore": "7385.88"
+  },
+  {
+    "ref": 54708669,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T02:17:44.407000",
+    "description": "v121 exact249+321+315 local7384.840240 sha7f9743be",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7384.99",
+    "privateScore": "7384.99"
+  },
+  {
+    "ref": 54708238,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T02:02:22.857000",
+    "description": "E cumulative 7385.60 add task174 cost3947to3306 fuzz0of500",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7385.77",
+    "privateScore": "7385.77"
+  },
+  {
+    "ref": 54708032,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T01:55:24.437000",
+    "description": "E cumulative 7385.51 add task085 cost2507to2299 fuzz0of500",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7385.60",
+    "privateScore": "7385.60"
+  },
+  {
+    "ref": 54707882,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T01:50:03.357000",
+    "description": "E cumulative 7385.37 add task138 cost11656to10096 fuzz0of500",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7385.51",
+    "privateScore": "7385.51"
+  },
+  {
+    "ref": 54707704,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T01:43:35.680000",
+    "description": "E cumulative 7385.15 add task216 cost8781to7137 fuzz0of500",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7385.37",
+    "privateScore": "7385.37"
+  },
+  {
+    "ref": 54707484,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T01:36:39.460000",
+    "description": "r30 rebase submission9 tasks133 174 cost21250to20920 3947to2884 local +0.329429 sha 2a7cd0a4",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7385.26",
+    "privateScore": "7385.26"
+  },
+  {
+    "ref": 54707421,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T01:34:44.647000",
+    "description": "E cumulative team7384.93 plus task035 task092 online-positive",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7385.15",
+    "privateScore": "7385.15"
+  },
+  {
+    "ref": 54707273,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T01:29:05.227000",
+    "description": "E isolate task092 on team7384.93 cost6553to5631 fuzz0of500",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7385.08",
+    "privateScore": "7385.08"
+  },
+  {
+    "ref": 54707104,
+    "fileName": "submission.zip",
+    "date": "2026-07-15T01:23:33.457000",
+    "description": "E isolate task035 on team7384.93 cost1879to1743 fuzz0of500",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7385.00",
+    "privateScore": "7385.00"
+  },
+  {
+    "ref": 54686944,
+    "fileName": "submission.zip",
+    "date": "2026-07-14T13:19:33.633000",
+    "description": "B exact batch on team submission3 +1.000883 local",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7384.93",
+    "privateScore": "7384.93"
+  },
+  {
+    "ref": 54685019,
+    "fileName": "submission.zip",
+    "date": "2026-07-14T12:16:57.893000",
+    "description": "E isolate task216 only on same baseline cost8781to7137 sha52d64dad",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7379.62",
+    "privateScore": "7379.62"
+  },
+  {
+    "ref": 54685015,
+    "fileName": "submission.zip",
+    "date": "2026-07-14T12:16:49.377000",
+    "description": "E isolate task138 only on same baseline cost11656to10096 sha401bc883",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7379.55",
+    "privateScore": "7379.55"
+  },
+  {
+    "ref": 54685012,
+    "fileName": "submission.zip",
+    "date": "2026-07-14T12:16:40.730000",
+    "description": "E isolate task110 only on same baseline cost9682to7326 sha4e46fb43",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7363.58",
+    "privateScore": "7363.58"
+  },
+  {
+    "ref": 54685007,
+    "fileName": "submission.zip",
+    "date": "2026-07-14T12:16:33.437000",
+    "description": "E isolate control baseline GitHub-tracked parent sha91673747 no task changes",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7379.41",
+    "privateScore": "7379.41"
+  },
+  {
+    "ref": 54684628,
+    "fileName": "submission.zip",
+    "date": "2026-07-14T12:04:01.447000",
+    "description": "E fast batch3 on latest GitHub-tracked team package; tasks110,138,216; cost 9682to7326,11656to10096,8781to7137; prior full-pass; private ds+nb",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7363.94",
+    "privateScore": "7363.94"
+  },
+  {
+    "ref": 54673685,
+    "fileName": "submission.zip",
+    "date": "2026-07-14T05:26:21.103000",
+    "description": "v118 rollback391 online-safe keep058 local7383.777544 shaa5c0b4bf",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7383.93",
+    "privateScore": "7383.93"
+  },
+  {
+    "ref": 54673438,
+    "fileName": "submission.zip",
+    "date": "2026-07-14T05:15:18.123000",
+    "description": "v117 task058 cross20 standardops local7383.986636 shac33ca008",
+    "status": "SubmissionStatus.ERROR",
+    "publicScore": "",
+    "privateScore": ""
+  },
+  {
+    "ref": 54670785,
+    "fileName": "submission.zip",
+    "date": "2026-07-14T03:32:13.983000",
+    "description": "v111 task095 cross20 revert391 platform-safe local7382.723441 sha4e149e9a",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7382.87",
+    "privateScore": "7382.87"
+  },
+  {
+    "ref": 54670378,
+    "fileName": "submission.zip",
+    "date": "2026-07-14T03:17:01.173000",
+    "description": "v110 task135 cross20 task386 partial local7382.599989 sha3aea23fe",
+    "status": "SubmissionStatus.ERROR",
+    "publicScore": "",
+    "privateScore": ""
+  },
+  {
+    "ref": 54668295,
+    "fileName": "submission.zip",
+    "date": "2026-07-14T01:58:33.290000",
+    "description": "round20 cumulative exact Reshape-to-Flatten 16 tasks local +0.012119 sha b8cfd410",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.68",
+    "privateScore": "7381.68"
+  },
+  {
+    "ref": 54662559,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T22:28:09.027000",
+    "description": "round19 cumulative exact task018 int32 Gather indices plus tasks090 131 local +0.014150 sha f1e57da9",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.66",
+    "privateScore": "7381.66"
+  },
+  {
+    "ref": 54662508,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T22:25:32.817000",
+    "description": "round18 cumulative exact Where-to-Cast tasks090 131 local +0.000586 sha a8683e4a",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.65",
+    "privateScore": "7381.65"
+  },
+  {
+    "ref": 54662258,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T22:11:39.970000",
+    "description": "round17 cumulative exact narrow tasks107 219 366 local +0.014293 sha 186b46cb",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.65",
+    "privateScore": "7381.65"
+  },
+  {
+    "ref": 54662184,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T22:07:32.327000",
+    "description": "round16 cumulative task002 LR exact narrow tasks107 219 366 local +0.006759 sha 94d1201d",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.64",
+    "privateScore": "7381.64"
+  },
+  {
+    "ref": 54662107,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T22:03:28.693000",
+    "description": "round15 exact bool-f16 ReduceSum tasks107 366 local +0.004750 sha 46ff10c8",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.62",
+    "privateScore": "7381.62"
+  },
+  {
+    "ref": 54661994,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T21:57:16.763000",
+    "description": "round14 isolated task002 last-LUD sha 2627d062",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.62",
+    "privateScore": "7381.62"
+  },
+  {
+    "ref": 54661985,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T21:57:06.040000",
+    "description": "round14 isolated task002 last-LRU sha cba8d065",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.62",
+    "privateScore": "7381.62"
+  },
+  {
+    "ref": 54661980,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T21:56:55.417000",
+    "description": "round14 isolated task002 last-LRD sha 6e499079",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.62",
+    "privateScore": "7381.62"
+  },
+  {
+    "ref": 54661974,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T21:56:44.893000",
+    "description": "round14 isolated task002 last-LU sha a45a83ed",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.63",
+    "privateScore": "7381.63"
+  },
+  {
+    "ref": 54661966,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T21:56:22.353000",
+    "description": "round14 isolated task002 last-round LR local +0.022656 sha 596492b8",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.63",
+    "privateScore": "7381.63"
+  },
+  {
+    "ref": 54661574,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T21:37:10.547000",
+    "description": "round13 exact cleanup tasks101 161 219 280 325 378 local +0.025303 sha f0eb443e",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.61",
+    "privateScore": "7381.61"
+  },
+  {
+    "ref": 54660939,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T21:11:48.027000",
+    "description": "round12 left-associated float Sum tasks133 268 285 local +0.021432 sha f0007ceb",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.59",
+    "privateScore": "7381.59"
+  },
+  {
+    "ref": 54660725,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T21:01:33.963000",
+    "description": "round11 safe exact narrow reductions tasks260 366 local +0.046622 sha 2026e780",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.57",
+    "privateScore": "7381.57"
+  },
+  {
+    "ref": 54660619,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T20:55:33.047000",
+    "description": "round10 isolated task366 int8 TopK plus narrow reductions exact50000 local +0.037342 sha 6e58b0c1",
+    "status": "SubmissionStatus.ERROR",
+    "publicScore": "",
+    "privateScore": ""
+  },
+  {
+    "ref": 54660261,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T20:34:48.697000",
+    "description": "round9 exact algebra flatten max task219 plus tasks076 275 local +0.080565 sha 89aa23a9",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.52",
+    "privateScore": "7381.52"
+  },
+  {
+    "ref": 54659982,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T20:19:59.103000",
+    "description": "round8 cumulative exact shared mask fusion tasks035 174 local +0.008388 sha 6ab2651f",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.44",
+    "privateScore": "7381.44"
+  },
+  {
+    "ref": 54659711,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T20:05:54.253000",
+    "description": "round7 cumulative exact cast mask fusion tasks133 174 234 285 363 local +0.046108 sha 999a6fe8",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.43",
+    "privateScore": "7381.43"
+  },
+  {
+    "ref": 54659491,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T19:55:25.243000",
+    "description": "round6 cumulative task064 online-positive onto 7381.32; local +0.065273; predicted 7381.3853; sha aaaff73f",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.38",
+    "privateScore": "7381.38"
+  },
+  {
+    "ref": 54659350,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T19:48:31.963000",
+    "description": "round5 isolated task064 exact complement-equal 8356to7828; official267 fuzz5000 exact; local +0.065273; sha 9d925ae7",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.21",
+    "privateScore": "7381.21"
+  },
+  {
+    "ref": 54659268,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T19:45:16.510000",
+    "description": "round5 rebase 7381.14; online-verified task174 3947to3306 plus exact task367 12726to12723; local +0.177453; 400 full pass; sha d9856e27",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.32",
+    "privateScore": "7381.32"
+  },
+  {
+    "ref": 54658428,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T19:10:18.787000",
+    "description": "round4 stack online-verified task011 318to282 plus exact task324 8555to8551 sha 16f1fa2e",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.14",
+    "privateScore": "7381.14"
+  },
+  {
+    "ref": 54658200,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T19:00:55.037000",
+    "description": "round4 isolated task349 exact rank2 cost12447to11396 official267 full400 pass sha b149c120",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7365.45",
+    "privateScore": "7365.45"
+  },
+  {
+    "ref": 54657315,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T18:23:41.823000",
+    "description": "full400 exact round3; parent 7379.19; 39 replacements; local +1.825473; sha d36ad26e",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7381.02",
+    "privateScore": "7381.02"
+  },
+  {
+    "ref": 54649205,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T14:07:45.093000",
+    "description": "submission8 proven rebase v3; exact t074 plus archive lower-cost t192 t206 t324; 400 models; local +0.12561; parent 7379.07; sha b99ce7fd",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7379.19",
+    "privateScore": "7379.19"
+  },
+  {
+    "ref": 54648923,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T13:57:33.890000",
+    "description": "submission8 rebase v2; reverted Kaggle processing failures t173 t233 t366; 13 validated lower-cost replacements; local +0.88663; parent 7379.07; sha 9d7b7cf8",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7363.63",
+    "privateScore": "7363.63"
+  },
+  {
+    "ref": 54648441,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T13:44:01.600000",
+    "description": "submission8 rebase +16 validated lower-cost models; archive t192 t206 t324; local +1.14937; parent 7379.07; sha cffe0a4c",
+    "status": "SubmissionStatus.ERROR",
+    "publicScore": "",
+    "privateScore": ""
+  },
+  {
+    "ref": 54647732,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T13:21:04.457000",
+    "description": "E parent7378.40 task085 integer codes; cost2507to2299; local +0.086613; 265/265; private ds+nb; out 39951611",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7378.49",
+    "privateScore": "7378.49"
+  },
+  {
+    "ref": 54647712,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T13:20:13.193000",
+    "description": "B-only original rewrites +1.062 local: t018 t123 t134 t285 t350 t360",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7379.07",
+    "privateScore": "7379.07"
+  },
+  {
+    "ref": 54646938,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T12:56:06.833000",
+    "description": "E parent7378.34 task064 pair-sums; cost8356to7858; local +0.061448; 267/267; private ds+nb; out 668fdecf",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7378.40",
+    "privateScore": "7378.40"
+  },
+  {
+    "ref": 54645593,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T12:16:18.853000",
+    "description": "",
+    "status": "SubmissionStatus.ERROR",
+    "publicScore": "",
+    "privateScore": ""
+  },
+  {
+    "ref": 54645238,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T12:03:53.970000",
+    "description": "E parent7378.16 task174 row-hash symmetry; cost3947to3306; local +0.177217; 266/266; private ds+nb; out 863fdf7f",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7378.34",
+    "privateScore": "7378.34"
+  },
+  {
+    "ref": 54645175,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T12:01:32.740000",
+    "description": "GOLF_20260713_ACD_LOCAL_10_V1 | target7800 aggressive candidate | source=SRC_KAGGLE_DATASET_ZEALOUS_NEUROGOLF7300 | changed=task017,task055,task165,task173,task218,task233,task338,task363,task366,task367 | risk=medium | local=pass",
+    "status": "SubmissionStatus.ERROR",
+    "publicScore": "",
+    "privateScore": ""
+  },
+  {
+    "ref": 54643514,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T11:04:07.033000",
+    "description": "E high7378.01 recovered7 via private dataset+notebook; tasks011,042,044,138,192,324,333; local +0.156376; out aae193b2",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7378.16",
+    "privateScore": "7378.16"
+  },
+  {
+    "ref": 54638601,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T08:02:23.470000",
+    "description": "GOLF_20260713_ALL399_DIRECT_13 | target7800 aggressive candidate | source=SRC_KAGGLE_DATASET_ZEALOUS_NEUROGOLF7300 | cumulative_batch=13 | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7378.01",
+    "privateScore": "7378.01"
+  },
+  {
+    "ref": 54638577,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T08:01:53.683000",
+    "description": "GOLF_20260713_ALL399_DIRECT_12 | target7800 aggressive candidate | source=SRC_KAGGLE_DATASET_ZEALOUS_NEUROGOLF7300 | cumulative_batch=12 | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7377.98",
+    "privateScore": "7377.98"
+  },
+  {
+    "ref": 54638574,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T08:01:49.897000",
+    "description": "GOLF_20260713_ALL399_DIRECT_11 | target7800 aggressive candidate | source=SRC_KAGGLE_DATASET_ZEALOUS_NEUROGOLF7300 | cumulative_batch=11 | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7377.55",
+    "privateScore": "7377.55"
+  },
+  {
+    "ref": 54638571,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T08:01:45.040000",
+    "description": "GOLF_20260713_ALL399_DIRECT_10 | target7800 aggressive candidate | source=SRC_KAGGLE_DATASET_ZEALOUS_NEUROGOLF7300 | cumulative_batch=10 | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7376.24",
+    "privateScore": "7376.24"
+  },
+  {
+    "ref": 54638567,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T08:01:40.497000",
+    "description": "GOLF_20260713_ALL399_DIRECT_09 | target7800 aggressive candidate | source=SRC_KAGGLE_DATASET_ZEALOUS_NEUROGOLF7300 | cumulative_batch=09 | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7374.00",
+    "privateScore": "7374.00"
+  },
+  {
+    "ref": 54638565,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T08:01:37.340000",
+    "description": "GOLF_20260713_ALL399_DIRECT_08 | target7800 aggressive candidate | source=SRC_KAGGLE_DATASET_ZEALOUS_NEUROGOLF7300 | cumulative_batch=08 | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7371.00",
+    "privateScore": "7371.00"
+  },
+  {
+    "ref": 54638561,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T08:01:34.440000",
+    "description": "GOLF_20260713_ALL399_DIRECT_07 | target7800 aggressive candidate | source=SRC_KAGGLE_DATASET_ZEALOUS_NEUROGOLF7300 | cumulative_batch=07 | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7367.18",
+    "privateScore": "7367.18"
+  },
+  {
+    "ref": 54637603,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T07:28:44.690000",
+    "description": "GOLF_20260713_ALL399_DIRECT_07 | target7800 aggressive candidate | source=SRC_KAGGLE_DATASET_ZEALOUS_NEUROGOLF7300 | changed=task045,task078,task043,task060,task188,task052,task033,task332,task310,task084,task058,task287,task304,task362,task079,task041,task099,task114,task257,task273,task296,task240,task132,task225,task195,task272,task254,task322,task348,task075,task040,task237,task389,task139,task202,task298,task211,task207,task220,task072,task066,task199,task093,task108,task373,task355,task100,task167,task105,task089,task252,task370,task331,task342,task034,task028,task251,task157,task073,task321,task095,task388,task203,task246,task383,task005,task378,task288,task294,task036 | risk=high | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7367.18",
+    "privateScore": "7367.18"
+  },
+  {
+    "ref": 54637436,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T07:22:37.457000",
+    "description": "GOLF_20260713_ALL399_DIRECT_06 | target7800 aggressive candidate | source=SRC_KAGGLE_DATASET_ZEALOUS_NEUROGOLF7300 | changed=task045,task078,task043,task060,task188,task052,task033,task332,task310,task084,task058,task287,task304,task362,task079,task041,task099,task114,task257,task273,task296,task240,task132,task225,task195,task272,task254,task322,task348,task075,task040,task237,task389,task139,task202,task298,task211,task207,task220,task072,task066,task199,task093,task108,task373,task355,task100,task167,task105,task089,task252,task370,task331,task342,task034,task028,task251,task157,task073,task321 | risk=high | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7362.56",
+    "privateScore": "7362.56"
+  },
+  {
+    "ref": 54637278,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T07:16:36.567000",
+    "description": "GOLF_20260713_ALL399_DIRECT_05 | target7800 aggressive candidate | source=SRC_KAGGLE_DATASET_ZEALOUS_NEUROGOLF7300 | changed=task045,task078,task043,task060,task188,task052,task033,task332,task310,task084,task058,task287,task304,task362,task079,task041,task099,task114,task257,task273,task296,task240,task132,task225,task195,task272,task254,task322,task348,task075,task040,task237,task389,task139,task202,task298,task211,task207,task220,task072,task066,task199,task093,task108,task373,task355,task100,task167,task105,task089 | risk=high | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7357.00",
+    "privateScore": "7357.00"
+  },
+  {
+    "ref": 54637116,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T07:10:47.050000",
+    "description": "GOLF_20260713_ALL399_DIRECT_04 | fallback_local_zip_after_notebook_output_failure | source=SRC_KAGGLE_DATASET_ZEALOUS_NEUROGOLF7300 | changed=task045,task078,task043,task060,task188,task052,task033,task332,task310,task084,task058,task287,task304,task362,task079,task041,task099,task114,task257,task273,task296,task240,task132,task225,task195,task272,task254,task322,task348,task075,task040,task237,task389,task139,task202,task298,task211,task207,task220,task072 | risk=high | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7350.18",
+    "privateScore": "7350.18"
+  },
+  {
+    "ref": 54636908,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T07:04:08.423000",
+    "description": "GOLF_20260713_ALL399_DIRECT_03 | target7800 aggressive candidate | source=SRC_KAGGLE_DATASET_ZEALOUS_NEUROGOLF7300 | changed=task045,task078,task043,task060,task188,task052,task033,task332,task310,task084,task058,task287,task304,task362,task079,task041,task099,task114,task257,task273,task296,task240,task132,task225,task195,task272,task254,task322,task348,task075 | risk=high | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7342.26",
+    "privateScore": "7342.26"
+  },
+  {
+    "ref": 54636773,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T06:58:56.937000",
+    "description": "GOLF_20260713_ALL399_DIRECT_02 | target7800 aggressive candidate | source=SRC_KAGGLE_DATASET_ZEALOUS_NEUROGOLF7300 | changed=task045,task078,task043,task060,task188,task052,task033,task332,task310,task084,task058,task287,task304,task362,task079,task041,task099,task114,task257,task273 | risk=high | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7331.89",
+    "privateScore": "7331.89"
+  },
+  {
+    "ref": 54636646,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T06:54:01.480000",
+    "description": "GOLF_20260713_ALL399_DIRECT_01 | target7800 aggressive candidate | source=SRC_KAGGLE_DATASET_ZEALOUS_NEUROGOLF7300 | changed=task045,task078,task043,task060,task188,task052,task033,task332,task310,task084 | risk=high | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7317.92",
+    "privateScore": "7317.92"
+  },
+  {
+    "ref": 54634057,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T05:17:53.770000",
+    "description": "GOLF_20260713_C5_05 | target7800 aggressive candidate | source=SRC_ARC_DSL_GITHUB | changed=task009,task046,task072,task075,task077,task091,task094,task096,task132,task158,task165,task190,task224,task237,task332,task349,task364,task378,task381,task382,task383,task388,task392 | risk=medium | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7297.02",
+    "privateScore": "7297.02"
+  },
+  {
+    "ref": 54633899,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T05:11:49.457000",
+    "description": "GOLF_20260713_C5_04 | target7800 aggressive candidate | source=SRC_ARC_DSL_GITHUB | changed=task072,task075,task077,task091,task094,task096,task190,task332,task349,task378,task381,task383,task388,task392 | risk=medium | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7296.84",
+    "privateScore": "7296.84"
+  },
+  {
+    "ref": 54633759,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T05:06:37.920000",
+    "description": "GOLF_20260713_C5_03 | target7800 aggressive candidate | source=SRC_ARC_DSL_GITHUB | changed=task072,task077,task091,task094,task190,task332,task349,task383,task388 | risk=medium | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7296.66",
+    "privateScore": "7296.66"
+  },
+  {
+    "ref": 54633579,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T05:01:20.957000",
+    "description": "GOLF_20260713_C5_02 | target7800 aggressive candidate | source=SRC_ARC_DSL_GITHUB | changed=task091,task094,task190,task332,task349,task383,task388 | risk=medium | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7296.47",
+    "privateScore": "7296.47"
+  },
+  {
+    "ref": 54633385,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T04:56:08.127000",
+    "description": "GOLF_20260713_C5_01 | target7800 aggressive candidate | source=SRC_ARC_DSL_GITHUB | changed=task332 | risk=medium | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7296.29",
+    "privateScore": "7296.29"
+  },
+  {
+    "ref": 54629233,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T02:12:40.393000",
+    "description": "B-only accepted7294.97 plus task001 143 255 313 344 expected +1.067295; excludes unsafe285",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7296.04",
+    "privateScore": "7296.04"
+  },
+  {
+    "ref": 54629107,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T02:09:20.037000",
+    "description": "B-only accepted7293.55 plus task291 40 task368 1611 task369 872 expected +1.423",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7294.97",
+    "privateScore": "7294.97"
+  },
+  {
+    "ref": 54628977,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T02:04:46.990000",
+    "description": "B-only accepted7292.17 plus task024 56 task245 1297 expected +1.380156",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7293.55",
+    "privateScore": "7293.55"
+  },
+  {
+    "ref": 54628864,
+    "fileName": "submission.zip",
+    "date": "2026-07-13T01:59:46.423000",
+    "description": "B-only 7290.38 plus task244 452 task377 1731; task377 266 official +500 random; expected +1.788051",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7292.17",
+    "privateScore": "7292.17"
+  },
+  {
+    "ref": 54615459,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T16:31:55.277000",
+    "description": "B-only accepted161 163 212 plus task350 terminal428 exact spans 267 official 500 random expected +3.049849",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7290.38",
+    "privateScore": "7290.38"
+  },
+  {
+    "ref": 54615262,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T16:26:46.713000",
+    "description": "B-only accepted161 163 plus task212 terminal412 isolated probe expected +1.697218",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7287.33",
+    "privateScore": "7287.33"
+  },
+  {
+    "ref": 54615076,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T16:21:13.563000",
+    "description": "B-only accepted161 plus task163 terminal310 isolated probe expected +1.753957",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7285.64",
+    "privateScore": "7285.64"
+  },
+  {
+    "ref": 54614776,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T16:11:56.480000",
+    "description": "B-only task161 compact275 isolated probe from 7282.01",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7283.88",
+    "privateScore": "7283.88"
+  },
+  {
+    "ref": 54613833,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T15:42:41.590000",
+    "description": "B verified task293 base plus zealous task056 task104 task205 local incremental +1.082373",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7282.01",
+    "privateScore": "7282.01"
+  },
+  {
+    "ref": 54613658,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T15:36:38.357000",
+    "description": "B task293 isolated high-order Einsum probe cost 1043 to 40 local +3.260977 on 7277.67 base",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7280.93",
+    "privateScore": "7280.93"
+  },
+  {
+    "ref": 54611171,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T14:18:01.270000",
+    "description": "",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7278.45",
+    "privateScore": "7278.45"
+  },
+  {
+    "ref": 54609656,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T13:30:13.670000",
+    "description": "",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7262.22",
+    "privateScore": "7262.22"
+  },
+  {
+    "ref": 54608730,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T13:02:34.720000",
+    "description": "GOLF_20260712_102_submission5_plus_c22 | target7800 aggressive candidate | source=SRC_OFFICIAL_UTILS | changed=task009,task046,task072,task077,task091,task094,task096,task132,task158,task165,task190,task224,task237,task332,task349,task364,task378,task381,task382,task383,task388,task392 | risk=low | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7278.75",
+    "privateScore": "7278.75"
+  },
+  {
+    "ref": 54607647,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T12:26:35.010000",
+    "description": "",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7254.66",
+    "privateScore": "7254.66"
+  },
+  {
+    "ref": 54606736,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T11:54:17.780000",
+    "description": "E high7277.67 round1 plus task012 2251to820 local +1.166202 out 5c237893",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7260.55",
+    "privateScore": "7260.55"
+  },
+  {
+    "ref": 54606556,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T11:47:44.143000",
+    "description": "E high7277.67 round1 67 tried 7 gains local +0.156376 base 663720cd out d53db8c5",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7277.83",
+    "privateScore": "7277.83"
+  },
+  {
+    "ref": 54606506,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T11:45:19.613000",
+    "description": "E full round1 67 attempted 6 gains local +0.036232 parent 58072444 out f8d28407",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7273.66",
+    "privateScore": "7273.66"
+  },
+  {
+    "ref": 54606256,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T11:36:19.030000",
+    "description": "E seq task011 318 to 282 local +0.120144 parent 23117163 out 58072444",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7273.62",
+    "privateScore": "7273.62"
+  },
+  {
+    "ref": 54605141,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T10:52:54.620000",
+    "description": "Team submission1 + B task205 v8 + task266 analytic v2; local 7277.533577 gain +1.061236",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7277.67",
+    "privateScore": "7277.67"
+  },
+  {
+    "ref": 54604712,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T10:37:44.103000",
+    "description": "B-only self rewrite task205 v8 + task266 analytic v2; local +1.061236 vs online-safe v6",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7269.46",
+    "privateScore": "7269.46"
+  },
+  {
+    "ref": 54604279,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T10:23:24.537000",
+    "description": "GOLF_20260712_100_submission4_plus_c8 | target7800 aggressive candidate | source=SRC_OFFICIAL_UTILS | changed=task193,task230,task372,task349,task335,task286,task069,task201 | risk=low | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7276.61",
+    "privateScore": "7276.61"
+  },
+  {
+    "ref": 54603337,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T09:48:14.157000",
+    "description": "E sequential task003 260 to 239 local +0.084218 base ca5ed65c out 23117163",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7273.50",
+    "privateScore": "7273.50"
+  },
+  {
+    "ref": 54595725,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T05:05:09.923000",
+    "description": "GOLF_20260712_099_v93_plus_task298 | target7800 aggressive candidate | source=SRC_OFFICIAL_UTILS | changed=task298 | risk=low | local=pass",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7273.42",
+    "privateScore": "7273.42"
+  },
+  {
+    "ref": 54592484,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T02:49:42.977000",
+    "description": "v93 verified remote 9 tasks local +1.080604 sha d3284267",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7273.37",
+    "privateScore": "7273.37"
+  },
+  {
+    "ref": 54591881,
+    "fileName": "submission.zip",
+    "date": "2026-07-12T02:29:11.540000",
+    "description": "v92 task021 int8 Min + verified v91 local +0.361174 sha 9498031a",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7272.29",
+    "privateScore": "7272.29"
+  },
+  {
+    "ref": 54572535,
+    "fileName": "submission.zip",
+    "date": "2026-07-11T13:06:56.873000",
+    "description": "B online-safe v6: task368 clip/mod v3; local +1.112282 vs V176",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7268.39",
+    "privateScore": "7268.39"
+  },
+  {
+    "ref": 54568646,
+    "fileName": "submission.zip",
+    "date": "2026-07-11T10:40:46.583000",
+    "description": "",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7271.95",
+    "privateScore": "7271.95"
+  },
+  {
+    "ref": 54568534,
+    "fileName": "submission.zip",
+    "date": "2026-07-11T10:35:14.540000",
+    "description": "B online-safe v5: t205 209 255 277 328 368 377; local +1.030562",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7268.31",
+    "privateScore": "7268.31"
+  },
+  {
+    "ref": 54568450,
+    "fileName": "submission.zip",
+    "date": "2026-07-11T10:32:07.100000",
+    "description": "B debug: safe-v3 plus task076 uint8 TopK with repaired shape info",
+    "status": "SubmissionStatus.ERROR",
+    "publicScore": "",
+    "privateScore": ""
+  },
+  {
+    "ref": 54568393,
+    "fileName": "submission.zip",
+    "date": "2026-07-11T10:29:44.413000",
+    "description": "B debug: safe-v3 plus task285 uint8 TopK with repaired shape info",
+    "status": "SubmissionStatus.ERROR",
+    "publicScore": "",
+    "privateScore": ""
+  },
+  {
+    "ref": 54568382,
+    "fileName": "submission.zip",
+    "date": "2026-07-11T10:29:28.223000",
+    "description": "B debug: safe-v3 plus task209 task328 standard ops",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7267.96",
+    "privateScore": "7267.96"
+  },
+  {
+    "ref": 54568377,
+    "fileName": "submission.zip",
+    "date": "2026-07-11T10:29:14.397000",
+    "description": "B debug: safe-v3 plus task018 exact-generator rewrite only",
+    "status": "SubmissionStatus.ERROR",
+    "publicScore": "",
+    "privateScore": ""
+  },
+  {
+    "ref": 54568253,
+    "fileName": "submission.zip",
+    "date": "2026-07-11T10:24:29.480000",
+    "description": "B debug: safe-v3 plus task018 209 328, no task368",
+    "status": "SubmissionStatus.ERROR",
+    "publicScore": "",
+    "privateScore": ""
+  },
+  {
+    "ref": 54568248,
+    "fileName": "submission.zip",
+    "date": "2026-07-11T10:24:14.783000",
+    "description": "B debug: safe-v3 plus task368 dual QLinearConv only",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7268.13",
+    "privateScore": "7268.13"
+  },
+  {
+    "ref": 54568105,
+    "fileName": "submission.zip",
+    "date": "2026-07-11T10:17:59.153000",
+    "description": "B selfrewrite v4: t018 t209 t328 t368; local +1.025 vs V176",
+    "status": "SubmissionStatus.ERROR",
+    "publicScore": "",
+    "privateScore": ""
+  },
+  {
+    "ref": 54557194,
+    "fileName": "submission.zip",
+    "date": "2026-07-11T02:15:21.407000",
+    "description": "v90 compact Pad axes 21 tasks local +0.033332 sha 02f7787e",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7271.93",
+    "privateScore": "7271.93"
+  },
+  {
+    "ref": 54557025,
+    "fileName": "submission.zip",
+    "date": "2026-07-11T02:06:21.983000",
+    "description": "v89 Einsum broadcast + task188 local +0.051401 sha b457b860",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7271.90",
+    "privateScore": "7271.90"
+  },
+  {
+    "ref": 54556850,
+    "fileName": "submission.zip",
+    "date": "2026-07-11T01:57:24.170000",
+    "description": "v88 concat fill to pad 10 tasks local +0.046789 sha 0d70a2f8",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7271.84",
+    "privateScore": "7271.84"
+  },
+  {
+    "ref": 54556713,
+    "fileName": "submission.zip",
+    "date": "2026-07-11T01:50:19.783000",
+    "description": "v87 optional defaults 19 tasks local +0.011033 sha 72f4ef4d",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7271.80",
+    "privateScore": "7271.80"
+  },
+  {
+    "ref": 54556485,
+    "fileName": "submission.zip",
+    "date": "2026-07-11T01:38:41.610000",
+    "description": "v86 broadcast collapse tasks174 363 local +0.022876 sha a34d6848",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7271.79",
+    "privateScore": "7271.79"
+  },
+  {
+    "ref": 54556355,
+    "fileName": "submission.zip",
+    "date": "2026-07-11T01:32:37.460000",
+    "description": "v85 legacy attrs 13 tasks local +0.017197 sha faba9f14",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7271.76",
+    "privateScore": "7271.76"
+  },
+  {
+    "ref": 54556095,
+    "fileName": "submission.zip",
+    "date": "2026-07-11T01:19:11.300000",
+    "description": "v84 task231 CRT local +0.201686 sha e5873eff",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7271.75",
+    "privateScore": "7271.75"
+  },
+  {
+    "ref": 54555567,
+    "fileName": "submission.zip",
+    "date": "2026-07-11T00:54:25.203000",
+    "description": "v83 task249 CRT + cleanup 8 tasks local +0.258520 sha d3c5f971",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7271.55",
+    "privateScore": "7271.55"
+  },
+  {
+    "ref": 54534491,
+    "fileName": "submission.zip",
+    "date": "2026-07-10T16:52:45.557000",
+    "description": "v82 public 7268.40 fusion 16 tasks local +1.108741 sha 024fda24",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7271.29",
+    "privateScore": "7271.29"
+  },
+  {
+    "ref": 54532414,
+    "fileName": "submission.zip",
+    "date": "2026-07-10T15:34:44.193000",
+    "description": "",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7254.62",
+    "privateScore": "7254.62"
+  },
+  {
+    "ref": 54530238,
+    "fileName": "submission.zip",
+    "date": "2026-07-10T14:20:13.507000",
+    "description": "",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7218.58",
+    "privateScore": "7218.58"
+  },
+  {
+    "ref": 54527273,
+    "fileName": "submission.zip",
+    "date": "2026-07-10T12:31:02.713000",
+    "description": "E loop task233 scatter 31938 to 30710 local +0.039208 sha 03896ba0",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7237.15",
+    "privateScore": "7237.15"
+  },
+  {
+    "ref": 54519973,
+    "fileName": "submission.zip",
+    "date": "2026-07-10T07:41:44.663000",
+    "description": "v81 F 20plus task006 306 local +1.186266 sha 1dbac62b",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7270.18",
+    "privateScore": "7270.18"
+  },
+  {
+    "ref": 54517873,
+    "fileName": "submission.zip",
+    "date": "2026-07-10T06:13:58.607000",
+    "description": "B online-safe v3 task205 255 277 377 local +0.5691",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7267.85",
+    "privateScore": "7267.85"
+  },
+  {
+    "ref": 54517745,
+    "fileName": "submission.zip",
+    "date": "2026-07-10T06:08:34.540000",
+    "description": "B task205 377 fp16tail online probe local +0.2811",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7267.56",
+    "privateScore": "7267.56"
+  },
+  {
+    "ref": 54517695,
+    "fileName": "submission.zip",
+    "date": "2026-07-10T06:06:31.477000",
+    "description": "B task277 only online probe local +0.1199 risky",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7267.40",
+    "privateScore": "7267.40"
+  },
+  {
+    "ref": 54517673,
+    "fileName": "submission.zip",
+    "date": "2026-07-10T06:05:37.003000",
+    "description": "B task255 only online probe local +0.1681",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7267.45",
+    "privateScore": "7267.45"
+  },
+  {
+    "ref": 54517546,
+    "fileName": "submission.zip",
+    "date": "2026-07-10T05:59:32.240000",
+    "description": "B core no u8topk debug t023 t255 t277 +0.6155 local",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7251.58",
+    "privateScore": "7251.58"
+  },
+  {
+    "ref": 54517518,
+    "fileName": "submission.zip",
+    "date": "2026-07-10T05:58:20.667000",
+    "description": "v79 F 20plus task026 274 334 local +1.385505 sha e62c2f57",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7268.99",
+    "privateScore": "7268.99"
+  },
+  {
+    "ref": 54517405,
+    "fileName": "submission.zip",
+    "date": "2026-07-10T05:53:55.153000",
+    "description": "B selfrewrite no fp16-output debug +0.7905 local",
+    "status": "SubmissionStatus.ERROR",
+    "publicScore": "",
+    "privateScore": ""
+  },
+  {
+    "ref": 54517159,
+    "fileName": "submission.zip",
+    "date": "2026-07-10T05:44:13.853000",
+    "description": "B selfrewrite v2 +1.0716 local vs yusuke v176",
+    "status": "SubmissionStatus.ERROR",
+    "publicScore": "",
+    "privateScore": ""
+  },
+  {
+    "ref": 54500407,
+    "fileName": "submission.zip",
+    "date": "2026-07-09T16:14:25.003000",
+    "description": "v78 v77 plus 2026 baseline positives 9 tasks local +0.59068 sha fcec36b3",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7267.61",
+    "privateScore": "7267.61"
+  },
+  {
+    "ref": 54493193,
+    "fileName": "submission.zip",
+    "date": "2026-07-09T12:03:35.313000",
+    "description": "Notebook NeuroGolf 01 | Version 1",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7267.46",
+    "privateScore": "7267.46"
+  },
+  {
+    "ref": 54491160,
+    "fileName": "submission.zip",
+    "date": "2026-07-09T10:50:26.733000",
+    "description": "F plus E public7266 union 38 tasks local +7.037 sha c4a0cef8",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7257.75",
+    "privateScore": "7257.75"
+  },
+  {
+    "ref": 54490507,
+    "fileName": "submission.zip",
+    "date": "2026-07-09T10:26:48.967000",
+    "description": "E yusuke7267.31 + task396 3566->3562 local +0.001122 sha 02b3d922",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7237.11",
+    "privateScore": "7237.11"
+  },
+  {
+    "ref": 54488042,
+    "fileName": "submission.zip",
+    "date": "2026-07-09T08:47:20.677000",
+    "description": "B-only yusuketogashi V176 positive graft +1.336 local",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7251.58",
+    "privateScore": "7251.58"
+  },
+  {
+    "ref": 54485638,
+    "fileName": "submission.zip",
+    "date": "2026-07-09T07:06:29.150000",
+    "description": "Notebook 2026 NeuroGolf Baseline | Version 1",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7267.31",
+    "privateScore": "7267.31"
+  },
+  {
+    "ref": 54483569,
+    "fileName": "submission.zip",
+    "date": "2026-07-09T05:36:44.697000",
+    "description": "GOLF_20260709_101 prvsiyan 7266.72 public notebook output repro sha 694b799a",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7266.72",
+    "privateScore": "7266.72"
+  },
+  {
+    "ref": 54482707,
+    "fileName": "submission.zip",
+    "date": "2026-07-09T04:59:51.290000",
+    "description": "E public7266 union 21 tasks local +4.931 sha 0bccf7d2",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7255.20",
+    "privateScore": "7255.20"
+  },
+  {
+    "ref": 54462703,
+    "fileName": "submission.zip",
+    "date": "2026-07-08T13:12:56.263000",
+    "description": "aggr7250.25 task233 packed u8 +1.225 local",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7235.69",
+    "privateScore": "7235.69"
+  },
+  {
+    "ref": 54461726,
+    "fileName": "submission.zip",
+    "date": "2026-07-08T12:33:40.720000",
+    "description": "v244: merge boristown+prvsiyan improvements, 15 task rewrites (+0.046)",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7250.28",
+    "privateScore": "7250.28"
+  },
+  {
+    "ref": 54461428,
+    "fileName": "submission.zip",
+    "date": "2026-07-08T12:22:18.973000",
+    "description": "v242: 6 task rewire improvements from jackelysia (+0.007)",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7250.25",
+    "privateScore": "7250.25"
+  },
+  {
+    "ref": 54460854,
+    "fileName": "submission.zip",
+    "date": "2026-07-08T11:58:22.430000",
+    "description": "direct jack 7250.25 public source verification",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7250.25",
+    "privateScore": "7250.25"
+  },
+  {
+    "ref": 54459607,
+    "fileName": "submission.zip",
+    "date": "2026-07-08T11:05:58.683000",
+    "description": "v241: rollback to v239 base",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7250.24",
+    "privateScore": "7250.24"
+  },
+  {
+    "ref": 54459602,
+    "fileName": "submission.zip",
+    "date": "2026-07-08T11:05:50.517000",
+    "description": "v241: rollback to v239 base (task023 koji model failed on hidden test, -16 pts)",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7250.24",
+    "privateScore": "7250.24"
+  },
+  {
+    "ref": 54459309,
+    "fileName": "submission.zip",
+    "date": "2026-07-08T10:55:02.147000",
+    "description": "v240: task023 cost reduction 8222->5851 (+0.34)",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7234.25",
+    "privateScore": "7234.25"
+  },
+  {
+    "ref": 54458467,
+    "fileName": "submission.zip",
+    "date": "2026-07-08T10:20:35.590000",
+    "description": "v239: v234 base + prvsiyan task243/285 improvements, reverted risky HF models",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7250.24",
+    "privateScore": "7250.24"
+  },
+  {
+    "ref": 54458195,
+    "fileName": "submission.zip",
+    "date": "2026-07-08T10:10:02.710000",
+    "description": "v238: union with HF+research+new sources, task067 fix",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7244.49",
+    "privateScore": "7244.49"
+  },
+  {
+    "ref": 54456827,
+    "fileName": "submission.zip",
+    "date": "2026-07-08T09:20:40.647000",
+    "description": "v235 multi-source union + universal ONNX opt",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7250.24",
+    "privateScore": "7250.24"
+  },
+  {
+    "ref": 54452990,
+    "fileName": "submission.zip",
+    "date": "2026-07-08T06:54:47.747000",
+    "description": "v232 mega union + universal ONNX opt: 123 source upgrades + 6 constant-fold improvements",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7250.22",
+    "privateScore": "7250.22"
+  },
+  {
+    "ref": 54452615,
+    "fileName": "submission.zip",
+    "date": "2026-07-08T06:41:40.023000",
+    "description": "v231 mega union: 123 tasks upgraded from 7 sources, full arc-gen verified",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7250.18",
+    "privateScore": "7250.18"
+  },
+  {
+    "ref": 54451622,
+    "fileName": "submission.zip",
+    "date": "2026-07-08T06:04:43.750000",
+    "description": "Notebook Version 3 | v233 boris refresh 5-task graft | sha b6a6e28847ba",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7250.18",
+    "privateScore": "7250.18"
+  },
+  {
+    "ref": 54451105,
+    "fileName": "submission.zip",
+    "date": "2026-07-08T05:43:56.553000",
+    "description": "Notebook Version 2 | v232 urad-plus 2-task graft | sha 2d24f3a8a017",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7250.18",
+    "privateScore": "7250.18"
+  },
+  {
+    "ref": 54450636,
+    "fileName": "submission.zip",
+    "date": "2026-07-08T05:20:53.700000",
+    "description": "Notebook Version 1 | v231 20260708 public top union | sha b9ac3c10d7c9",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7250.09",
+    "privateScore": "7250.09"
+  },
+  {
+    "ref": 54432311,
+    "fileName": "submission.zip",
+    "date": "2026-07-07T14:41:32.133000",
+    "description": "v230 multi-source union: 28 tasks upgraded, full arc-gen verified",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7244.05",
+    "privateScore": "7244.05"
+  },
+  {
+    "ref": 54430680,
+    "fileName": "submission.zip",
+    "date": "2026-07-07T13:49:44.627000",
+    "description": "v225 probe benchmark stability",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7243.68",
+    "privateScore": "7243.68"
+  },
+  {
+    "ref": 54430483,
+    "fileName": "submission.zip",
+    "date": "2026-07-07T13:43:33.723000",
+    "description": "v226 rollback | verified 7243.87",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7228.29",
+    "privateScore": "7228.29"
+  },
+  {
+    "ref": 54430156,
+    "fileName": "submission.zip",
+    "date": "2026-07-07T13:32:47.067000",
+    "description": "v227 iter2 bypass union",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7228.32",
+    "privateScore": "7228.32"
+  },
+  {
+    "ref": 54430069,
+    "fileName": "submission.zip",
+    "date": "2026-07-07T13:28:40.333000",
+    "description": "v227",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7228.32",
+    "privateScore": "7228.32"
+  },
+  {
+    "ref": 54428784,
+    "fileName": "submission.zip",
+    "date": "2026-07-07T12:40:04.890000",
+    "description": "direct velvet 7243.87 open-source package verification",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7243.87",
+    "privateScore": "7243.87"
+  },
+  {
+    "ref": 54428728,
+    "fileName": "submission.zip",
+    "date": "2026-07-07T12:37:04.047000",
+    "description": "aggr7243_22 combined 7243 public sources v1",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7243.32",
+    "privateScore": "7243.32"
+  },
+  {
+    "ref": 54427600,
+    "fileName": "submission.zip",
+    "date": "2026-07-07T11:51:46.083000",
+    "description": "Notebook Version 4 | v226 boris-frank-ryosuke union | sha 10e5e0f1bcc5",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7243.87",
+    "privateScore": "7243.87"
+  },
+  {
+    "ref": 54426892,
+    "fileName": "submission.zip",
+    "date": "2026-07-07T11:25:39.600000",
+    "description": "Notebook Version 3 | target notebook v225 update | sha 10fdc055f8f7",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7243.68",
+    "privateScore": "7243.68"
+  },
+  {
+    "ref": 54426421,
+    "fileName": "submission.zip",
+    "date": "2026-07-07T11:06:30.063000",
+    "description": "Notebook Version 1 | compact union v225 | sha 10fdc055f8f7",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7243.68",
+    "privateScore": "7243.68"
+  },
+  {
+    "ref": 54426060,
+    "fileName": "submission.zip",
+    "date": "2026-07-07T10:52:17.820000",
+    "description": "Notebook Version 2 | compact union v224 | sha 2c052b8dc4c1",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7243.14",
+    "privateScore": "7243.14"
+  },
+  {
+    "ref": 54418469,
+    "fileName": "submission.zip",
+    "date": "2026-07-07T06:29:44.560000",
+    "description": "Notebook Version 1 | public verified source union | sha 708dd92e4df6",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7243.08",
+    "privateScore": "7243.08"
+  },
+  {
+    "ref": 54394481,
+    "fileName": "submission.zip",
+    "date": "2026-07-06T12:23:29.390000",
+    "description": "v73_public_7235_83_blend_delta0_199984",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7236.23",
+    "privateScore": "7236.23"
+  },
+  {
+    "ref": 54392321,
+    "fileName": "submission.zip",
+    "date": "2026-07-06T11:02:20.737000",
+    "description": "v72_public_top_7235_63_blend_delta0_510827",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7236.03",
+    "privateScore": "7236.03"
+  },
+  {
+    "ref": 54392002,
+    "fileName": "submission.zip",
+    "date": "2026-07-06T10:52:53.087000",
+    "description": "Notebook NeuroGolf 7235.83 | Verified Circuit Union | Version 5",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7235.83",
+    "privateScore": "7235.83"
+  },
+  {
+    "ref": 54391794,
+    "fileName": "submission.zip",
+    "date": "2026-07-06T10:45:39.263000",
+    "description": "Notebook Version 3 | Verified Circuit Union | score parity 7235.83",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7235.83",
+    "privateScore": "7235.83"
+  },
+  {
+    "ref": 54391634,
+    "fileName": "submission.zip",
+    "date": "2026-07-06T10:39:47.230000",
+    "description": "private notebook v1 parity check; expected 7235.83; sha 4b599ed707d6",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7235.83",
+    "privateScore": "7235.83"
+  },
+  {
+    "ref": 54391459,
+    "fileName": "submission.zip",
+    "date": "2026-07-06T10:33:17.600000",
+    "description": "v221 20260706 late public union plus validated task selection; local 7235.725947",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7235.83",
+    "privateScore": "7235.83"
+  },
+  {
+    "ref": 54391250,
+    "fileName": "submission.zip",
+    "date": "2026-07-06T10:25:04.980000",
+    "description": "[REDACTED_KAGGLE_TOKEN] round01 task024 single local+4.222844 sha8dbedee3",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "6493.04",
+    "privateScore": "6493.04"
+  },
+  {
+    "ref": 54390560,
+    "fileName": "submission.zip",
+    "date": "2026-07-06T10:00:19.970000",
+    "description": "direct submit current 6535 baseline probe key [REDACTED_KAGGLE_TOKEN] sha8fd8e831",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "6488.82",
+    "privateScore": "6488.82"
+  },
+  {
+    "ref": 54390369,
+    "fileName": "submission.zip",
+    "date": "2026-07-06T09:51:17.127000",
+    "description": "probe external round2 retry public scan vs v71",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7235.60",
+    "privateScore": "7235.60"
+  },
+  {
+    "ref": 54390365,
+    "fileName": "submission.zip",
+    "date": "2026-07-06T09:51:12.190000",
+    "description": "probe external round1 top public scan vs v70",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7235.52",
+    "privateScore": "7235.52"
+  },
+  {
+    "ref": 54383505,
+    "fileName": "submission.zip",
+    "date": "2026-07-06T05:00:18.700000",
+    "description": "v220 20260706 public-notebook union; 68 full-valid tasks; local 7235.361858",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7235.47",
+    "privateScore": "7235.47"
+  },
+  {
+    "ref": 54382527,
+    "fileName": "submission.zip",
+    "date": "2026-07-06T04:16:28.910000",
+    "description": "v71_v70_plus_public_top_biohack_yuu_blend_delta51_874",
+    "status": "SubmissionStatus.COMPLETE",
+    "publicScore": "7235.52",
+    "privateScore": "7235.52"
+  }
+]

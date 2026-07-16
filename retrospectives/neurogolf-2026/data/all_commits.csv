@@ -1,0 +1,110 @@
+﻿sha,short_sha,parents,parent_count,date,author,email,subject
+f33f4b08d66043f643459e74a612a795ec871ea8,f33f4b08,,0,2026-07-09T12:34:58+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,Add NeuroGolf team task assignment
+8f56c04647d7e9f67f0761cfec1c3830b836d1c1,8f56c046,f33f4b08d66043f643459e74a612a795ec871ea8,1,2026-07-09T12:37:11+08:00,lljjcc426,3115250840@qq.com,1
+1c402cf86ebb111d6a7028c5b697d3534e1b4b2b,1c402cf8,8f56c04647d7e9f67f0761cfec1c3830b836d1c1,1,2026-07-09T12:39:16+08:00,lljjcc426,3115250840@qq.com,1
+8ace140a1535670ed3dee179f19a73ceb3c7a40a,8ace140a,1c402cf86ebb111d6a7028c5b697d3534e1b4b2b,1,2026-07-09T12:43:02+08:00,lljjcc426,3115250840@qq.com,Create readme.md
+d7d1db0e2ce3ff3758d17f74958f9f76fda8019e,d7d1db0e,8ace140a1535670ed3dee179f19a73ceb3c7a40a,1,2026-07-09T12:43:32+08:00,lljjcc426,3115250840@qq.com,Create readme.md
+bf9b09f671a3cd415cd02199135945ee56b68790,bf9b09f6,d7d1db0e2ce3ff3758d17f74958f9f76fda8019e,1,2026-07-09T12:43:54+08:00,lljjcc426,3115250840@qq.com,Create readme.md
+a5174758f986ee7827305864cb9f121a4c17b1dd,a5174758,bf9b09f671a3cd415cd02199135945ee56b68790,1,2026-07-09T12:44:20+08:00,lljjcc426,3115250840@qq.com,Create readme.md
+89df6ce207c325a265b534f65b211a6891f7c9fb,89df6ce2,a5174758f986ee7827305864cb9f121a4c17b1dd,1,2026-07-09T12:44:44+08:00,lljjcc426,3115250840@qq.com,Create readme.md
+4ca3c4c44de80f3d46027d4fbd0a68e077cae56e,4ca3c4c4,89df6ce207c325a265b534f65b211a6891f7c9fb,1,2026-07-09T12:45:07+08:00,lljjcc426,3115250840@qq.com,Create readme.md
+55108a30a9d97a62917e6ce9aa10ddde7db3282c,55108a30,4ca3c4c44de80f3d46027d4fbd0a68e077cae56e,1,2026-07-09T12:53:04+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,Record E team optimization scan
+a5ea013ca400abb9dc5ae259fa089506e8736d32,a5ea013c,55108a30a9d97a62917e6ce9aa10ddde7db3282c,1,2026-07-09T13:08:34+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,Record E public 7266 score lift
+da27da9b5cf374a55071137ec8db7e490bf625b0,da27da9b,a5ea013ca400abb9dc5ae259fa089506e8736d32,1,2026-07-09T13:46:53+08:00,llllllc,f74974332@gmail.com,Update workplaceA optimized tasks
+e7c262d1495d042a6c02f785586d73665084ed5f,e7c262d1,a5ea013ca400abb9dc5ae259fa089506e8736d32,1,2026-07-09T12:55:21+08:00,whzy,2402686765@qq.com,Add workplace C Kaggle scaffold
+c61bd558aea09f2c172543bbfc5712631d58d72d,c61bd558,e7c262d1495d042a6c02f785586d73665084ed5f,1,2026-07-09T12:56:54+08:00,whzy,2402686765@qq.com,Document workplace C upload status
+349f3648ed5f48f93b2adb3f79a9b70fe0daf7dc,349f3648,c61bd558aea09f2c172543bbfc5712631d58d72d,1,2026-07-09T14:14:05+08:00,whzy,2402686765@qq.com,Add Workplace C task dashboard
+56ac78854d088a5fc1673670281a9fad91beea25,56ac7885,da27da9b5cf374a55071137ec8db7e490bf625b0,1,2026-07-09T14:24:18+08:00,llllllc,f74974332@gmail.com,Update workplaceA from team top public submissions
+b6543f48bd8c837e1aadd6cd8b19b719eb1c2912,b6543f48,349f3648ed5f48f93b2adb3f79a9b70fe0daf7dc,1,2026-07-09T14:38:46+08:00,whzy,2402686765@qq.com,Add full NeuroGolf task mirror for Workplace C
+2c71d8fa51aa89e2b5c9d201433d8b8495c3d1c0,2c71d8fa,b6543f48bd8c837e1aadd6cd8b19b719eb1c2912,1,2026-07-09T15:37:13+08:00,WaterXiao-git,sanmo13689@gmail.com,Add workplace D optimization scan and opportunities
+9d898e90f58befe146456599c8eb586f3ebf7c6b,9d898e90,b6543f48bd8c837e1aadd6cd8b19b719eb1c2912,1,2026-07-09T15:59:56+08:00,whzy,2402686765@qq.com,C score improvement aggressive checkpoint
+251cb9bb53b2b7f3cfa2bc0e76b5c6edf9563f46,251cb9bb,9d898e90f58befe146456599c8eb586f3ebf7c6b,1,2026-07-09T16:00:35+08:00,whzy,2402686765@qq.com,Update C score report checkpoint status
+ca6332f8338d94ad6872f1559ea5f864fb1a9815,ca6332f8,2c71d8fa51aa89e2b5c9d201433d8b8495c3d1c0,1,2026-07-09T16:26:31+08:00,WaterXiao-git,sanmo13689@gmail.com,Expand workplace D deep candidate optimization
+2072d324aaebff89516180cca04b51be89a7ec5d,2072d324,4ca3c4c44de80f3d46027d4fbd0a68e077cae56e,1,2026-07-09T16:46:41+08:00,jokerrrrr,3220829322@qq.com,Add B-only yusuketogashi graft
+a3d894465caf01d4dc472b471237add7d4d73a6a,a3d89446,251cb9bb53b2b7f3cfa2bc0e76b5c6edf9563f46,1,2026-07-09T16:46:41+08:00,jokerrrrr,3220829322@qq.com,Add B-only yusuketogashi graft
+b6e55480b54531c11f1887ecc866dcfccac4905a,b6e55480,a3d894465caf01d4dc472b471237add7d4d73a6a,1,2026-07-09T16:50:35+08:00,jokerrrrr,3220829322@qq.com,Record B graft Kaggle result
+5d65954a36a8b313da6f2a126149e06f4ff13311,5d65954a,b6e55480b54531c11f1887ecc866dcfccac4905a,1,2026-07-09T18:11:03+08:00,jokerrrrr,3220829322@qq.com,Add B yusuke active-base gains
+13e5a3250166799495556342ee909b49deda23f2,13e5a325,56ac78854d088a5fc1673670281a9fad91beea25,1,2026-07-09T19:31:19+08:00,lc666,lc666@example.com,Sync workplaceA current submission tasks
+70bf98107d24730b7824bbeb722ab5319fd07e76,70bf9810,13e5a3250166799495556342ee909b49deda23f2,1,2026-07-09T19:51:40+08:00,lc666,lc666@example.com,Restrict workplaceA to assigned WorkA tasks
+c62c95f0c26f549645dbb53243471549db075ae1,c62c95f0,5d65954a36a8b313da6f2a126149e06f4ff13311,1,2026-07-09T21:00:02+08:00,whzy,2402686765@qq.com,Add task158 accepted resize stamp improvement
+a770de6fa7dd56ead62abf5f8ff9d77ee9e112ec,a770de6f,c62c95f0c26f549645dbb53243471549db075ae1,1,2026-07-09T21:02:19+08:00,whzy,2402686765@qq.com,Update task158 checkpoint status
+3c377e7ba804d4d2fc11f8eaa2bff089f509754f,3c377e7b,ca6332f8338d94ad6872f1559ea5f864fb1a9815,1,2026-07-09T21:04:02+08:00,WaterXiao-git,sanmo13689@gmail.com,Add workplace D unscanned candidate sweep
+ea8f9a082b9e12732ffc0ca072f7d2255b8557f0,ea8f9a08,a770de6fa7dd56ead62abf5f8ff9d77ee9e112ec 3c377e7ba804d4d2fc11f8eaa2bff089f509754f,2,2026-07-09T22:15:03+08:00,lljjcc426,3115250840@qq.com,Merge pull request #1 from WaterXiao-git/codex/workplace-d-optimization-20260709-073652
+7e6a8d5a0e7478c6ba369c7a5ed4c94f80e128b6,7e6a8d5a,ea8f9a082b9e12732ffc0ca072f7d2255b8557f0,1,2026-07-09T22:20:22+08:00,WaterXiao-git,sanmo13689@gmail.com,Add workplace D optimized task artifacts
+af72da566d8d294c647e8d887f9af65e433d51a6,af72da56,7e6a8d5a0e7478c6ba369c7a5ed4c94f80e128b6,1,2026-07-09T22:43:37+08:00,whzy,2402686765@qq.com,Add task286 rule model and ONNX probe
+22e7a0e6544504b10bcf575c6324d81d5e00a980,22e7a0e6,70bf98107d24730b7824bbeb722ab5319fd07e76,1,2026-07-10T18:10:02+08:00,lc666,lc666@example.com,Optimize WorkA tasks 005 319 and 379
+95cc8c3d1b69ff3f8617c8191f45c583ccf52c7e,95cc8c3d,af72da566d8d294c647e8d887f9af65e433d51a6,1,2026-07-10T18:22:00+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,Record E scoreboard loop and task233 probes
+9f4716763ba1965beb3e2c29d05cdf19d2b5642b,9f471676,95cc8c3d1b69ff3f8617c8191f45c583ccf52c7e,1,2026-07-10T18:49:10+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,Record E task233 loop probes
+f1db6a4ed6fdda2465bf668745c47e75b8f99980,f1db6a4e,9f4716763ba1965beb3e2c29d05cdf19d2b5642b,1,2026-07-10T20:36:05+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,Improve E task233 and record Kaggle result
+3e6fac8eca858d248c3efe9b29afe98ca85ff8fe,3e6fac8e,22e7a0e6544504b10bcf575c6324d81d5e00a980,1,2026-07-10T23:15:13+08:00,lc666,lc666@example.com,Sync WorkA models from baseline comparison
+ca66a43e3dd715fc9f9a5c36d3ad669001ef78c4,ca66a43e,3e6fac8eca858d248c3efe9b29afe98ca85ff8fe,1,2026-07-10T23:30:55+08:00,lc666,lc666@example.com,Merge best WorkA models into submission baseline
+a2694e8fc9f7e745329d7f38fb5ce3a521e93f23,a2694e8f,f1db6a4ed6fdda2465bf668745c47e75b8f99980,1,2026-07-10T23:36:25+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,Rebase E loop on team baseline and improve task233
+0c5111ebef1f19d6b803356a4b4c3dffb3eecc80,0c5111eb,ca66a43e3dd715fc9f9a5c36d3ad669001ef78c4,1,2026-07-11T13:01:19+08:00,lc666,lc666@example.com,Optimize WorkA task148 false initializer reuse
+d6bbf546cfeba78a3e6c0bef1c90dbaa5b663993,d6bbf546,a2694e8fc9f7e745329d7f38fb5ce3a521e93f23,1,2026-07-11T14:31:47+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,Optimize E task085 by practical score ROI
+3860ba1cbd1c20118f0b69b5aaaadb167993a9d5,3860ba1c,0c5111ebef1f19d6b803356a4b4c3dffb3eecc80,1,2026-07-11T16:22:52+08:00,lc666,lc666@example.com,Optimize WorkA task215 opset attrs
+df2096af93de7b57509ecb2068e5b0ac308407df,df2096af,d6bbf546cfeba78a3e6c0bef1c90dbaa5b663993,1,2026-07-10T14:24:13+08:00,jokerrrrr,3220829322@qq.com,Add B online-safe rewrite probes
+a4aa60cdab32a8682988a88ce461d79ae12295c1,a4aa60cd,df2096af93de7b57509ecb2068e5b0ac308407df,1,2026-07-11T18:42:03+08:00,jokerrrrr,3220829322@qq.com,Add verified B self-rewrite v5 bundle
+a6d449c4246d9fb72435c9076f2e2dc35cf271e7,a6d449c4,a4aa60cdab32a8682988a88ce461d79ae12295c1,1,2026-07-11T20:51:34+08:00,whzy,2402686765@qq.com,Document C score retrospective and next build plan
+710b5ff85043508af94ea1600f319aebb39ec9a5,710b5ff8,a6d449c4246d9fb72435c9076f2e2dc35cf271e7,1,2026-07-11T22:41:06+08:00,whzy,2402686765@qq.com,Advance C individual ONNX model coverage
+edc44dd27e28a27514c0b52dbe685aad8d6ed754,edc44dd2,710b5ff85043508af94ea1600f319aebb39ec9a5,1,2026-07-12T11:06:14+08:00,jokerrrrr,3220829322@qq.com,Advance B task266 toward 20 points
+27fb8b4236ce46dc3eea95963064ae1df89b51d7,27fb8b42,edc44dd27e28a27514c0b52dbe685aad8d6ed754,1,2026-07-12T12:37:24+08:00,jokerrrrr,3220829322@qq.com,Document B cross-20 structural searches
+89240a42d052f3f6224a6ae0539fdbf78648a7ba,89240a42,27fb8b4236ce46dc3eea95963064ae1df89b51d7,1,2026-07-12T13:19:05+08:00,whzy,2402686765@qq.com,Complete deep individual modeling for all C tasks
+bff206ce0e07a5b06aaab1daeee5f095eef5ca50,bff206ce,89240a42d052f3f6224a6ae0539fdbf78648a7ba,1,2026-07-12T13:36:04+08:00,Blacklions,blacklions@users.noreply.github.com,Document F optimization lessons through v93
+896fbf28922722f53f108ab2855ab1e8fef4abb1,896fbf28,bff206ce0e07a5b06aaab1daeee5f095eef5ca50,1,2026-07-12T14:25:51+08:00,jokerrrrr,3220829322@qq.com,Record rejected B cross-20 operator experiments
+d75acbd9ba29792c5f8b9330dcc9df0846092afe,d75acbd9,896fbf28922722f53f108ab2855ab1e8fef4abb1,1,2026-07-12T17:50:38+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,Optimize E task003 in sequential loop
+a14951f2ed049895e365b60c5e9c809ab657c846,a14951f2,d75acbd9ba29792c5f8b9330dcc9df0846092afe,1,2026-07-12T17:52:24+08:00,whzy,2402686765@qq.com,Improve C local task score models
+766c750ff4d06c1607c1d69892a52e2a19faf8ff,766c750f,a14951f2ed049895e365b60c5e9c809ab657c846,1,2026-07-12T18:39:47+08:00,jokerrrrr,3220829322@qq.com,Cut B task205 cost with boolean coordinates
+fed77dc60050f50786b245c4453e2853c471fc4b,fed77dc6,766c750ff4d06c1607c1d69892a52e2a19faf8ff,1,2026-07-12T18:41:17+08:00,jokerrrrr,3220829322@qq.com,Record B task205 task266 online gain
+48e730ff010fd9f7609ec93feae2b86f1f85981b,48e730ff,fed77dc60050f50786b245c4453e2853c471fc4b,1,2026-07-12T18:48:49+08:00,whzy,2402686765@qq.com,Add C task077 task096 task349 score gains
+4d04f5f76ed96c7849c74ff5f61d0d5df75ecca4,4d04f5f7,48e730ff010fd9f7609ec93feae2b86f1f85981b,1,2026-07-12T18:57:49+08:00,jokerrrrr,3220829322@qq.com,Integrate B rewrites into team submission
+529ff689f51803f8264923aaad549af38205f524,529ff689,4d04f5f76ed96c7849c74ff5f61d0d5df75ecca4,1,2026-07-12T19:38:13+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,Optimize E task011 after teammate method review
+a3c00fa1ab37ec2ff1940e3633799807465853f5,a3c00fa1,529ff689f51803f8264923aaad549af38205f524,1,2026-07-12T20:50:50+08:00,whzy,2402686765@qq.com,Advance C local task score plan
+d019a86da845f8a8189acb31f6701854ebe182a9,d019a86d,a3c00fa1ab37ec2ff1940e3633799807465853f5,1,2026-07-12T21:17:50+08:00,whzy,2402686765@qq.com,Document C submission5 rebase to 7278.75
+98dd3e0e9f43295b1a15497ab2d37029ade1b4c8,98dd3e0e,d019a86da845f8a8189acb31f6701854ebe182a9,1,2026-07-12T22:51:44+08:00,muelsyse,2402686765@qq.com,Mirror D tasks into C workspace and add CD strategy index
+b28ccc90fc6d104e825642b94afe5dc9623056d3,b28ccc90,d019a86da845f8a8189acb31f6701854ebe182a9 98dd3e0e9f43295b1a15497ab2d37029ade1b4c8,2,2026-07-12T23:08:51+08:00,muelsyse,2402686765@qq.com,Merge pull request #2 from lljjcc426/agent/cd-task-strategy-20260712
+17c5192a4e38f7b1366182432813fae3952917c7,17c5192a,b28ccc90fc6d104e825642b94afe5dc9623056d3,1,2026-07-12T19:29:19+08:00,jokerrrrr,3220829322@qq.com,Reduce B task104 with rank two sign factors
+a778a9922d726e9bfbcb4d21712a78bd5a9ea6ed,a778a992,17c5192a4e38f7b1366182432813fae3952917c7,1,2026-07-12T23:50:20+08:00,jokerrrrr,3220829322@qq.com,B: audit neurogolf7300 and integrate verified gains
+52036630957743bb4349b180a96731082fa22438,52036630,a778a9922d726e9bfbcb4d21712a78bd5a9ea6ed,1,2026-07-13T09:54:10+08:00,jokerrrrr,3220829322@qq.com,B: integrate terminal rule models through 7290.38
+a6c8b328f0c3dcdcadd184ac43267dd841c63ee8,a6c8b328,52036630957743bb4349b180a96731082fa22438,1,2026-07-13T10:18:22+08:00,jokerrrrr,3220829322@qq.com,B: integrate verified tail gains through 7296.04
+6b5dcbf2d09067f8f70d59ac7e6ef80c7a8a7f2e,6b5dcbf2,a6c8b328f0c3dcdcadd184ac43267dd841c63ee8,1,2026-07-13T10:20:48+08:00,jokerrrrr,3220829322@qq.com,B: record task255 terminal rewrite constraints
+b991f916ce12287eef38b0680097c276c6137293,b991f916,6b5dcbf2d09067f8f70d59ac7e6ef80c7a8a7f2e,1,2026-07-13T11:24:22+08:00,jokerrrrr,3220829322@qq.com,B: add task018 sparse dihedral rewrite
+6f2597afb9f861422fdd523a662e295a0babd2ae,6f2597af,b991f916ce12287eef38b0680097c276c6137293,1,2026-07-13T11:24:44+08:00,jokerrrrr,3220829322@qq.com,B: archive task018 model and continuation package
+c2408e13cbc378376cdd2a22d5ddfdf51ea7feca,c2408e13,6f2597afb9f861422fdd523a662e295a0babd2ae,1,2026-07-13T11:29:24+08:00,jokerrrrr,3220829322@qq.com,B: record low-task structural audit
+3d2fe525d4ca63e58690cc78721e48e740a78f07,3d2fe525,c2408e13cbc378376cdd2a22d5ddfdf51ea7feca,1,2026-07-13T11:53:49+08:00,whzy,2402686765@qq.com,Benchmark C+D archive methods and derive local optimizations
+29b611fa6d73af9dcabc2381a7fdc47d0ef2345e,29b611fa,3d2fe525d4ca63e58690cc78721e48e740a78f07,1,2026-07-13T12:57:35+08:00,jokerrrrr,3220829322@qq.com,B: add exact task285 quadrant rewrite
+734efb7122d816be411fe2d02f7b31d7bbb1986a,734efb71,29b611fa6d73af9dcabc2381a7fdc47d0ef2345e,1,2026-07-13T13:25:02+08:00,whzy,2402686765@qq.com,C: verify five cumulative gains through 7297.02
+4b744348a4152aca407bdfb6feb4b592bd367ac3,4b744348,734efb7122d816be411fe2d02f7b31d7bbb1986a,1,2026-07-13T16:35:39+08:00,whzy,2402686765@qq.com,C: scan all399 archive and record direct batch campaign
+f92abae1d3bf59152c13366626fc8652a9c1789b,f92abae1,4b744348a4152aca407bdfb6feb4b592bd367ac3,1,2026-07-13T21:25:05+08:00,jokerrrrr,3220829322@qq.com,B: add six original rewrites on team 7378 baseline
+7042e1bf18783b5a452c5a31cc35d4a1f9ef336c,7042e1bf,f92abae1d3bf59152c13366626fc8652a9c1789b,1,2026-07-14T00:03:23+08:00,jokerrrrr,3220829322@qq.com,B: add seven exact rewrites on 7379 parent
+c61118f282350c2280f5c769b35afa9f7872c743,c61118f2,7042e1bf18783b5a452c5a31cc35d4a1f9ef336c,1,2026-07-14T01:03:06+08:00,whzy,2402686765@qq.com,Add validated full-400 ONNX optimization passes
+5e4d16d4fecfae9460b9dc1f79d5dc86ce0629bc,5e4d16d4,c61118f282350c2280f5c769b35afa9f7872c743,1,2026-07-14T02:15:09+08:00,whzy,2402686765@qq.com,Expand exact ONNX optimization across all tasks
+836fdcb7da5575f640d52861e3e5f2171889e090,836fdcb7,5e4d16d4fecfae9460b9dc1f79d5dc86ce0629bc,1,2026-07-14T02:21:17+08:00,whzy,2402686765@qq.com,Parameterize verified parent package metadata
+6a7a6b686c7cbcd2b2f4dc1f4244323042647f6e,6a7a6b68,836fdcb7da5575f640d52861e3e5f2171889e090,1,2026-07-14T02:23:24+08:00,whzy,2402686765@qq.com,Build self-contained Kaggle submission kernels
+09c98d4e8b732ae2a8babbae4026a5dc9e11cb73,09c98d4e,6a7a6b686c7cbcd2b2f4dc1f4244323042647f6e,1,2026-07-14T09:47:44+08:00,whzy,2402686765@qq.com,Harden full-400 ONNX optimization and validation
+3907fd2271280c2827862560f742956ad051cbf7,3907fd22,c61118f282350c2280f5c769b35afa9f7872c743 09c98d4e8b732ae2a8babbae4026a5dc9e11cb73,2,2026-07-14T09:50:18+08:00,muelsyse,2402686765@qq.com,Merge pull request #3 from lljjcc426/codex/full400-hardening-round1
+3f37e0bd0300fa45cd11bd4fac375723e5bba1f4,3f37e0bd,3907fd2271280c2827862560f742956ad051cbf7,1,2026-07-14T20:09:21+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,E: record fast task110 task138 task216 batch
+a8e924ba696c78f09d4714b8e7b365c42ce7a720,a8e924ba,3f37e0bd0300fa45cd11bd4fac375723e5bba1f4,1,2026-07-14T20:12:34+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,E: record batch3 Kaggle regression
+2027814a4f98019b697bc46d7e02c8c605c91fd2,2027814a,a8e924ba696c78f09d4714b8e7b365c42ce7a720,1,2026-07-14T20:23:38+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,E: record isolated Kaggle task diagnosis
+d8a1ca3aa7b2fa883b36c82b64ddf7234bf75bf4,d8a1ca3a,2027814a4f98019b697bc46d7e02c8c605c91fd2,1,2026-07-14T21:29:23+08:00,jokerrrrr,3220829322@qq.com,B: verify exact batch at 7384.93
+3c1b97fbc9c8155da3befdf741e4b632bab556f0,3c1b97fb,d8a1ca3aa7b2fa883b36c82b64ddf7234bf75bf4,1,2026-07-15T08:55:31+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,E: scan full round and stage isolated gains
+5dd5c7546e0ec56eb00cb7ebad5f44fa9acd75f7,5dd5c754,3c1b97fbc9c8155da3befdf741e4b632bab556f0,1,2026-07-15T09:05:14+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,E: differential-fuzz isolated candidates
+4f7a1c7a4ce3c8b038bcda057535a86c31a1d690,4f7a1c7a,5dd5c7546e0ec56eb00cb7ebad5f44fa9acd75f7,1,2026-07-15T09:41:31+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,E: verify task035 task092 online at 7385.15
+9bbb9aef87ba34b7363048b3e869213553c7eda4,9bbb9aef,4f7a1c7a4ce3c8b038bcda057535a86c31a1d690,1,2026-07-15T09:41:45+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,E: share exact 7385.15 package
+89662516b1728f9d4b96654acde22ab1f24cba4c,89662516,9bbb9aef87ba34b7363048b3e869213553c7eda4,1,2026-07-15T09:49:27+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,E: verify task216 online at 7385.37
+98a7ad454638fb9ce3570f746e55446a1286d5fd,98a7ad45,89662516b1728f9d4b96654acde22ab1f24cba4c,1,2026-07-15T09:54:54+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,E: verify task138 online at 7385.51
+ee5a798eeb6989139d9413484535bbd29b3286be,ee5a798e,98a7ad454638fb9ce3570f746e55446a1286d5fd,1,2026-07-15T10:00:05+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,E: verify task085 online at 7385.60
+6a24e2aad7ae926d0fdbbf0ea220a526e47ca153,6a24e2aa,ee5a798eeb6989139d9413484535bbd29b3286be,1,2026-07-15T10:07:48+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,E: verify task174 online at 7385.77
+afe709ca216deda4d8826d95ac20633a4c9d6f2f,afe709ca,6a24e2aad7ae926d0fdbbf0ea220a526e47ca153,1,2026-07-15T10:25:53+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,E: optimize task064 online to 7385.88
+e957ce712b7719ddeb1a7c2f9c0822730db6ba88,e957ce71,afe709ca216deda4d8826d95ac20633a4c9d6f2f,1,2026-07-15T11:39:08+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,E: verify task118 isolated at 7385.93
+7a7fd191b87e4df891e50cc910d2f94f5a6be2f2,7a7fd191,e957ce712b7719ddeb1a7c2f9c0822730db6ba88,1,2026-07-15T12:14:26+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,E: verify task324 and audit hidden regressions
+6f0acd384a12d8c86f78e3f05b19269012476409,6f0acd38,7a7fd191b87e4df891e50cc910d2f94f5a6be2f2,1,2026-07-15T15:30:13+08:00,whzy,2402686765@qq.com,Record public-source gains and hidden-distribution safeguards
+97fb2777dda5d93ddc2976248448139ecd71b0c8,97fb2777,6f0acd384a12d8c86f78e3f05b19269012476409,1,2026-07-15T18:42:59+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,E: add complete team handoff and work index
+6773e235368bbad5b7790b6b0ccbe09c5a300944,6773e235,97fb2777dda5d93ddc2976248448139ecd71b0c8,1,2026-07-15T18:45:42+08:00,lljjcc426,204199163+lljjcc426@users.noreply.github.com,E: document research-only champion artifact
+63b208cbed822e5f21e2cfeac272a7bd9be9b348,63b208cb,6f0acd384a12d8c86f78e3f05b19269012476409,1,2026-07-15T23:26:29+08:00,whzy,2402686765@qq.com,Add exact ONNX contraction optimizations and closeout results
+5a4b214018a0983c3654120310d5a42500627719,5a4b2140,6773e235368bbad5b7790b6b0ccbe09c5a300944,1,2026-07-15T23:15:40+08:00,jokerrrrr,3220829322@qq.com,B: add submission4 original rewrite batch
+f9146a64a01979d850ec70618cc59ec9dd0a9a55,f9146a64,5a4b214018a0983c3654120310d5a42500627719,1,2026-07-16T00:15:01+08:00,jokerrrrr,3220829322@qq.com,B: reject hidden-unsafe task344 rank2
+2f565c8c38bb1791bd43893dd45eb24404636bb3,2f565c8c,f9146a64a01979d850ec70618cc59ec9dd0a9a55,1,2026-07-16T00:49:29+08:00,jokerrrrr,3220829322@qq.com,B: add submission4 exact batch2
+07326a252dce892f4fdcad6337df584fb3c2cbf0,07326a25,2f565c8c38bb1791bd43893dd45eb24404636bb3,1,2026-07-16T00:57:27+08:00,jokerrrrr,3220829322@qq.com,B: record batch2 online score 7388.17
+361a857cd358459aee4f6d9f74ceea194606c032,361a857c,07326a252dce892f4fdcad6337df584fb3c2cbf0,1,2026-07-16T02:20:49+08:00,jokerrrrr,3220829322@qq.com,B: integrate submission5 across all 400 tasks
+0ef01283f65550b5731fe8e202b0911d9d06b44e,0ef01283,361a857cd358459aee4f6d9f74ceea194606c032,1,2026-07-16T02:25:28+08:00,jokerrrrr,3220829322@qq.com,B: record all-400 integration score 7420.93
+13691a6262e15effe42ef4fa396d6f67a5217060,13691a62,0ef01283f65550b5731fe8e202b0911d9d06b44e,1,2026-07-16T03:03:28+08:00,jokerrrrr,3220829322@qq.com,B: compact task018 on 7420.93 parent
