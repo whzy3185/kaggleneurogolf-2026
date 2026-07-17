@@ -111,6 +111,7 @@ The Jul 13 archive analysis initially placed direct models on compliance hold, t
 ## Files
 
 - `KAGGLE_CODE_DISCUSSION_LESSONS.md`: public Kaggle Code and Discussion review collected after competition close, with reusable workflow lessons.
+- `NGC_WORK_LOCAL_INVENTORY.md`: local NGC-work discovery, rename, repository state, and historical-path-reference audit.
 - `guides/LOCAL_KAGGLE_SUBMISSION_PLAYBOOK.md`: reusable local Kaggle CLI, token setup, kernel, submission, polling, and failure-handling workflow.
 - `guides/KAGGLE_OPTIMIZATION_STRATEGY_PLAYBOOK.md`: validation-first experiment selection, expected-value prioritization, rebasing, and submission-budget strategy.
 - `PERSONAL_TIMELINE.md`: all 29 personal commits in chronological order.
