@@ -1,3 +1,18 @@
+# Kaggle NeuroGolf 2026 Archive
+
+This repository was migrated from the complete
+`whzy3185/kaggleorbit:retrospective/neurogolf-2026` branch on 2026-07-17.
+The source commit and the initial target `main` commit are both
+`007060e275a9ef0f3ca1965a9c78eb04bcea8dee`; the source branch was retained.
+
+The NeuroGolf material is under
+[`retrospectives/neurogolf-2026`](retrospectives/neurogolf-2026/README.md).
+The consolidated public Code/Discussion review is in
+[`KAGGLE_CODE_DISCUSSION_LESSONS.md`](retrospectives/neurogolf-2026/KAGGLE_CODE_DISCUSSION_LESSONS.md).
+
+The remaining files are preserved because the requested migration covered the
+entire source branch, including its inherited Orbit Wars workspace and history.
+
 # Orbit Wars Adaptive Agent
 
 This project is the Orbit Wars workspace for a first official submission
