@@ -1,7 +1,17 @@
-# NeuroGolf High-Score Solution Retrospective
+# NeuroGolf Repository Score Path and Public-Bundle Retrospective
 
 last_updated: 2026-07-18
-source_scope: public Kaggle pages, local cached Kaggle API outputs, and repository score records
+source_scope: public Kaggle bundles reproduced by the source repository and local score records
+
+## Scope
+
+This file documents the source repository's
+`7015 -> 7113 -> 7266 -> 7395 -> 7420` path. Those numbers are not the final
+leaderboard leaders' scores.
+
+For the final top-10 leaderboard and the actual first-place through tenth-place
+public solution review, see
+`FINAL_LEADERBOARD_TOP_SOLUTIONS_RETROSPECTIVE.md`.
 
 ## Current Local State
 
@@ -9,7 +19,8 @@ source_scope: public Kaggle pages, local cached Kaggle API outputs, and reposito
 - Best submission id: `54736568`
 - Best exp_id/message: `submission5 all400 GitHub audit safe11 +1.025027 sha bcef5a06`
 - Target recorded in the current scorecard: `7800.0`
-- Live leaderboard CLI refresh status: `403 Forbidden`; use Kaggle UI or an account with leaderboard access for a live rank refresh.
+- Final leaderboard snapshot downloaded on 2026-07-18: winner `Kaggle Agent`,
+  score `8314.03`.
 
 ## Public High-Score Sources Already Reproduced or Audited
 
@@ -22,9 +33,11 @@ source_scope: public Kaggle pages, local cached Kaggle API outputs, and reposito
 | Beicicc 6645 | https://www.kaggle.com/code/beicicc/neurogolf-6645-39-public-score-open-solution | lower than later public sources | Useful as a structural motif source; raw broad structural-pass mixing caused negative feedback in this workspace. |
 | Kojimar 6272 | https://www.kaggle.com/code/kojimar/6272-50-lb-audited-neurogolf-onnx-overrides | public source family | Useful for audited overrides and task-level attribution patterns. |
 
-## First-Place and Top-Writeup Lessons
+## Cross-Reference to Final-Leaderboard Writeups
 
-Public first-place/high-rank writeups should be treated as workflow sources, not as private artifact requests:
+The detailed rank-by-rank review is maintained in
+`FINAL_LEADERBOARD_TOP_SOLUTIONS_RETROSPECTIVE.md`. The source links below are
+retained here only because they influenced the repository's later workflow:
 
 - `1st Place - Introduction`: https://www.kaggle.com/competitions/neurogolf-2026/discussion/726654
 - `Pipeline overview`: https://www.kaggle.com/competitions/neurogolf-2026/discussion/726799

@@ -31,6 +31,7 @@ The core high-score recap files found in `E:\kagglegolf` are tracked there. This
 ## Files Added to This Retrospective Repository
 
 - `FIRST_PLACE_CONTACT_AND_SLACK_COLLAB.md`
+- `FINAL_LEADERBOARD_TOP_SOLUTIONS_RETROSPECTIVE.md`
 - `HIGH_SCORE_SOLUTION_RETROSPECTIVE.md`
 - `LOCAL_RECAP_UPLOAD_AUDIT.md`
 

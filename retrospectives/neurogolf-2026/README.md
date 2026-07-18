@@ -112,7 +112,8 @@ The Jul 13 archive analysis initially placed direct models on compliance hold, t
 
 - `KAGGLE_CODE_DISCUSSION_LESSONS.md`: public Kaggle Code and Discussion review collected after competition close, with reusable workflow lessons.
 - `FIRST_PLACE_CONTACT_AND_SLACK_COLLAB.md`: public-safe first-place contact routes and Slack team coordination protocol.
-- `HIGH_SCORE_SOLUTION_RETROSPECTIVE.md`: synthesized 7015/7113/7266/7395/7420 high-score path review and reusable strategy.
+- `FINAL_LEADERBOARD_TOP_SOLUTIONS_RETROSPECTIVE.md`: verified final top-10 leaderboard and rank-by-rank public solution review.
+- `HIGH_SCORE_SOLUTION_RETROSPECTIVE.md`: the source repository's 7015/7113/7266/7395/7420 path, explicitly separated from the final leaderboard.
 - `LOCAL_RECAP_UPLOAD_AUDIT.md`: audit of local `kagglegolf` recap files and what was synced to this retrospective repository.
 - `NGC_WORK_LOCAL_INVENTORY.md`: local NGC-work discovery, rename, repository state, and historical-path-reference audit.
 - `guides/LOCAL_KAGGLE_SUBMISSION_PLAYBOOK.md`: reusable local Kaggle CLI, token setup, kernel, submission, polling, and failure-handling workflow.
